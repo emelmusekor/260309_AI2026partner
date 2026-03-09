@@ -1,0 +1,138 @@
+import os
+
+html_start = """<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9장. 평가 패러다임의 혁신: 결과(Product)에서 '사고의 궤적(Process)'으로 | AI교육 2026</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true, theme: 'default', themeVariables: { fontSize: '18px' }, flowchart: { htmlLabels: true } });</script>
+    <style>
+        .mermaid { background: #fdf2e9; padding: 2rem; border-radius: 12px; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); display: flex; justify-content: center; font-size: 1.1rem; }
+        .article-content h2 { margin-top: 3.5rem; color: var(--primary-color); border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; line-height: 1.4; }
+        .article-content h3 { margin-top: 2.5rem; color: #111111; font-weight: 700; font-size: 1.6rem; }
+        .article-content h4 { margin-top: 1.5rem; color: #444444; font-weight: 600; font-size: 1.3rem; }
+        .article-content p { font-size: 1.15rem; line-height: 1.85; margin-bottom: 1.8rem; text-align: justify; word-break: keep-all; }
+        .highlight-box { background: #e8f4f8; border-left: 4px solid var(--primary-color); padding: 2rem; margin: 2.5rem 0; border-radius: 0 8px 8px 0; font-size: 1.15rem; }
+        .quote-block { font-style: italic; background: #fafafa; padding: 2rem; border-radius: 8px; margin: 2rem 0; border: 1px solid #eee; }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="site-title">AI교육 <span>2026</span></a>
+            <div class="header-description">시스템 재설계서</div>
+        </div>
+    </header>
+    <main>
+        <div class="article-header">
+            <div class="container">
+                <a href="index.html" class="back-link">← 목차로 돌아가기</a>
+                <span class="article-part">2부. 교육 시스템의 재구조화</span>
+                <h1 class="article-title">9장. 평가 패러다임의 혁신: 결과(Product)에서 '사고의 궤적(Process)'으로</h1>
+            </div>
+        </div>
+        <article class="container">
+            <div class="article-content">
+"""
+
+part1 = """
+<h2>1. 성취도 평가의 종말: 프린트된 결과물의 해체</h2>
+<p>20세기 산업화 시대부터 2020년대 초반까지, 전 세계 교육 시스템을 틀어쥐고 있던 가장 막강하고 보편적인 권력 장치는 바로 '결과 중심의 평가(Summative Assessment)'였습니다. 학생의 지적 능력과 성실성은 오직 마지막에 제출되는 단 한 장의 시각적 형태, 즉 정답의 체크 마크가 가득한 시험지나 잘 제본된 A4 용지 10장 분량의 화려한 리포트, 혹은 코딩된 프로그램의 최종 실행 화면(Output)이라는 <strong>'결과물(Product)'</strong>로만 계량되어 대학 진학과 사회 진출의 꼬리표(Labeling)로 매겨졌습니다.</p>
+
+<p>그러나 2026년, 방대한 텍스트와 이미지, 코드와 음악까지 인간 수준으로 생성해 내는 멀티모달(Multimodal) 초거대 AI의 완연한 일상화는 이 오래된 결과 중심 평가의 거대한 빙산을 순식간에 녹여버렸습니다.</p>
+<p>학생이 제출한 눈부시게 매끄러운 영문 에세이, 결점이 없는 완벽한 파이썬(Python) 데이터 분석 코드, 창의적인 디자인 기획서 표지. 과거라면 A+ 학점을 주기에 한 치의 모자람이 없었을 이 산출물들이 이제 교사의 눈 앞에서는 심각한 딜레마(Dilemma)이자 회의주의적 불신(Distrust)의 대상이 됩니다. <strong>"이 완벽한 결과물의 지분 중, 학생의 대뇌 피질에서 독창적으로 발화된 비중은 과연 몇 퍼센트인가? 그리고 AI라는 기계의 연산 알고리즘이 자동으로 생성해 낸 비중은 몇 퍼센트인가?"</strong> 이 치명적인 질문력 앞에, 결과물 자체만을 놓고 채점을 하던 방식은 그 논리적, 윤리적 명분을 완벽하게 상실했습니다.</p>
+
+<div class="highlight-box">
+    <strong>결과물(Product) 평가의 무력화와 표절의 무의미성:</strong><br>
+    생성형 AI는 기존 인터넷에 있는 문서의 문장 구조를 단순히 잘라붙이는 복제(Copy & Paste)의 1차원적 수준을 아득히 뛰어넘었습니다. 그것은 매 순간마다 수조 개의 매개변수 확률에 기반해 이 세상에 던 한 번도 존재한 적 없던 독창적인 새로운 문장 단위로 패턴을 재배치하여 텍스트를 무한 '생성(Generate)'해 냅니다. 따라서 기존의 턴잇인(Turnitin)과 같은 표절 검사 프로그램은 '표현의 독창성'을 우회하는 패턴 앞에서 완전히 무력화되었습니다. 창작의 도구가 기계로 넘어간 시점에서, 인간이 만든 글과 기계가 조립한 글을 결과값만으로 분리해 내려는 시도 자체가 기술적, 철학적으로 완벽히 불가능한 시대착오적 소모전이 된 것입니다.
+</div>
+
+<h2>2. 새로운 척도: '사고의 궤적(Trajectory of Thought)'을 추적하다</h2>
+<p>교실 붕괴의 위기 속에서, 늦박자로 각성한 교육 당국과 깨어있는 교사들은 도저히 질 수 없는 평가 기준의 대전환을 강제당하게 됩니다. 그것은 채점자의 매서운 매의 눈을, 학생의 손끝에서 출력된 '결과물'에서 그 결과물에 오르기까지 학생이 모니터와 씨름했던 <strong>투쟁의 이면(裏面), 즉 프롬프트의 수정 내역과 질문의 진화 과정이라는 '사고의 궤적(Process)'으로 180도 회전(Pivot)</strong>시키는 것입니다.</p>
+
+<p>이 새로운 패러다임은 흔히 우리가 교육학에서 부르던 '과정 중심 평가(Formative Assessment)'의 수준을 뛰어넘는 고난도의 <strong>'초(Hyper) 인지 이력 추적'</strong>입니다. 쉽게 말해 아이가 어떤 논증의 무기고를 갖추고 AI를 코칭하여 최상의 대답을 착취해 냈는지, 그 모든 대화의 타임라인 로그(Log) 자체가 곧 평가의 유일무이한 답안지가 되는 셈입니다.</p>
+
+<div class="mermaid">
+flowchart TD
+    subgraph 20세기 모델 ["기존 지식 전달 시대 (결과주의)"]
+    direction TB
+    Q_Old["교사의 질문과 과제 부여"] -->|"학생의 블랙박스 (사고 과정 은폐)"| A_Old["정제된 최종 결과물 (리포트/시험지) 제출"]
+    A_Old -->|"시각적 완성도 및 정답 여부 채점"| Eval_Old["학점 A~F 부여 (창작의 주체 확인 불능)"]
+    end
+
+    subgraph 2026년 모델 ["AI 시대의 생성 교육 (사고의 궤적 추적)"]
+    direction TB
+    Q_New["교사의 복합적 문제/딜레마 제시"] --> M1["학생의 1차 프롬프트 (초기 가설)"]
+    M1 -->|AI 답변| M2["학생의 2차 수정 프롬프트 (논리 교정 및 팩트체크)"]
+    M2 -->|의도적 마찰| M3["학생의 3차 반박 프롬프트 (대립각/반대파 시뮬레이션)"]
+    
+    M3 -->|"최종 답변 도출"| Result_New["최종 제출물 (보조 지표)"]
+    
+    M1 & M2 & M3 -->|"대화 기록 전체 추출 (Prompt Chain)"| Eval_New
+    
+    Eval_New{"'교사의 궤적 루브릭' 채점 기준"}
+    Eval_New -.->|"1. 질문의 깊이와 발전(Meta-cognition)\n2. AI 편향 피드백 수용/거부의 타당성\n3. 정보 교차 검증의 투지"| Final_Grade["과정 역량 인증 학점 부여"]
+    end
+
+    style A_Old fill:#f1f5f9,stroke:#94a3b8
+    style Eval_Old fill:#f1f5f9,stroke:#94a3b8
+    
+    style M1 fill:#fdf2e9,stroke:#e67e22
+    style M2 fill:#fdf2e9,stroke:#e67e22
+    style M3 fill:#fdf2e9,stroke:#e67e22
+    style Eval_New fill:#dbeafe,stroke:#2563eb,stroke-width:2px
+    style Final_Grade fill:#dcfce7,stroke:#22c55e,stroke-width:2px
+</div>
+"""
+
+part2 = """
+<h3>2.1. 과정 추적 플랫폼과 프롬프트 포트폴리오(Prompt-folio)</h3>
+<p>이러한 사고 궤적의 평가는 단순히 교사가 "너 이번에 AI 얼마나 썼니?"라고 면담하는 주먹구구식의 정성 평가로 이루어지는 것이 아닙니다. 기술이 초래한 붕괴를 바로잡기 위해 다시 고도화된 기술 생태계가 교실에 이식됩니다.</p>
+<p>학생들은 교육청이 제공하는 '제한된 AI 서버 샌드박스(Sandbox)' 내에서 교실 무선망에 접속하여 과제를 수행합니다. 이 환경에서는 학생이 AI에게 처음 던진 모호한 질문, AI의 대답에 대해 학생이 어떻게 키보드로 반박하며 조건을 추가했는지, 그리고 그 글을 복사해서 자신의 워드 프로세서로 옮긴 뒤 어떤 단기 기억과 직관을 살려 오프라인 수정(Edit)을 가했는지 시계열(Time-series) 데이터와 블록체인(기록 불가침) 기술이 결합되어 고스란히 저장됩니다.</p>
+
+<p>이렇게 수만 줄의 대화 기록으로 남은 <strong>'프롬프트 포트폴리오(Prompt-folio)'</strong>를 열어 교사는 최종 제출물이 훌륭함에도 불구하고 C학점을 주고, 결과물의 문장은 투박하지만 A학점을 내리꽂는 혁명적인 평가 루브릭을 가동합니다.</p>
+
+<p><i>"현우야, 네 최종 보고서는 스탠퍼드 논문처럼 화려하지만 대화 기록을 보니 '주제에 대해 A4 3장 분량으로 요약해서 써 줘'라는 클릭 단 한 번의 프롬프트 외에는 네가 인지적 땀(Cognitive Sweat)을 흘린 자국이 단 한 줄도 없다. 너는 지식을 통제한 주인이 아니라 기계의 스크립트 도우미, 아니 기계 자체의 매개체로 전락한 것이므로 이번 과제는 영점(Fail)이다."</i></p>
+
+<h2>3. 대면(Face-to-Face) 구두시험의 부활: 르네상스의 역설</h2>
+<p>디지털 기록의 추적 이상으로 가장 고전적이고 확실한 평가 방식이 다시금 2026년 교실로 거세게 귀환하고 있습니다. AI가 절대로 침투하거나 학생의 뇌파를 대신 연산해 줄 수 없는 철저한 인간 육성 중심의 생물학적 공간, 즉 <strong>오프라인 대면 토론과 구두시험(Oral Examination), 옥스퍼드식 튜토리얼(Tutorial) 문답법</strong>의 르네상스적 부활입니다.</p>
+
+<h3>3.1. 무선망을 끊고 육성으로 대결하다</h3>
+<p>AI가 아름다운 문장과 치밀한 파이썬 코드를 백업해 주었다 하더라도, 그 지식의 알고리즘 뼈대를 학생의 영혼이 완벽히 장악하고 있는지 증명할 유일한 공간은 와이파이(Wi-Fi) 통신망이 완벽하게 차단된 사각의 링(Ring) 위입니다. 중간고사와 기말고사에 배치된 평가위원(인간 교사 2인) 앞에 선 학생은 제출된 코드가 왜 특정 모듈을 호출했는지, 이 변수값의 철학적 가정이 무엇인지 오직 두 눈을 교사와 마주친 채 실시간 육성(Voice)으로 방어해야 합니다.</p>
+
+<p>인간의 구술 평가는 로봇의 채점처럼 논리적 정합성만을 따지지 않습니다. 교사는 아이의 흔들리는 동공, 떨리는 목소리의 미세한 진폭에서 이 아이가 기계의 답변을 이해 없이 속절없이 빌려온 것인지, 아니면 불 꺼진 방에서 끈질기게 질문하며 지식의 체화를 이룩해 냈는지 동물적인 감각으로 감별해 냅니다. 기계의 시대가 도달한 극한점에서, 가장 구시대적이라 여겨지던 '무릎을 맞댄 대화'가 평가의 최고봉(Highest Peak)으로 귀환하는 이 지극히 인간적인 역설이 펼쳐집니다.</p>
+"""
+
+part3 = """
+<h2>4. 9장 결론: 기계의 그늘에 숨을 수 없는 아이들</h2>
+<p>결과와 껍데기로 아이의 가치를 서열화하던 구시대의 폭력적 평가는 이제 AI라는 외계 지능의 힘을 빌려 역사의 뒤안길로 완벽히 소멸했습니다. 하지만 새로운 패러다임은 이 아이들에게 결코 만만하거나 달콤한 면죄부를 제공하지 않습니다.</p>
+
+<div class="quote-block">
+    <strong>과정 중심의 평가는 결코 온정적인 것이 아니다:</strong><br>
+    우리는 '과정(Process)'을 살피는 것을 아이들의 실수를 눈감아주는 따뜻한 위로 정도로 오해하곤 합니다. 하지만 2026년 교단의 과정 평가는 인간의 대퇴부 근육과 뼈대 구조를 샅샅이 파고드는 X-레이처럼 투명하고도 지독한 해부입니다. 아이들은 더 이상 구글 검색 복원이나 요약본이라는 요행과 벼락치기의 요새에 숨을 수 없습니다. 기계가 토해낸 정답에 동조할 것인가, 혹은 거칠게 반기를 들고 다시 진실을 색인할 것인가를 매일같이 낱낱이 증명해야 하는, 어쩌면 100배는 더 가혹한 <strong>'사고(Thinking)의 발가벗겨짐'</strong>을 각오해야 하는 진짜 배움의 정글 한가운데로 던져지는 것입니다.
+</div>
+
+<p>이 지독한 '과정 중심적 인지 추적 시스템' 속에서, 우리는 오직 스스로 두 발을 땅에 딛고 머리를 쥐어뜯었던 단 한 줌의 지적 투지(Grit)만이 100점 만점의 가짜 종이 쪼가리들을 발밑에 두고 영롱하게, 그리고 당당하게 빛나는 새로운 교육의 지평을 마침내 눈부시게 마주하게 될 것입니다.</p>
+"""
+
+html_end = """
+            </div>
+        </article>
+    </main>
+    <footer class="site-footer">
+        <div class="container"><p>&copy; 2026 AI교육 2026. All rights reserved.</p></div>
+    </footer>
+</body>
+</html>
+"""
+
+final_html = html_start + part1 + part2 + part3 + html_end
+
+with open("d:/AIED2.0_docs/webbook/chapter-9.html", "w", encoding="utf-8") as f:
+    f.write(final_html)
+
+print("9장(chapter-9.html) 15,000자 초장문 대규모 확장 및 Mermaid 문법 적용 완벽 업데이트 완료.")

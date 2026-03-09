@@ -1,0 +1,178 @@
+import os
+
+html_start = """<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1장. AI교육 2026: 기술의 작동법을 넘어 '공진(Symbiosis)'의 교실로 | AI교육 2026</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true, theme: 'default', themeVariables: { fontSize: '18px' }, flowchart: { htmlLabels: true } });</script>
+    <style>
+        .mermaid { background: #fdf2e9; padding: 2rem; border-radius: 12px; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); display: flex; justify-content: center; font-size: 1.1rem; }
+        .article-content h2 { margin-top: 3rem; color: var(--primary-color); border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; }
+        .article-content h3 { margin-top: 2rem; color: #334155; }
+        .highlight-box { background: #eff6ff; border-left: 4px solid var(--primary-color); padding: 1.5rem; margin: 2rem 0; border-radius: 0 8px 8px 0; }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="site-title">AI교육 <span>2026</span></a>
+            <div class="header-description">시스템 재설계서</div>
+        </div>
+    </header>
+    <main>
+        <div class="article-header">
+            <div class="container">
+                <a href="index.html" class="back-link">← 목차로 돌아가기</a>
+                <span class="article-part">1부. 시대를 읽는 렌즈</span>
+                <h1 class="article-title">1장. AI교육 2026: 기술의 작동법을 넘어 '공진(Symbiosis)'의 교실로</h1>
+            </div>
+        </div>
+        <article class="container">
+            <div class="article-content">
+"""
+
+part1 = """
+<h2>1. 서론: 패러다임의 거대한 전환과 '공진'의 필요성</h2>
+<p>2022년 말, OpenAI의 ChatGPT가 세상에 등장하며 촉발된 생성형 인공지능의 충격파는 사회 전반을 강타했습니다. 교육계 역시 예외는 아니었습니다. 초기 교육 현장의 반응은 주로 두 가지 양극단으로 나뉘었습니다. 한편에서는 AI가 교사의 역할을 대체하고 학생들의 비판적 사고력을 퇴화시킬 것이라는 '거부와 공포'가 팽배했고, 다른 한편에서는 최신 AI 도구를 수업에 적극 도입하여 업무 효율성과 학습 흥미를 높이려는 '맹목적 수용'이 주를 이루었습니다. 수많은 프롬프트 엔지니어링 강좌와 도구 활용 연수가 쏟아졌고, 교육청과 학교는 앞다투어 'AI 선도 학교', '스마트 교실' 구축에 예산을 투입하며 <strong>AI 활용(Utilizing AI)</strong>에 방점을 찍었습니다.</p>
+<p>하지만 2026년 현재, 우리는 더 이상 인공지능을 단순한 '도구적 관점'으로만 바라볼 수 없는 중대한 변곡점에 도달해 있습니다. 스마트폰이 단순히 '전화기'를 넘어 현대인의 일상을 지배하는 '외부 뇌(External Brain)'이자 세계와 소통하는 핵심 인터페이스로 자리 잡은 것처럼, 이제 거대 언어 모델(LLM)과 지능형 에이전트로 진화한 AI는 학습자의 사고, 판단, 그리고 사회적 상호작용에 깊숙이 개입하는 <strong>'근본적인 인지적 파트너'</strong>로 진화하고 있습니다.</p>
+
+<div class="highlight-box">
+    <strong>오순영 저 『AI시대 부의 지도』에서 발췌 및 재해석:</strong><br>
+    "AI 시대를 성공적으로 항해하고 지배하는 핵심 동력은 개별 프로그램의 코딩 문법을 암기하는 능력이 아닙니다. 진정한 힘은 AI를 하나의 거대한 '환경(Environment)'이자 '사회적 시스템(System)'으로 해석해 내는 거시적 통찰력에 있습니다. 지식의 생산 단가가 0에 수렴하는 시대에, 우리는 AI라는 파도에 휩쓸리지 않고 그 파도의 흐름을 읽고 타는 법을 배워야 합니다."
+</div>
+
+<p>교육 역시 마찬가지입니다. AI의 개념과 원리를 지식으로 배우는 'AI를 배우는(Learning about AI)' 교육이나, AI를 단순히 문제 풀이 속도를 높여주는 편리한 도구로 사용하는 'AI와 함께 배우는(Learning with AI)' 단계를 넘어서야 합니다. 미래의 교실은 AI라는 거대한 지능형 네트워크 및 자율 에이전트와 끊임없이 교감, 질문, 충돌, 그리고 타협하며 인간과 기계가 상호의존적으로 진화하는 <strong>'공진화(Co-evolution)'</strong>, 즉 <strong>공진(Symbiosis)</strong>의 생태계가 되어야 합니다.</p>
+
+<div class="mermaid">
+graph TD
+    A[과거: AI as a Tool] -->|발전| B[현재: AI as an Assistant]
+    B -->|패러다임 전환| C[미래: AI as a Symbiotic Partner]
+    C --> D[인지적 역할 분담]
+    C --> E[메타 협력적 지식 창출]
+    C --> F[윤리적/비판적 견제]
+    style A fill:#f1f5f9,stroke:#94a3b8
+    style B fill:#e0f2fe,stroke:#38bdf8
+    style C fill:#dbeafe,stroke:#2563eb,color:#1e40af,stroke-width:2px
+</div>
+
+<h3>1.1. 기능인 양성을 넘어선 주체적 시민의 형성</h3>
+<p>공진의 교실에서 추구하는 교육의 궁극적인 목표는 인공지능을 능숙하게 부려 기계적인 생산성을 극대화하는 '기능인(Technician)'을 길러내는 데 있지 않습니다. 물론 프롬프트 엔지니어링이나 AI 도구의 활용 능력이 당장의 취업 시장이나 학업에서 유리한 고지를 점하도록 도울 수는 있습니다. 그러나 기계가 기계 스스로를 학습하고 개선하며, 나아가 고도의 추론과 기획 단계까지 수행하는 인공일반지능(AGI)의 도래가 가시화되는 현 시점에서, 인간이 기계와 '효율성'이나 '생산 속도'로 경쟁하는 것은 무의미합니다.</p>
+<p>기계가 인간의 지능을 위협할 정도로 똑똑해질수록, 교육은 역설적으로 가장 <strong>인간 고유의 본질</strong>로 회귀해야 합니다. 그것은 바로 기술이 던지는 무수한 윤리적, 사회적, 실존적 질문에 올바르게 답할 수 있는 능력입니다. 학생들은 데이터의 편향성을 의심하고, 알고리즘이 내리는 불투명한 결정에 이의를 제기하며, 기계의 제안을 비판적으로 수용하여 최종적인 책임을 지는 <strong>'주체적 시민(Autonomous Citizen)'</strong>으로 길러져야 합니다. 이것이 바로 AI교육 2026 시스템 재설계의 핵심 철학입니다.</p>
+
+<h2>2. 인간과 AI의 관계 진화: 단순한 도구에서 '지적 동반자(Intellectual Partner)'로</h2>
+<p>AI교육 2.0 모델에서는 인간과 인공지능이 교육 현장에서 맺는 관계의 진화 단계를 크게 5단계로 규정합니다. 우리는 현재 어느 단계에 과도하게 머물러 있으며, 어떤 단계로 도약해야 하는지를 명확히 인지하는 것이 중요합니다.</p>
+
+<div class="mermaid">
+sequenceDiagram
+    participant H as 인간 (학습자)
+    participant A as 인공지능 (AI)
+    Note over H,A: 1단계: 경쟁 (Fear & Replacement)
+    H-->>A: "네가 내 자리를 뺏을까 두렵다"
+    Note over H,A: 2단계: 활용 (Tool & Utilization)
+    H->>A: "이 텍스트 요약 좀 해줘"
+    A-->>H: "네, 요약된 결과입니다."
+    Note over H,A: 3단계: 협력 (Interaction & Feedback)
+    H->>A: "이 구조에서 논리적 비약이 있을까?"
+    A-->>H: "3번 문단의 근거가 빈약합니다."
+    Note over H,A: 4단계: 상생 (Co-creation)
+    H->>A: "이 주제로 아이디어를 교환해보자"
+    A-->>H: "B라는 관점도 고려해볼 수 있습니다."
+    Note over H,A: 5단계: 공존 (Symbiosis / Meta-Collaborativism)
+    H->>A: "끊임없는 핑퐁(Ping-pong) 질문"
+    A-->>H: "메타인지 확장 및 공동 창출 수행"
+</div>
+
+<h3>2.1. 인지적 진화의 5단계 분석</h3>
+<p><strong>1단계: 경쟁(Competition)의 시대</strong><br>
+초기 인공지능의 충격 속에서 교육계는 깊은 두려움에 사로잡혔습니다. "AI가 곧 교사를 완벽히 대체할 것이다", "학생들이 스스로 생각하고 글을 쓰는 능력을 영원히 상실하여 사고력이 퇴화될 것이다"라는 비관론이 팽배했습니다. 이 시기에는 AI를 학습의 방해물로 간주하고, 시험이나 과제에서 AI 사용을 엄격히 통제하고 적발해 내는 이른바 '창과 방패의 싸움'에 막대한 에너지를 소모했습니다.</p>
+<p><strong>2단계: 활용(Utilization)의 시대</strong><br>
+시간이 흐르며 AI의 유용성을 무시할 수 없게 되자, 일각에서는 AI를 '똑똑한 비서'나 '고급 검색 엔진'으로 수용하기 시작했습니다. 교사들은 수업 자료 초안을 작성하거나 행정 업무를 처리하는 데 AI를 사용했고, 학생들은 방대한 자료를 요약하거나 번역하는 데 AI를 도구로 활용했습니다. 이 단계에서 AI는 여전히 수동적인 도구체이며, 지시한 명령(Prompt)에 대해서만 정해진 결과물(Output)을 반환하는 1회성 관계에 머뭅니다.</p>
+
+<p><strong>3단계 이상: 협력, 상생, 그리고 대망의 '공존(Symbiosis)'</strong><br>
+앞으로의 교실은 단순히 도구를 부리는 2단계를 넘어, 고도의 지적 상호작용이 일어나는 '협력' 이상의 단계로 도약해야만 합니다. AI가 학생의 초기 질문에 실시간으로 반응하고, 학습의 논리적 허점을 분석해 내며, 단번에 정답을 주는 대신 더 깊은 사고를 유도하는 꼬리 질문을 던지는 환경입니다. 학습자는 AI와의 끊임없는 피드백 루프(Prompt → Feedback → Reflection → Iteration) 속에서 자신의 사고 과정을 객관화하여 바라보게 됩니다. <br>
+이러한 패러다임을 우리는 <strong>메타협력주의(Meta-Collaborativism)</strong>라 부릅니다. 과거 전통적인 교실에서의 협력학습이 동료 인간 학습자들과 의견을 조율하여 하나의 프로젝트를 완성하는 '결과 지향적 사회화 과정'이었다면, 미래의 교실에서 학습자는 AI와의 지치지 않는 영점 조절(탁구 게임)을 통해 자신의 인지 구조 자체를 성찰(메타인지 확장)하고 오개념을 수정하며, 세상에 없던 새로운 지식을 '공동으로 창출(Co-creation)'해 내게 됩니다.</p>
+
+<h2>3. 방대한 지식의 바다: 무엇을 어떻게 가르칠 것인가?</h2>
+<p>정보 폭발과 지식 유통 기한의 급격한 단축은 교육 과정(Curriculum)의 근본적인 수술을 요합니다. 과거 산업화 시대의 학교 교육은 거대하고 정형화된 지식의 덩어리를 잘게 쪼개어 교과서라는 매체에 담고, 이를 교사의 입을 통해 학생의 뇌에 주입하는 '컨베이어 벨트식 전달 모델'을 따랐습니다. 하지만 AI가 세상의 거의 모든 지식을 학습하고 이를 초 단위로 합성하여 제공하는 시대에, '어떤 지식을 얼마나 많이 암기하고 있는가'는 더 이상 개인의 경쟁력을 담보하지 못합니다.</p>
+<p>이제 중요한 것은 파편화된 지식들을 연결하고, 맥락을 파악하며, AI가 생성한 정보의 진위를 가려내고 그 이면의 편향성을 비판적으로 해석해 내는 <strong>'네트워크적 사고(Networked Thinking)'</strong>와 <strong>'데이터 리터러시(Data Literacy)'</strong>입니다.</p>
+
+<h3>3.1. 주지 교과로서의 'AI 소양(Digitacy)'</h3>
+<p>지금까지 한국 교육에서 AI 교육은 대체로 '정보 교과'나 '컴퓨터 동아리' 활동 시간으로 축소되어 기술적 측면(코딩, 알고리즘 기초)만을 다루는 경향이 짙었습니다. 하지만 우리는 국어나 영어를 단순히 소설가를 만들거나 번역가를 양성하기 위해 가르치지 않습니다. 언어는 모든 학습과 사회생활의 가장 기초적인 운영 체제(OS)이기 때문입니다. <br>
+AI 소양, 즉 <strong>디지터시(Digitacy = Digital + Literacy)</strong> 역시 마찬가지입니다. AI는 이제 특정 직업군만의 전문 기술이 아니라, 정치, 경제, 문화, 의료 등 인간 삶의 모든 영역을 매개하는 보편적인 환경이 되었습니다. 따라서 디지터시는 모든 교과의 뼈대를 이루는 <strong>주지 교과(Primary Subject)</strong>로 승격되어야 하며, 국어, 수학, 사회, 과학, 예술 등 전 교과 영역에 걸쳐 융합적으로 훈련되어야 합니다.</p>
+"""
+
+part2 = """
+<div class="mermaid">
+flowchart LR
+    Root["AI 소양 (Digitacy)"]
+    Root --> Tech["1. 기술적 이해"]
+    Tech --> T1("알고리즘 구조")
+    Tech --> T2("데이터 편향성 도출")
+    Tech --> T3("확률적 추론 및 환각현상")
+
+    Root --> Ethics["2. 윤리 및 철학"]
+    Ethics --> E1("저작권과 프라이버시")
+    Ethics --> E2("주체성 유지")
+    Ethics --> E3("가치 정렬")
+
+    Root --> Critical["3. 비판적 사고"]
+    Critical --> C1("정보 출처 팩트체크")
+    Critical --> C2("AI 출력물 한계 분석")
+    Critical --> C3("프롬프트 메타적 질문화")
+
+    Root --> Apply["4. 융합적 적용"]
+    Apply --> A1("전 교과 융합 지식 도출")
+    Apply --> A2("데이터 스토리텔링")
+    Apply --> A3("협업적 문제 해결")
+
+    style Root fill:#dbeafe,stroke:#2563eb,stroke-width:2px
+    style Tech fill:#fdf2e9,stroke:#e67e22
+    style Ethics fill:#fdf2e9,stroke:#e67e22
+    style Critical fill:#fdf2e9,stroke:#e67e22
+    style Apply fill:#fdf2e9,stroke:#e67e22
+</div>
+
+<h3>3.2. 본 도서의 목적: '시스템 재설계서'</h3>
+<p>이 책 『AI교육 2026』은 어제 출시된 최신 AI 툴의 기능 버튼이 어디에 있는지, 내일 당장 수업에 써먹을 수 있는 프롬프트 100선이 무엇인지 설명하는 매뉴얼 서적이 아닙니다. 기술 도구의 표면적인 사용법(How-to)은 소프트웨어가 업데이트되는 순간 즉시 폐기되는 시한부 지식에 불과합니다.</p>
+<p>대신, 우리는 공교육 기관(학교)부터 고등교육(대학), 그리고 평생학습 기관에 이르기까지 국가의 전체 교육 시스템과 교사의 역할, 학생의 평가 기준, 그리고 교육 생태계의 거버넌스를 어떻게 근본적으로 <strong>'수술(Surgeon)'</strong>해야 하는지를 다루는 거시적인 <strong>'시스템 재설계서'</strong>를 지향합니다. 인류가 서 있는 땅의 지형이 완전히 변했다면, 그 위를 걷고 달리는 방법 역시 근원적으로 달라져야 하기 때문입니다.</p>
+
+<h2>4. 심층 분석: 'AI를 사용한다'는 착각에서 벗어나기</h2>
+<p>최근 유발 하라리는 신작 『넥서스(Nexus)』에서 매우 불길하고도 정확한 경고를 던졌습니다. 하라리에 따르면, 인류 역사상 정보나 문자를 다루었던 모든 도구(인쇄기, 라디오 등)는 그저 도구일 뿐이었습니다. 인쇄기는 자신이 어떤 사상을 찍어내는지 이해하지 못했고, 라디오는 자신이 뿜어내는 음성이 파시즘 선동인지 자유주의 연설인지 구별할 지능이 없었습니다.<br>
+그러나 작금의 알고리즘과 AI 네트워크는 역사상 최초의 <strong>'비인간 편집자(Non-human Editor)'</strong>입니다. 유튜브의 추천 알고리즘이나 틱톡의 피드는 청소년들이 어떤 영상을 볼 때 더 분노하고 오래 체류하는지 '스스로 학습'하여 현실을 자극적으로 편집하고 주입합니다.</p>
+<p>따라서, "우리는 수업 시간에 AI를 잘 사용하고 있다"는 안일한 착각에서 깨어나야 합니다. 학생이 AI에게 단편적인 질문을 던지고 요약본을 받아 적을 때, 사실 권력의 우위는 질문을 하는 인간이 아니라 답변의 범위를 재단하여 제공하는 시스템 측에 있을 수 있습니다. 교육 현장에서의 무분별한 AI 투입은 자칫 학생들의 세계관과 인지 방식을 글로벌 빅테크 자본이 짠 상업적 알고리즘의 노예로 전락시킬 위험성을 내포하고 있습니다.</p>
+
+<h3>4.1. 정보 매개 권력을 통제하는 비판력 육성</h3>
+<p>공진의 교실에서 가장 중요한 과제 중 하나는 이처럼 보이지 않는 '정보 매개 권력'을 학생 스스로가 자각하고 통제하도록 훈련시키는 일입니다. 이는 단순한 미디어 리터러시를 넘어선, 일종의 <strong>'인지적 방어권(Cognitive Defense Right)'</strong> 교육입니다.</p>
+<ul>
+    <li><strong>블랙박스(Black Box) 해체 훈련:</strong> AI가 결과물을 도출한 알고리즘의 편향 가능성과 데이터 소스의 한계를 학생 스스로 질문하고 추적해보는 탐구 활동. 내가 받은 답변이 어떤 데이터 세트(서양 중심, 영어 중심, 성인 중심 등)에 지배받고 있는지 분해해 보는 연습입니다.</li>
+    <li><strong>의도적 마찰(Intentional Friction)의 설계:</strong> 교사는 수업 중 일각을 할애하여 의도적으로 인터넷 연결을 끊거나 AI 기비 사용을 전면 금지하고, 백지와 연필만으로 자신의 날것 그대로의 생각을 대면하게 하는 '디지털 디톡스 구간' 혹은 '인지적 로딩 구간'을 반드시 설계해야 합니다. AI가 주는 매끄럽고 빠른 정답에서 벗어나, 울퉁불퉁하고 느릿느릿한 스스로의 사고 회로를 돌리는 훈련이 병행되어야만 비로소 기계와 종속되지 않는 독립적 주체로 설 수 있습니다.</li>
+</ul>
+
+<h2>5. 1장 결론: 공진의 미래를 위한 첫걸음</h2>
+<p>다가오는 2026년 이후의 세계는 AI가 일상에 산소처럼 스며든 <strong>AX(AI Transformation) 시대</strong>입니다. 이러한 거대한 전환기 속에서 교육의 책임은 그 어느 때보다 무겁습니다.</p>
+<p>우리는 단순히 새로운 기술을 교실에 '더하는(Add-on)' 수준을 넘어, 교육의 본질을 'AI 환경 하에서' 완전히 새롭게 재구조화해야 합니다. 불안과 맹신이라는 두 가지 맹목적 장벽을 허물고, AI 기술 이면에 숨겨진 자본의 논리와 알고리즘의 편향성을 폭로하며, 그 한계를 명확히 직시할 때 비로소 진정한 파트너십이 성립할 수 있습니다. <br>
+기계가 놀라운 연산 능력으로 해답을 쏟아낼수록, 우리 아이들은 그 해답을 맹신하지 않고 <strong>'한 번 더 왜(Why)라고 묻는 인간 고유의 불경하고도 아름다운 반항심'</strong>을 길러야 합니다. 이것이 바로 우리가 나아가야 할 '공진(Symbiosis)의 교실'이 외치는 가장 절박한 첫 번째 선언입니다.</p>
+"""
+
+html_end = """
+            </div>
+        </article>
+    </main>
+    <footer class="site-footer">
+        <div class="container"><p>&copy; 2026 AI교육 2026. All rights reserved.</p></div>
+    </footer>
+</body>
+</html>
+"""
+
+final_html = html_start + part1 + part2 + html_end
+
+with open("d:/AIED2.0_docs/webbook/chapter-1.html", "w", encoding="utf-8") as f:
+    f.write(final_html)
+
+print("1장(chapter-1.html) 대규모 확장 및 Mermaid 도표 적용 완벽 완료.")
