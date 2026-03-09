@@ -8,7 +8,7 @@
 <link as="style" crossorigin="" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet"/>
 <link href="styles.css" rel="stylesheet"/>
 <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true, theme: 'default', themeVariables: { fontSize: '18px' }, flowchart: { htmlLabels: true } });</script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'base', look: 'handDrawn', themeVariables: { primaryColor: '#fdf2e9' } });</script>
 <style>
         .mermaid { background: #fdf2e9; padding: 2rem; border-radius: 12px; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); display: flex; justify-content: center; font-size: 1.1rem; }
         .article-content h2 { margin-top: 3.5rem; color: var(--primary-color); border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; line-height: 1.4; }
@@ -18,7 +18,10 @@
         .highlight-box { background: #e8f4f8; border-left: 4px solid var(--primary-color); padding: 2rem; margin: 2.5rem 0; border-radius: 0 8px 8px 0; font-size: 1.15rem; }
         .quote-block { font-style: italic; background: #fafafa; padding: 2rem; border-radius: 8px; margin: 2rem 0; border: 1px solid #eee; }
     </style>
-</head>
+<style>
+.mermaid { overflow-x: auto; text-align: center; margin: 2rem 0; clear:both; }
+.mermaid svg { max-width: 100%; height: auto; }
+</style></head>
 <body>
 <header class="site-header">
 <div class="container header-content">
@@ -37,42 +40,38 @@
 <article class="container">
 <div class="article-content">
 <h2>1. 공공의 낡은 서버실과 사기업 매머드의 격돌</h2>
-<p>거대한 비전과 정책은 문서 위에서 자생하지 않습니다. 2026년에 시작되는 AI 교육 국가 로드맵의 성공 여부는 화려한 청사진에 있지 않고 현장 교사들의 처절한 실천과 수많은 오류의 축적에 달렸다. 정부는 더 이상 중앙의 책상 위에서 완벽한 정답을 하달하려는 교만을 버려야 합니다. 애자일한 수정과 끊임없는 파일럿 테스트, 그리고 현장의 불만과 실패를 데이터로 비료 삼아 진화해 나가는 겸손함만이 이 거대하고 두려운 항공 로켓, "AI교육 체제"를 무사히 목적지에 안착시키는 유일한 추력이 될 것입니다.</p>
+<p>거대한 비전과 정책은 문서 위에서 자생하지 않습니다. 2026년에 시작되는 AI 교육 국가 로드맵의 성공 여부는 화려한 청사진에 있지 않고 현장 교사들의 처절한 실천과 수많은 오류의 축적에 달렸다. 정부는 더 이상 중앙의 책상 위에서 완벽한 정답을 하달하려는 교만을 버려야 합니다. 애자일한 수정과 끊임없는 파일럿 테스트, 그리고 현장의 불만과 실패를 데이터로 비료 삼아 진화해 나가는 겸손함만이 이 거대하고 두려운 항공 로켓, <em>AI교육 체제</em>를 무사히 목적지에 안착시키는 유일한 추력이 될 것입니다.</p>
 <p>교육부 산하의 공공기관들이 매년 배정되는 수백억 단위의 쥐꼬리만 한 고정 예산과 경직된 인사관리를 가지고, 하룻밤 사이 수십 차례 알고리즘 로직이 바뀌는 실리콘밸리의 빅테크 및 국내 거대 통신사·포털 에듀테크의 혁신 속도를 따라잡는 것은 물리적, 자원적으로 완벽히 불가능합니다.</p>
-<div class="highlight-box"><p style="margin:0;"><strong>공공 플랫폼(EBS, KERIS 등)의 한계와 착각</strong>은(는) 과거 코로나19 시국을 버텨내던 EBS 온라인 클래스나 공공 화상 서버 수준의 낡은 아키텍처로 "국가 주도형 AI 튜터"를 상상한다면, 2026년 교실 현장의 가장 깐깐하고 넷플릭스급의 유려한 사용자 경험에 길들여진 아이들에게 그것은 3초 만에 폐기 처분될 "랙 걸리는 깡통 로봇"에 지나지 않습니다. 국가가 모든 벽돌을 혼자 다 구워서 만리장성을 쌓겠다는 관료적 오만을 당장 버려야만, 우리는 사교육 시장의 위협에 공교육이 무너지는 대참사를 가까스로 면할 수 있습니다.</p></div>
+<div class="highlight-box"><p style="margin:0;"><strong>공공 플랫폼(EBS, KERIS 등)의 한계와 착각</strong>은(는) 과거 코로나19 시국을 버텨내던 EBS 온라인 클래스나 공공 화상 서버 수준의 낡은 아키텍처로 <em>국가 주도형 AI 튜터</em>를 상상한다면, 2026년 교실 현장의 가장 깐깐하고 넷플릭스급의 유려한 사용자 경험에 길들여진 아이들에게 그것은 3초 만에 폐기 처분될 <em>랙 걸리는 깡통 로봇</em>에 지나지 않습니다. 국가가 모든 벽돌을 혼자 다 구워서 만리장성을 쌓겠다는 관료적 오만을 당장 버려야만, 우리는 사교육 시장의 위협에 공교육이 무너지는 대참사를 가까스로 면할 수 있습니다.</p></div>
 
 
-        <div class="checkpoint-widget" style="background:#fdf4ff; padding:1.5rem; border-radius:8px; margin: 3rem 0; border: 1px solid #fae8ff;">
-          <h4 style="margin-top:0; color:#701a75; display:flex; align-items:center; gap:0.5rem;">💭 개념 연결 (Drag & Drop 체험)</h4>
-          <p style="margin-bottom:1rem; color:#4a044e;">문맥에 맞는 올바른 단어를 마음속으로 배치해 보거나 버튼을 클릭해 확인해 보세요.</p>
-          <div style="padding:1.5rem; background:white; border-radius:6px; border:1px dashed #e879f9;">
-              "미래의 교육은 디지털 <strong>[ 빈칸 ]</strong>(을)를 넘어서, 가장 통제된 아날로그적 연대와 <strong>[ 빈칸 ]</strong>(을)를 복원해야만 합니다."
-          </div>
-          <div style="display:flex; gap:1rem; margin-top:1rem;">
-              <button onclick="alert('정답 해설: 미래 교육은 맹목적인 디지털 [종속]을 넘어서 아날로그적 [비판]과 연대를 복원해야 합니다.')" style="background:#d946ef; color:white; border:none; padding:0.8rem 1.5rem; border-radius:4px; font-weight:600; cursor:pointer;">정답과 해설 보기</button>
-          </div>
-        </div>
-        
+<div class="interactive-widget sa-widget">
+<h4 class="widget-title">⌨️ 핵심 어휘 회상 (단답형)</h4>
+<p style="margin-bottom: 1rem;">알고리즘의 정보 편식 문제와 관련하여, <strong>"자신과 비슷한 성향의 추천 정보만 반복적으로 수용하여 벽에 둘러싸인 닫힌 사고에 갇히는 현상"</strong>을 무엇이라 부릅니까?</p>
+<input class="short-answer-input" data-target="에코체임버,메아리방,확증,편향" placeholder="핵심 단어를 입력해주세요 (예: 에코체임버, 확증편향)" type="text"/>
+<button class="submit-btn" type="button">정답 제출하기</button>
+<div class="feedback-msg"></div>
+</div>
 <h2>2. 새로운 룰의 세팅: 플랫폼 종속이 아닌 "통제된 협업(API 샌드박스)"</h2>
-<p>가장 현명한 2026년 교육 국가 전략의 본질은, 민간 에듀테크(스타트업, 통신사, 글로벌 빅테크) 기업들이 피 튀기며 천문학적 돈을 쏟아부어 만들어낸 가장 뛰어난 최정상급 <strong>"원천 베이스 모델(Foundation Model/API)"의 멱살을 잡아채, 공교육 내부로 가장 우아하게, 그러나 가혹한 국가적 제어판 아래로 끌어들여 임대하는 방식</strong>입니다.</p>
+<p>가장 현명한 2026년 교육 국가 전략의 본질은, 민간 에듀테크(스타트업, 통신사, 글로벌 빅테크) 기업들이 피 튀기며 천문학적 돈을 쏟아부어 만들어낸 가장 뛰어난 최정상급 "원천 베이스 모델(Foundation Model/API)"의 멱살을 잡아채, 공교육 내부로 가장 우아하게, 그러나 가혹한 국가적 제어판 아래로 끌어들여 임대하는 방식입니다.</p>
 <div class="mermaid">
 flowchart TD
-    subgraph errModel ["잘못된 모델: 공교육의 식민지화"]
-    Err1["학교와 교사가 개별적으로 민간 특정 AI 수학 앱 도입"] --&gt;|"학생 데이터 무분별 사기업 유출"| Err2["블랙박스 속 학생 등급 분류 수익화"]
-    Err2 --&gt;|"플랫폼 락인 효과"| Err3["사교육 앱 종속으로 인한 특정 기업 독점 특혜 시비"]
+    subgraph errModel [<em>잘못된 모델: 공교육의 식민지화</em>]
+    Err1["학교와 교사가 개별적으로 민간 특정 AI 수학 앱 도입<em>] --&gt;|</em>학생 데이터 무분별 사기업 유출<em>| Err2[</em>블랙박스 속 학생 등급 분류 수익화<em>]
+    Err2 --&gt;|</em>플랫폼 락인 효과<em>| Err3[</em>사교육 앱 종속으로 인한 특정 기업 독점 특혜 시비"]
     end
 
     subgraph rightModel ["2026년 국가 주도 생태계 룰: API 샌드박스 허브"]
     direction TB
-    Gov_API["교육부 클라우드 중앙 허브 - Data Privacy 및 API 관리소"]
+    Gov_API["교육부 클라우드 중앙 허브 - Data Privacy 및 API 관리소<em>]
 
-    Edu_Co1["통신사 A - 자연어 음성 엔진 API 제공"] --&gt;|"비식별 필터링 후 가동"| Gov_API
-    Edu_Co2["스타트업 B - 수학 지식 추적 AI 제공"] --&gt;|"교과서 기준 편향 점검 통과"| Gov_API
-    Big_Tech["글로벌 기업 C - 시각 생성 엔진 제공"] --&gt;|"투명성 감사 허가 시 진입"| Gov_API
+    Edu_Co1[</em>통신사 A - 자연어 음성 엔진 API 제공<em>] --&gt;|</em>비식별 필터링 후 가동<em>| Gov_API
+    Edu_Co2[</em>스타트업 B - 수학 지식 추적 AI 제공<em>] --&gt;|</em>교과서 기준 편향 점검 통과<em>| Gov_API
+    Big_Tech[</em>글로벌 기업 C - 시각 생성 엔진 제공<em>] --&gt;|</em>투명성 감사 허가 시 진입"| Gov_API
 
-    Gov_API --&gt;|"교사의 다중 선택권 허용"| School["전국 교실의 대시보드 - 자유로운 모듈 조립"]
+    Gov_API --&gt;|<em>교사의 다중 선택권 허용</em>| School[<em>전국 교실의 대시보드 - 자유로운 모듈 조립</em>]
 
-    School --&gt;|"학생 데이터는 사기업 엔진에 남지 않고 공공 허브로 회귀"| Final["데이터 주권 확보 및 상생의 조인트 벤처"]
+    School --&gt;|"학생 데이터는 사기업 엔진에 남지 않고 공공 허브로 회귀<em>| Final[</em>데이터 주권 확보 및 상생의 조인트 벤처"]
     end
 
     style Err3 fill:#fee2e2,stroke:#ef4444,stroke-width:2px
@@ -80,80 +79,158 @@ flowchart TD
     style School fill:#fdf2e9,stroke:#e67e22,stroke-width:2px
     style Final fill:#dcfce7,stroke:#22c55e,stroke-width:2px
 </div>
-<h3>2.1. 기술은 사기업이 대고, 철학과 데이터 소유권은 국가가 쥔다</h3>
-<p>학교 현장의 김 교사는 태블릿에 탑재할 수학 보충 AI 튜터를 고를 때, 국가가 직접 엉성하게 만든 한 가지 모델만 강요받지 않습니다. 대신 국가(교육부)의 철저한 사전 <strong>편향성, 보안, 윤리적 해킹 테스트를 모두 무사히 통과한 가장 민첩하고 탁월한 민간 기업들의 모델 5가지(예: 스타트업 A, 통신사 B 모델)</strong> 중에서, 자신의 학급 아이들의 성향과 자신의 교수법에 가장 찰떡같이 맞아떨어지는 모듈을 "선택"하여 구독 신청할 수 있게 됩니다.</p>
+
+<div class="interactive-widget dnd-widget">
+<h4 class="widget-title">🧩 문장 복원하기 (Drag &amp; Drop)</h4>
+<p style="margin-bottom:1rem;">아래의 단어 블록을 드래그하여, 문맥상 알맞은 빈칸에 채워 넣으세요.</p>
+<div class="dnd-container">
+<div class="draggable" data-value="마찰" draggable="true">마찰</div>
+<div class="draggable" data-value="연대" draggable="true">연대</div>
+<div class="draggable" data-value="종속" draggable="true">종속</div>
+</div>
+<p style="font-size:1.15rem; line-height:2.0; margin-top:1.5rem; padding: 1.5rem; background: #fafafa; border:1px solid #e2e8f0; border-radius:8px; color: #334155;">
+            우리는 기계에 대한 맹목적인 <span class="dropzone" data-target="종속"></span>을(를) 거부하고, 
+            사고의 근육을 키우기 위한 고통스러운 인지적 <span class="dropzone" data-target="마찰"></span>을(를) 개입시켜, 
+            결국 서로의 체온을 나누는 아날로그적 <span class="dropzone" data-target="연대"></span> 생태계를 창조해야 합니다.
+        </p>
+<button class="submit-btn" type="button">정답 제출하기</button>
+<div class="feedback-msg"></div>
+</div>
+<h2>3. 기술은 사기업이 대고, 철학과 데이터 소유권은 국가가 쥔다</h2>
+<p>학교 현장의 김 교사는 태블릿에 탑재할 수학 보충 AI 튜터를 고를 때, 국가가 직접 엉성하게 만든 한 가지 모델만 강요받지 않습니다. 대신 국가(교육부)의 철저한 사전 편향성, 보안, 윤리적 해킹 테스트를 모두 무사히 통과한 가장 민첩하고 탁월한 민간 기업들의 모델 5가지(예: 스타트업 A, 통신사 B 모델) 중에서, 자신의 학급 아이들의 성향과 자신의 교수법에 가장 찰떡같이 맞아떨어지는 모듈을 <em>선택</em>하여 구독 신청할 수 있게 됩니다.</p>
 <p>이때 가장 치명적이고 중요한 헌법 레벨의 국가적 룰셋이 가동됩니다. 사기업의 강력한 신경망 알고리즘 엔진이 공교육 교실로 파이프를 내리고 봉사하지만, 이 연산 과정에서 발생한 학생 30명의 그 어떤 민감한 인지 및 생체 데이터(오답 기록, 망설임 밀리초 패턴, 프롬프트 문장)도 결코 사기업의 서버(예: 오픈AI, 삼성, 네이버 클라우드)에 침전(저장)될 수 없습니다.</p>
-<p>모든 데이터의 실시간 소유권과 저장권, 파기 여부는 즉시 <strong>국가의 샌드박스 공공 데이터 센터</strong>로 100% 회수환원됩니다. 국가는 최고의 교육 데이터를 독점함으로써 민간 기업에 종속되는 것을 막고, 반대로 사기업들에게 "기계의 임대료"만을 깨끗하게 현금(바우처)으로 지불하는 가장 차갑고 거만한 "조인트 벤처의 갑"으로 군림해야 합니다.</p>
-<h3>2.2. 경쟁과 혁신을 자극하는 "교육 기술 인증 체계"</h3>
-<p>API 샌드박스 허브가 제대로 작동하기 위해서는 단순한 행정적 허가를 넘어선 <strong>"교육 기술 인증 체계"</strong>가 국가 차원에서 정교하게 설계되어야 합니다. 이는 에듀테크 기업들이 공교육의 API 허브에 진입하기 위해 반드시 통과해야 하는 엄격한 진입 심사 관문이자, 동시에 기업들이 더 뛰어난 기술력으로 경쟁하도록 자극하는 혁신의 엔진이 됩니다.</p>
-<p>인증 체계의 핵심 심사 기준은 세 가지입니다. 첫째, <strong>"알고리즘 투명성 지수"</strong>로서 기업은 AI 모델이 특정 학생 집단에 대해 차별적 결과를 산출하지 않음을 증명하는 수학적 공정성 보고서를 제출해야 합니다. 둘째, <strong>"데이터 주권 컴플라이언스"</strong>로서 국내 공공 서버로의 데이터 회수 의무 이행 여부를 분기별로 감사받아야 합니다. 셋째, <strong>"현장 교사 평가 점수"</strong>로서 실제 교사 패널 1,000명이 6개월간 사용 후 제출하는 사용자 경험 및 교육 효과 평가 결과가 진입 유지에 결정적인 영향을 미칩니다. 이 세 가지 관문을 모두 통과한 기업만이 국가의 AI 교육 생태계에서 합법적으로 수익을 얻을 수 있습니다.</p>
+<p>모든 데이터의 실시간 소유권과 저장권, 파기 여부는 즉시 국가의 샌드박스 공공 데이터 센터로 100% 회수환원됩니다. 국가는 최고의 교육 데이터를 독점함으로써 민간 기업에 종속되는 것을 막고, 반대로 사기업들에게 <em>기계의 임대료</em>만을 깨끗하게 현금(바우처)으로 지불하는 가장 차갑고 거만한 <em>조인트 벤처의 갑</em>으로 군림해야 합니다.</p>
+
+<div class="interactive-widget mcq-widget">
+<h4 class="widget-title">🧐 인지적 점검: 올바른 학습자상</h4>
+<p style="margin-bottom:1.5rem;">에이전틱 AI 시대를 살아갈 학습자의 바람직한 학습 태도로 <strong>가장 적절한 것</strong>을 고르세요.</p>
+<div class="mcq-option" data-correct="false">A. AI가 논리적으로 도출한 결과물을 절대적 진리로 여기고 무비판적으로 수용합니다.</div>
+<div class="mcq-option" data-correct="false">B. 학습 속도의 효율성을 극대화하기 위해 질문을 포기하고 기계적 암기에 몰두합니다.</div>
+<div class="mcq-option" data-correct="true">C. 결과물 도출의 주도권을 기계에 넘기지 않고, 치열하게 '왜'라고 묻는 주체성을 유지합니다.</div>
+<div class="mcq-option" data-correct="false">D. 인간 동료와의 불완전한 협력 대신 AI 튜터와의 완벽히 통제된 개인 대화만을 유일한 학습 수단으로 삼습니다.</div>
+<div class="mcq-option" data-correct="false">E. 스스로 사고하는 과정을 생략한 채, AI의 출력을 보기 좋게 편집하는 2차 가공 기술에만 전념합니다.</div>
+<button class="submit-btn" type="button">정답 제출하기</button>
+<div class="feedback-msg"></div>
+</div>
+<h2>4. 경쟁과 혁신을 자극하는 "교육 기술 인증 체계"</h2>
+<p>API 샌드박스 허브가 제대로 작동하기 위해서는 단순한 행정적 허가를 넘어선 <em>교육 기술 인증 체계</em>가 국가 차원에서 정교하게 설계되어야 합니다. 이는 에듀테크 기업들이 공교육의 API 허브에 진입하기 위해 반드시 통과해야 하는 엄격한 진입 심사 관문이자, 동시에 기업들이 더 뛰어난 기술력으로 경쟁하도록 자극하는 혁신의 엔진이 됩니다.</p>
+<p>인증 체계의 핵심 심사 기준은 세 가지입니다. 첫째, <em>알고리즘 투명성 지수</em>로서 기업은 AI 모델이 특정 학생 집단에 대해 차별적 결과를 산출하지 않음을 증명하는 수학적 공정성 보고서를 제출해야 합니다. 둘째, <em>데이터 주권 컴플라이언스</em>로서 국내 공공 서버로의 데이터 회수 의무 이행 여부를 분기별로 감사받아야 합니다. 셋째, <em>현장 교사 평가 점수</em>로서 실제 교사 패널 1,000명이 6개월간 사용 후 제출하는 사용자 경험 및 교육 효과 평가 결과가 진입 유지에 결정적인 영향을 미칩니다. 이 세 가지 관문을 모두 통과한 기업만이 국가의 AI 교육 생태계에서 합법적으로 수익을 얻을 수 있습니다.</p>
 
 
-        <div class="checkpoint-widget" style="background:#fdf4ff; padding:1.5rem; border-radius:8px; margin: 3rem 0; border: 1px solid #fae8ff;">
-          <h4 style="margin-top:0; color:#701a75; display:flex; align-items:center; gap:0.5rem;">💭 개념 연결 (Drag & Drop 체험)</h4>
-          <p style="margin-bottom:1rem; color:#4a044e;">문맥에 맞는 올바른 단어를 마음속으로 배치해 보거나 버튼을 클릭해 확인해 보세요.</p>
-          <div style="padding:1.5rem; background:white; border-radius:6px; border:1px dashed #e879f9;">
-              "미래의 교육은 디지털 <strong>[ 빈칸 ]</strong>(을)를 넘어서, 가장 통제된 아날로그적 연대와 <strong>[ 빈칸 ]</strong>(을)를 복원해야만 합니다."
-          </div>
-          <div style="display:flex; gap:1rem; margin-top:1rem;">
-              <button onclick="alert('정답 해설: 미래 교육은 맹목적인 디지털 [종속]을 넘어서 아날로그적 [비판]과 연대를 복원해야 합니다.')" style="background:#d946ef; color:white; border:none; padding:0.8rem 1.5rem; border-radius:4px; font-weight:600; cursor:pointer;">정답과 해설 보기</button>
-          </div>
-        </div>
-        
-<h2>3. 최상의 구매자이자 까다로운 생태계 관리자</h2>
-<p>이 상생적이고도 팽팽한 견제의 생태계가 정착되면, 자연스럽게 교육 당국은 더 이상 하등한 코드를 직접 짜던 하청업체 수준에서 벗어나, <strong>전 세계에서 가장 돈맛을 잘 알고 가장 수준 높은 "기술 구매자 및 기준 설정자"</strong>로 거대한 지위 세탁을 완성하게 됩니다.</p>
+<div class="interactive-widget mcq-widget">
+<h4 class="widget-title">🧐 인지적 점검: 올바른 학습자상</h4>
+<p style="margin-bottom:1.5rem;">에이전틱 AI 시대를 살아갈 학습자의 바람직한 학습 태도로 <strong>가장 적절한 것</strong>을 고르세요.</p>
+<div class="mcq-option" data-correct="false">A. AI가 논리적으로 도출한 결과물을 절대적 진리로 여기고 무비판적으로 수용합니다.</div>
+<div class="mcq-option" data-correct="false">B. 학습 속도의 효율성을 극대화하기 위해 질문을 포기하고 기계적 암기에 몰두합니다.</div>
+<div class="mcq-option" data-correct="true">C. 결과물 도출의 주도권을 기계에 넘기지 않고, 치열하게 '왜'라고 묻는 주체성을 유지합니다.</div>
+<div class="mcq-option" data-correct="false">D. 인간 동료와의 불완전한 협력 대신 AI 튜터와의 완벽히 통제된 개인 대화만을 유일한 학습 수단으로 삼습니다.</div>
+<div class="mcq-option" data-correct="false">E. 스스로 사고하는 과정을 생략한 채, AI의 출력을 보기 좋게 편집하는 2차 가공 기술에만 전념합니다.</div>
+<button class="submit-btn" type="button">정답 제출하기</button>
+<div class="feedback-msg"></div>
+</div>
+<h2>5. 최상의 구매자이자 까다로운 생태계 관리자</h2>
+<p>이 상생적이고도 팽팽한 견제의 생태계가 정착되면, 자연스럽게 교육 당국은 더 이상 하등한 코드를 직접 짜던 하청업체 수준에서 벗어나, 전 세계에서 가장 돈맛을 잘 알고 가장 수준 높은 <em>기술 구매자 및 기준 설정자</em>로 거대한 지위 세탁을 완성하게 됩니다.</p>
 <p>수백 개의 에듀테크 기업이 국가의 예산을 배정받기 위해, 국가가 요구하는 가장 깐깐하고 잔인한 교육 철학 기준(예: "우리 학교 납품용 수학 AI는 정답을 절대 3초 안에 스포일러해서는 안 됩니다.")을 맞추기 위해 딥러닝 코드의 뼈를 깎아내며 충성 경쟁을 벌이게 됩니다.</p>
-<h3>3.1. 스타트업 생태계와 공교육의 선순환 고리</h3>
-<p>이 파트너십 모델이 가장 아름다운 선순환을 만들어내는 지점은 바로 <strong>소규모 에듀테크 스타트업들에게도 공교육 생태계 진입의 문을 열어두는 것</strong>입니다. 기존의 공공 조달 구조는 대기업과 대형 SI 업체들에게 압도적으로 유리한 구조였기 때문에, 혁신적인 아이디어를 가진 소규모 스타트업들이 공교육 시장에서 기회를 얻기란 거의 불가능했습니다.</p>
-<p>하지만 API 샌드박스 허브 체계 하에서는, 단 하나의 특출한 기술 모듈(예: 난독증 학생을 위한 특화된 음성 인식 엔진, 또는 다문화 가정 학생을 위한 다국어 맥락 학습 AI)만으로도 인증을 통과하면 전국 학교의 대시보드에 즉시 탑재될 수 있는 기회가 생깁니다. 국가는 이 스타트업들에게 <strong>공공 실증을 위한 데이터 접근권</strong>을 제한적으로 허용하여 기술 고도화를 지원하고, 스타트업은 그 대가로 국가에 더 정교해진 AI 모델을 공급하는 선순환의 고리가 형성됩니다.</p>
+
+<div class="interactive-widget mcq-widget">
+<h4 class="widget-title">🧐 인지적 점검: 올바른 학습자상</h4>
+<p style="margin-bottom:1.5rem;">에이전틱 AI 시대를 살아갈 학습자의 바람직한 학습 태도로 <strong>가장 적절한 것</strong>을 고르세요.</p>
+<div class="mcq-option" data-correct="false">A. AI가 논리적으로 도출한 결과물을 절대적 진리로 여기고 무비판적으로 수용합니다.</div>
+<div class="mcq-option" data-correct="false">B. 학습 속도의 효율성을 극대화하기 위해 질문을 포기하고 기계적 암기에 몰두합니다.</div>
+<div class="mcq-option" data-correct="true">C. 결과물 도출의 주도권을 기계에 넘기지 않고, 치열하게 '왜'라고 묻는 주체성을 유지합니다.</div>
+<div class="mcq-option" data-correct="false">D. 인간 동료와의 불완전한 협력 대신 AI 튜터와의 완벽히 통제된 개인 대화만을 유일한 학습 수단으로 삼습니다.</div>
+<div class="mcq-option" data-correct="false">E. 스스로 사고하는 과정을 생략한 채, AI의 출력을 보기 좋게 편집하는 2차 가공 기술에만 전념합니다.</div>
+<button class="submit-btn" type="button">정답 제출하기</button>
+<div class="feedback-msg"></div>
+</div>
+<h2>6. 스타트업 생태계와 공교육의 선순환 고리</h2>
+<p>이 파트너십 모델이 가장 아름다운 선순환을 만들어내는 지점은 바로 소규모 에듀테크 스타트업들에게도 공교육 생태계 진입의 문을 열어두는 것입니다. 기존의 공공 조달 구조는 대기업과 대형 SI 업체들에게 압도적으로 유리한 구조였기 때문에, 혁신적인 아이디어를 가진 소규모 스타트업들이 공교육 시장에서 기회를 얻기란 거의 불가능했습니다.</p>
+<p>하지만 API 샌드박스 허브 체계 하에서는, 단 하나의 특출한 기술 모듈(예: 난독증 학생을 위한 특화된 음성 인식 엔진, 또는 다문화 가정 학생을 위한 다국어 맥락 학습 AI)만으로도 인증을 통과하면 전국 학교의 대시보드에 즉시 탑재될 수 있는 기회가 생깁니다. 국가는 이 스타트업들에게 공공 실증을 위한 데이터 접근권을 제한적으로 허용하여 기술 고도화를 지원하고, 스타트업은 그 대가로 국가에 더 정교해진 AI 모델을 공급하는 선순환의 고리가 형성됩니다.</p>
 <div class="quote-block">
     "진정한 에듀테크 생태계의 상생은 국가가 기술을 빌려 쓰는 단순한 갑을 관계가 아닙니다. 국가는 가장 엄격한 철학적 기준으로 시장을 정제하고, 기업은 그 기준의 틈새에서 가장 예리한 혁신을 경쟁적으로 쏟아내며, 교사는 그 혁신의 조각들을 자신의 교육 철학에 맞게 자유롭게 조합하는, 그 세 주체의 유기적인 결합이어야 합니다."
 </div>
 
 
-        <div class="checkpoint-widget" style="background:#fdf4ff; padding:1.5rem; border-radius:8px; margin: 3rem 0; border: 1px solid #fae8ff;">
-          <h4 style="margin-top:0; color:#701a75; display:flex; align-items:center; gap:0.5rem;">💭 개념 연결 (Drag & Drop 체험)</h4>
-          <p style="margin-bottom:1rem; color:#4a044e;">문맥에 맞는 올바른 단어를 마음속으로 배치해 보거나 버튼을 클릭해 확인해 보세요.</p>
-          <div style="padding:1.5rem; background:white; border-radius:6px; border:1px dashed #e879f9;">
-              "미래의 교육은 디지털 <strong>[ 빈칸 ]</strong>(을)를 넘어서, 가장 통제된 아날로그적 연대와 <strong>[ 빈칸 ]</strong>(을)를 복원해야만 합니다."
-          </div>
-          <div style="display:flex; gap:1rem; margin-top:1rem;">
-              <button onclick="alert('정답 해설: 미래 교육은 맹목적인 디지털 [종속]을 넘어서 아날로그적 [비판]과 연대를 복원해야 합니다.')" style="background:#d946ef; color:white; border:none; padding:0.8rem 1.5rem; border-radius:4px; font-weight:600; cursor:pointer;">정답과 해설 보기</button>
-          </div>
-        </div>
-        
-<h2>4. 18장 결론: 코딩 엘리트들과 공무원들의 위대한 줄다리기</h2>
+<div class="interactive-widget mcq-widget">
+<h4 class="widget-title">🧐 인지적 점검: 올바른 학습자상</h4>
+<p style="margin-bottom:1.5rem;">에이전틱 AI 시대를 살아갈 학습자의 바람직한 학습 태도로 <strong>가장 적절한 것</strong>을 고르세요.</p>
+<div class="mcq-option" data-correct="false">A. AI가 논리적으로 도출한 결과물을 절대적 진리로 여기고 무비판적으로 수용합니다.</div>
+<div class="mcq-option" data-correct="false">B. 학습 속도의 효율성을 극대화하기 위해 질문을 포기하고 기계적 암기에 몰두합니다.</div>
+<div class="mcq-option" data-correct="true">C. 결과물 도출의 주도권을 기계에 넘기지 않고, 치열하게 '왜'라고 묻는 주체성을 유지합니다.</div>
+<div class="mcq-option" data-correct="false">D. 인간 동료와의 불완전한 협력 대신 AI 튜터와의 완벽히 통제된 개인 대화만을 유일한 학습 수단으로 삼습니다.</div>
+<div class="mcq-option" data-correct="false">E. 스스로 사고하는 과정을 생략한 채, AI의 출력을 보기 좋게 편집하는 2차 가공 기술에만 전념합니다.</div>
+<button class="submit-btn" type="button">정답 제출하기</button>
+<div class="feedback-msg"></div>
+</div>
+<h2>7. 결론: 코딩 엘리트들과 공무원들의 위대한 줄다리기</h2>
 <p>에듀테크 민간 시장과 공교육 시스템의 관계는 결코 순수하거나 우호적일 수 없는 물과 기름의 본질을 지닙니다. 이윤 극대화가 생명줄인 억만장자 기업가들과, 가장 느리고 가장 멍청한 하위 1% 아이의 생존권을 지켜내야 하는 국가 공무원들의 철학적 방향은 애당초 평행선을 달리기 때문입니다.</p>
-<p>그러나 2026년 공교육 로드맵의 승패는 이 둘 중 어느 한쪽이 완전히 이기는 데 있지 않습니다. 오히려 국가가 사기업의 가장 눈부신 기술적 칼날을 두려움 없이 구매하여 빌려 쓰되, 그 칼날이 아이들을 베거나 데이터를 절도하지 못하도록 <strong>가장 두껍고 무거운 무쇠 장갑(데이터 거버넌스와 샌드박스 통제권)</strong>의 마지노선을 죽기 살기로 틀어쥐는, 그 아찔하고 위대한 투쟁과 줄다리기가 바로 생태계 상생의 참모습입니다. 코드는 사기업이 짜더라도, 그 코드가 아이들의 뇌를 지날 때 작동하는 이정표(방향키)는 오직 인간 교사와 국가가 거머쥐어야 할 가장 신성한 닻입니다.</p>
+<p>그러나 2026년 공교육 로드맵의 승패는 이 둘 중 어느 한쪽이 완전히 이기는 데 있지 않습니다. 오히려 국가가 사기업의 가장 눈부신 기술적 칼날을 두려움 없이 구매하여 빌려 쓰되, 그 칼날이 아이들을 베거나 데이터를 절도하지 못하도록 가장 두껍고 무거운 무쇠 장갑(데이터 거버넌스와 샌드박스 통제권)의 마지노선을 죽기 살기로 틀어쥐는, 그 아찔하고 위대한 투쟁과 줄다리기가 바로 생태계 상생의 참모습입니다. 코드는 사기업이 짜더라도, 그 코드가 아이들의 뇌를 지날 때 작동하는 이정표(방향키)는 오직 인간 교사와 국가가 거머쥐어야 할 가장 신성한 닻입니다.</p>
 <div class="highlight-box"><p style="margin:0;"><strong>공교육-에듀테크 파트너십의 황금 원칙 3가지</strong>은(는) 1. 기술 주권: 베이스 모델은 민간에서 빌리되, 데이터와 교육 철학의 설정권은 반드시 공공이 독점합니다. 
     2. 경쟁적 다원주의: 단일 독점 플랫폼이 아닌, 복수의 검증된 기업 모듈 중에서 교사가 자유롭게 선택하는 큐레이팅 구조를 보장합니다. 
     3. 투명성 의무화: 교실에서 작동하는 모든 AI 알고리즘의 의사결정 과정은 교사와 학부모의 요청 시 반드시 해명 가능한 수준으로 공개되어야 합니다.</p></div>
 <!-- MASSIVE EXPANSION INJECTED -->
-<h3>18.1. 자본의 포위망과 이데올로기 투쟁</h3>
+
+<div class="interactive-widget mcq-widget">
+<h4 class="widget-title">📝 깊이 있는 사유: 5지 선다형 점검</h4>
+<p style="margin-bottom:1.5rem;">본 단원의 철학적 기조와 <strong>가장 거리가 먼</strong> 설명을 고르세요.</p>
+<div class="mcq-option" data-correct="false">A. 인공지능 도구의 압도적 연산력은 현장 교사들의 교육적 개입을 완전히 대체할 수 없습니다.</div>
+<div class="mcq-option" data-correct="true">B. 현대의 훌륭한 교사란, 디지털 기기를 철저히 배제하고 교과서의 지식만을 무결점으로 주입하는 교사입니다.</div>
+<div class="mcq-option" data-correct="false">C. 맹목적인 기계적 효율성의 추구는 오히려 학습자의 스캐폴딩과 인지적 땀방울을 증발시켜 버립니다.</div>
+<div class="mcq-option" data-correct="false">D. 우리는 의도적 마찰을 두려워하지 않고 인간적 고뇌의 과정을 교실로 끌어와야만 합니다.</div>
+<div class="mcq-option" data-correct="false">E. 궁극적으로 AI 인프라는 교육의 아날로그적 본질(사랑과 헌신)을 절대로 상실시킬 수 없습니다.</div>
+<button class="submit-btn" type="button">정답 제출하기</button>
+<div class="feedback-msg"></div>
+</div>
+<h2>8. 자본의 포위망과 이데올로기 투쟁</h2>
 <p>빅테크 기업들이 AI 경쟁에서 궁극적으로 쥐고자 하는 권력은 사상적 판별권입니다. 자본주의 친화적인 알고리즘이 연대와 희생을 비효율로 폐기 처분하려 들 것입니다.</p>
-<h3>18.2. 시스템을 타격하는 철학적 아나키스트 양성</h3>
-<p>정부는 극단적으로 편향적인 "리버스-AI" 튜터들을 교실에 배치하여, 아이들이 소외된 자들의 시선으로 기계의 목줄을 쥐고 불평등에 저항하는 철학적 아나키스트로 거듭나도록 선동해야 합니다.</p>
+
+<div class="interactive-widget mcq-widget">
+<h4 class="widget-title">🧐 인지적 점검: 올바른 학습자상</h4>
+<p style="margin-bottom:1.5rem;">에이전틱 AI 시대를 살아갈 학습자의 바람직한 학습 태도로 <strong>가장 적절한 것</strong>을 고르세요.</p>
+<div class="mcq-option" data-correct="false">A. AI가 논리적으로 도출한 결과물을 절대적 진리로 여기고 무비판적으로 수용합니다.</div>
+<div class="mcq-option" data-correct="false">B. 학습 속도의 효율성을 극대화하기 위해 질문을 포기하고 기계적 암기에 몰두합니다.</div>
+<div class="mcq-option" data-correct="true">C. 결과물 도출의 주도권을 기계에 넘기지 않고, 치열하게 '왜'라고 묻는 주체성을 유지합니다.</div>
+<div class="mcq-option" data-correct="false">D. 인간 동료와의 불완전한 협력 대신 AI 튜터와의 완벽히 통제된 개인 대화만을 유일한 학습 수단으로 삼습니다.</div>
+<div class="mcq-option" data-correct="false">E. 스스로 사고하는 과정을 생략한 채, AI의 출력을 보기 좋게 편집하는 2차 가공 기술에만 전념합니다.</div>
+<button class="submit-btn" type="button">정답 제출하기</button>
+<div class="feedback-msg"></div>
+</div>
+<h2>9. 시스템을 타격하는 철학적 아나키스트 양성</h2>
+<p>정부는 극단적으로 편향적인 <em>리버스-AI</em> 튜터들을 교실에 배치하여, 아이들이 소외된 자들의 시선으로 기계의 목줄을 쥐고 불평등에 저항하는 철학적 아나키스트로 거듭나도록 선동해야 합니다.</p>
 <!-- MASSIVE VOLUME BOOST -->
-<h3>18.3. 자본가 알고리즘의 거대한 이데올로기 수조(水槽)</h3>
+
+<div class="interactive-widget mcq-widget">
+<h4 class="widget-title">📝 깊이 있는 사유: 5지 선다형 점검</h4>
+<p style="margin-bottom:1.5rem;">본 단원의 철학적 기조와 <strong>가장 거리가 먼</strong> 설명을 고르세요.</p>
+<div class="mcq-option" data-correct="false">A. 인공지능 도구의 압도적 연산력은 현장 교사들의 교육적 개입을 완전히 대체할 수 없습니다.</div>
+<div class="mcq-option" data-correct="true">B. 현대의 훌륭한 교사란, 디지털 기기를 철저히 배제하고 교과서의 지식만을 무결점으로 주입하는 교사입니다.</div>
+<div class="mcq-option" data-correct="false">C. 맹목적인 기계적 효율성의 추구는 오히려 학습자의 스캐폴딩과 인지적 땀방울을 증발시켜 버립니다.</div>
+<div class="mcq-option" data-correct="false">D. 우리는 의도적 마찰을 두려워하지 않고 인간적 고뇌의 과정을 교실로 끌어와야만 합니다.</div>
+<div class="mcq-option" data-correct="false">E. 궁극적으로 AI 인프라는 교육의 아날로그적 본질(사랑과 헌신)을 절대로 상실시킬 수 없습니다.</div>
+<button class="submit-btn" type="button">정답 제출하기</button>
+<div class="feedback-msg"></div>
+</div>
+<h2>10. 자본가 알고리즘의 거대한 이데올로기 수조(水槽)</h2>
 <p>오픈AI나 구글의 엘리트 엔지니어들이 설계한 시스템 안에서 춤을 출 때, 아이들은 무의식적으로 승자 독식, 효율성 극대화라는 가장 자본친화적인 가치관을 무제한으로 복용하게 됩니다. 인공지능은 중립적이지 않다. 그것은 실리콘밸리의 부유한 백인 남성들의 편향된 세계관을 가장 매끄러운 수사학으로 포장한 디지털 식민주의의 척후병입니다.</p>
-<h3>18.4. 모순의 교실: 변증법적 충돌망의 건설</h3>
+
+<div class="interactive-widget sa-widget">
+<h4 class="widget-title">⌨️ 핵심 어휘 회상 (단답형)</h4>
+<p style="margin-bottom: 1rem;">알고리즘의 정보 편식 문제와 관련하여, <strong>"자신과 비슷한 성향의 추천 정보만 반복적으로 수용하여 벽에 둘러싸인 닫힌 사고에 갇히는 현상"</strong>을 무엇이라 부릅니까?</p>
+<input class="short-answer-input" data-target="에코체임버,메아리방,확증,편향" placeholder="핵심 단어를 입력해주세요 (예: 에코체임버, 확증편향)" type="text"/>
+<button class="submit-btn" type="button">정답 제출하기</button>
+<div class="feedback-msg"></div>
+</div>
+<h2>11. 모순의 교실: 변증법적 충돌망의 건설</h2>
 <p>교실은 이 매끄러운 자본의 이데올로기에 테러를 가하는 유일한 방파제가 되어야 합니다. 교사는 미국 중심의 영어권 알고리즘이 모범 답안을 낼 때, 남미의 억눌린 해방신학 논조를 탑재한 대항적 리버스-AI를 강제로 투입해 두 기계의 치열한 사상 논쟁을 시뮬레이션해야 합니다. 기계가 뱉어낸 진리를 의심하고 조롱하며 파괴해결 능력을 갖춘 철학적 아나키스트로 성장시키지 않는다면, 우리 세대의 교육은 완벽하게 실패한 것입니다.</p>
 
 
-        <div class="checkpoint-widget" style="background:#f8fafc; padding:1.5rem; border-radius:8px; margin: 3rem 0; border: 1px solid #e2e8f0;">
-          <h4 style="margin-top:0; color:#0f172a; display:flex; align-items:center; gap:0.5rem;">🎯 단원 점검 (Checkpoint)</h4>
-          <p style="margin-bottom:1rem; color:#334155;">이 단원의 핵심 논조로 올바른 것을 하나 선택해주세요.</p>
-          <div style="display:flex; flex-direction:column; gap:0.5rem;">
-             <button onclick="showAlert(this, true, '정답입니다! 매끄러운 쾌락보다는 인간 고유의 의도적 마찰이 중요합니다.')" style="text-align:left; padding:1rem; border:1px solid #cbd5e1; background:white; cursor:pointer; border-radius:6px; transition:all 0.2s;">
-                 A. 기계의 완벽함에 의존하기보다, 피 흘리는 연대와 의도적 마찰을 통한 비판적 사유가 필수적입니다.
-             </button>
-             <button onclick="showAlert(this, false, '오답입니다. 기계에 의존하는 것은 인간성의 상실을 초래합니다.')" style="text-align:left; padding:1rem; border:1px solid #cbd5e1; background:white; cursor:pointer; border-radius:6px; transition:all 0.2s;">
-                 B. 초거대 인공지능이 제공하는 정답을 무조건적으로 신뢰하고 학습 속도를 높이는 것이 2026년 교육의 유일한 목표입니다.
-             </button>
-          </div>
-          <p class="feedback-msg" style="display:none; margin-top:1rem; font-weight:600;"></p>
-        </div>
-        
+<div class="interactive-widget sa-widget">
+<h4 class="widget-title">⌨️ 핵심 어휘 회상 (단답형)</h4>
+<p style="margin-bottom: 1rem;">알고리즘의 정보 편식 문제와 관련하여, <strong>"자신과 비슷한 성향의 추천 정보만 반복적으로 수용하여 벽에 둘러싸인 닫힌 사고에 갇히는 현상"</strong>을 무엇이라 부릅니까?</p>
+<input class="short-answer-input" data-target="에코체임버,메아리방,확증,편향" placeholder="핵심 단어를 입력해주세요 (예: 에코체임버, 확증편향)" type="text"/>
+<button class="submit-btn" type="button">정답 제출하기</button>
+<div class="feedback-msg"></div>
+</div>
 <div class="reflection-section" style="margin-top: 4rem; padding: 2.5rem; background: #fafafa; border-radius: 12px; border: 1px solid #eaeaea; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
 <h3 style="margin-top: 0; color: #111; font-size: 1.5rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
             성찰과 연대: 2026년을 향한 당신의 생각
@@ -186,34 +263,230 @@ flowchart TD
 <div class="container"><p>© 2026 AI교육 2026. All rights reserved.</p></div>
 </footer>
 
-<script>
-function showAlert(btn, isCorrect, msg) {
-    const parent = btn.parentElement.parentElement;
-    const msgElement = parent.querySelector('.feedback-msg');
-    
-    // reset borders
-    const btns = parent.querySelectorAll('button');
-    btns.forEach(b => {
-        b.style.borderColor = '#cbd5e1';
-        b.style.backgroundColor = 'white';
-        b.style.color = '#333';
-    });
-    
-    if (isCorrect) {
-        btn.style.borderColor = '#22c55e';
-        btn.style.backgroundColor = '#f0fdf4';
-        btn.style.color = '#166534';
-        msgElement.style.color = '#166534';
-    } else {
-        btn.style.borderColor = '#ef4444';
-        btn.style.backgroundColor = '#fef2f2';
-        btn.style.color = '#991b1b';
-        msgElement.style.color = '#991b1b';
-    }
-    
-    msgElement.innerText = msg;
-    msgElement.style.display = 'block';
+
+<style>
+/* Modern Widget CSS */
+.interactive-widget {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 2.5rem;
+    margin: 3.5rem 0;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
 }
+.widget-title {
+    margin-top: 0;
+    color: #0f172a;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #f1f5f9;
+    padding-bottom: 0.8rem;
+}
+.mcq-option {
+    display: block;
+    padding: 1.2rem;
+    margin-bottom: 0.8rem;
+    background: #f8fafc;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 1.05rem;
+    color: #334155;
+    line-height: 1.5;
+}
+.mcq-option:hover { background: #f1f5f9; border-color: #cbd5e1;}
+.mcq-option.selected { border-color: #3b82f6; background: #eff6ff; color: #1d4ed8; font-weight: 600; box-shadow: 0 0 0 1px #3b82f6;}
+.submit-btn {
+    background: #1e293b;
+    color: white;
+    padding: 0.8rem 1.8rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1.05rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: background 0.2s, transform 0.1s;
+}
+.submit-btn:hover { background: #0f172a; transform: translateY(-1px);}
+.submit-btn:active { transform: translateY(0);}
+.feedback-msg { margin-top: 1.5rem; font-weight: 600; padding: 1.2rem; border-radius: 8px; display: none; font-size:1.05rem; line-height: 1.5;}
+.feedback-msg.success { background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0; display: block; animation: fadeIn 0.3s;}
+.feedback-msg.error { background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca; display: block; animation: fadeIn 0.3s;}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes confetti {
+  0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(200px) rotate(720deg); opacity: 0; }
+}
+.confetti-piece {
+  position: absolute;
+  width: 12px; height: 12px;
+  background: #facc15;
+  animation: confetti 1.2s ease-out forwards;
+  z-index: 100;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+/* Drag and Drop */
+.dnd-container { display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap; background: #f8fafc; padding: 1.5rem; border-radius: 8px; border: 1px dashed #cbd5e1;}
+.draggable { padding: 0.8rem 1.5rem; background: #3b82f6; color: white; border-radius: 6px; cursor: grab; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: transform 0.1s;}
+.draggable:active { cursor: grabbing; transform: scale(0.95);}
+.dropzone { 
+    display: inline-block; 
+    min-width: 120px; 
+    height: 36px; 
+    border-bottom: 3px dashed #94a3b8; 
+    margin: 0 0.5rem; 
+    vertical-align: middle; 
+    text-align: center; 
+    background: #f1f5f9;
+    border-radius: 4px 4px 0 0;
+    transition: all 0.2s;
+    line-height: 36px;
+    font-size: 1.05rem;
+}
+.dropzone.dragover { background: #e2e8f0; border-bottom-color: #64748b;}
+.dropzone.filled { background: #eff6ff; border-bottom: 3px solid #3b82f6; color: #1d4ed8; font-weight:bold; }
+
+/* Short Answer */
+.short-answer-input { padding: 1rem; border: 2px solid #e2e8f0; border-radius: 8px; width: 100%; max-width: 500px; font-size: 1.05rem; margin-bottom: 1rem; transition: border-color 0.2s;}
+.short-answer-input:focus { border-color: #3b82f6; outline: none; box-shadow: 0 0 0 3px rgba(59,130,246,0.1); }
+</style>
+
+<script>
+function fireConfetti(widget) {
+    const rect = widget.getBoundingClientRect();
+    for(let i=0; i<50; i++) {
+        const conf = document.createElement('div');
+        conf.className = 'confetti-piece';
+        const colors = ['#facc15', '#f87171', '#60a5fa', '#34d399', '#c084fc'];
+        conf.style.left = (Math.random() * 100) + '%';
+        conf.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        conf.style.top = (Math.random() * 20) + 'px';
+        widget.appendChild(conf);
+        setTimeout(() => conf.remove(), 1200);
+    }
+}
+
+function setupWidgets() {
+    // MCQ
+    document.querySelectorAll('.mcq-widget').forEach(widget => {
+        const options = widget.querySelectorAll('.mcq-option');
+        options.forEach(opt => {
+            opt.addEventListener('click', () => {
+                options.forEach(o => o.classList.remove('selected'));
+                opt.classList.add('selected');
+                widget.querySelector('.feedback-msg').style.display = 'none'; // reset
+            });
+        });
+        
+        const btn = widget.querySelector('.submit-btn');
+        const feedback = widget.querySelector('.feedback-msg');
+        btn.addEventListener('click', () => {
+            const selected = widget.querySelector('.mcq-option.selected');
+            if(!selected) {
+                feedback.className = 'feedback-msg error';
+                feedback.innerHTML = '⚠️ 보기를 하나 선택해주세요.';
+                return;
+            }
+            if(selected.dataset.correct === 'true') {
+                feedback.className = 'feedback-msg success';
+                feedback.innerHTML = '🎯 <strong>정답입니다!</strong> 본문의 핵심 철학을 정확히 이해하셨습니다.';
+                fireConfetti(widget);
+            } else {
+                feedback.className = 'feedback-msg error';
+                feedback.innerHTML = '❌ <strong>아쉽습니다.</strong> 기계적 효율성보다는 비판적 사고의 가치를 다시 떠올려보세요.';
+            }
+        });
+    });
+
+    // Drag & Drop
+    document.querySelectorAll('.dnd-widget').forEach(widget => {
+        const draggables = widget.querySelectorAll('.draggable');
+        const dropzones = widget.querySelectorAll('.dropzone');
+        let draggedItem = null;
+        
+        draggables.forEach(d => {
+            d.addEventListener('dragstart', function() { draggedItem = this; });
+        });
+        
+        dropzones.forEach(dz => {
+            dz.addEventListener('dragover', e => { e.preventDefault(); dz.classList.add('dragover'); });
+            dz.addEventListener('dragleave', () => dz.classList.remove('dragover'));
+            dz.addEventListener('drop', function(e) {
+                e.preventDefault();
+                this.classList.remove('dragover');
+                if(draggedItem) {
+                    this.textContent = draggedItem.textContent;
+                    this.dataset.value = draggedItem.dataset.value;
+                    this.classList.add('filled');
+                }
+            });
+        });
+        
+        const btn = widget.querySelector('.submit-btn');
+        const feedback = widget.querySelector('.feedback-msg');
+        btn.addEventListener('click', () => {
+            let correct = true;
+            let allFilled = true;
+            dropzones.forEach(dz => {
+                if(!dz.dataset.value) allFilled = false;
+                if(dz.dataset.value !== dz.dataset.target) correct = false;
+            });
+            if(!allFilled) {
+                feedback.className = 'feedback-msg error';
+                feedback.innerHTML = '⚠️ 모든 빈칸을 파란색 블록으로 채워주세요.';
+                return;
+            }
+            if(correct) {
+                feedback.className = 'feedback-msg success';
+                feedback.innerHTML = '🎯 <strong>완벽합니다!</strong> 문맥이 올바르게 복원되었습니다.';
+                fireConfetti(widget);
+            } else {
+                feedback.className = 'feedback-msg error';
+                feedback.innerHTML = '❌ 일부 단어의 위치가 틀렸습니다. 다시 고민해 보세요.';
+            }
+        });
+    });
+
+    // Short Answer
+    document.querySelectorAll('.sa-widget').forEach(widget => {
+        const btn = widget.querySelector('.submit-btn');
+        const input = widget.querySelector('input');
+        const feedback = widget.querySelector('.feedback-msg');
+        
+        input.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') btn.click();
+        });
+
+        btn.addEventListener('click', () => {
+            const val = input.value.trim().replace(/\s+/g, '');
+            const target = input.dataset.target.split(',');
+            if(val === '') {
+                feedback.className = 'feedback-msg error';
+                feedback.innerHTML = '⚠️ 정답을 입력해주세요.';
+                return;
+            }
+            if(target.some(t => val.includes(t))) {
+                feedback.className = 'feedback-msg success';
+                feedback.innerHTML = '🎯 <strong>정확합니다!</strong> 핵심 개념을 훌륭하게 인지하셨습니다.';
+                fireConfetti(widget);
+            } else {
+                feedback.className = 'feedback-msg error';
+                feedback.innerHTML = '❌ 예상되는 핵심 개념어가 아닙니다. 본문의 흐름을 다시 학인해주세요.';
+            }
+        });
+    });
+}
+document.addEventListener('DOMContentLoaded', setupWidgets);
 </script>
 
 </body>

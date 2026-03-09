@@ -8,7 +8,7 @@
 <link as="style" crossorigin="" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet"/>
 <link href="styles.css" rel="stylesheet"/>
 <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true, theme: 'default', themeVariables: { fontSize: '18px' }, flowchart: { htmlLabels: true } });</script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'base', look: 'handDrawn', themeVariables: { primaryColor: '#fdf2e9' } });</script>
 <style>
         .mermaid { background: #fdf2e9; padding: 2rem; border-radius: 12px; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); display: flex; justify-content: center; font-size: 1.1rem; }
         .article-content h2 { margin-top: 3.5rem; color: var(--primary-color); border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; line-height: 1.4; }
@@ -18,7 +18,10 @@
         .highlight-box { background: #e8f4f8; border-left: 4px solid var(--primary-color); padding: 2rem; margin: 2.5rem 0; border-radius: 0 8px 8px 0; font-size: 1.15rem; }
         .quote-block { font-style: italic; background: #fafafa; padding: 2rem; border-radius: 8px; margin: 2rem 0; border: 1px solid #eee; }
     </style>
-</head>
+<style>
+.mermaid { overflow-x: auto; text-align: center; margin: 2rem 0; clear:both; }
+.mermaid svg { max-width: 100%; height: auto; }
+</style></head>
 <body>
 <header class="site-header">
 <div class="container header-content">
@@ -38,80 +41,117 @@
 <div class="article-content">
 <h2>1. 은퇴와 함께 시작되는 "인지적 고립"</h2>
 <p>테크노-캐피털리즘의 거대한 자본이 교육 시장을 융단 폭격하는 2026년, 생태계 확장은 환호와 우려를 동시에 낳는다. 10만 개가 넘는 에듀테크 스타트업이 쏟아내는 매끄러운 플랫폼의 파도 속에서, 학교는 자칫 거대 자본이 데이터를 무료로 수탈해가는 일개 테스트 실험실로 전락할 수 있습니다. 기술이 인간의 영역을 침범할수록 공교육은 상업적 논리에 결코 굴복하지 않는 가치 지향적 방파제를 구축해야 합니다. 스타트업의 유연성과 공교육의 공공성이 숨 막히는 긴장감 속에서 건강하게 길항(拮抗)할 때만이 진정한 상생의 생태계가 탄생합니다.</p>
-<p>이들이 맞이한 진짜 위기는 단순히 기계를 조작할 줄 모르는 불편함에서 그치지 않습니다. 유튜브나 소셜미디어를 통해 쏟아지는 극단적인 정치적 편향(가짜뉴스) 알고리즘과 지능화된 보이스피싱(딥페이크 음성 사기)의 무차별적인 폭격 앞에 어떠한 방어의 필터(인지적 백신)도 갖추지 못한 채 홀로 내동댕이쳐진 <strong>"고립된 지성"</strong>의 거대한 사각지대가 바로 국가의 가장 약한 고리가 됩니다.</p>
-<div class="highlight-box"><p style="margin:0;"><strong>기술적 경로우대석은 없습니다</strong>은(는) 기존의 복지관이나 주민센터에서 "문자 메시지 보내는 법", "카카오톡 사진 전송하는 법"을 가르치던 아날로그식 어르신 스마트폰 교실은 이미 완전히 파산했습니다. 버튼의 위치는 앱이 업데이트될 때마다 수시로 바뀌기 때문입니다. 이제 우리에게 절실한 평생학습의 목표는, 버튼의 위치를 외우게 하는 것이 아니라 아예 "당신의 목소리(자연어)로 기계를 다루는 가장 원초적이고 거만한 권력"을 이들의 입술과 두 손에 쥐여 주는 것입니다.</p></div>
+<p>이들이 맞이한 진짜 위기는 단순히 기계를 조작할 줄 모르는 불편함에서 그치지 않습니다. 유튜브나 소셜미디어를 통해 쏟아지는 극단적인 정치적 편향(가짜뉴스) 알고리즘과 지능화된 보이스피싱(딥페이크 음성 사기)의 무차별적인 폭격 앞에 어떠한 방어의 필터(인지적 백신)도 갖추지 못한 채 홀로 내동댕이쳐진 <em>고립된 지성</em>의 거대한 사각지대가 바로 국가의 가장 약한 고리가 됩니다.</p>
+<div class="highlight-box"><p style="margin:0;"><strong>기술적 경로우대석은 없습니다</strong>은(는) 기존의 복지관이나 주민센터에서 <em>문자 메시지 보내는 법</em>, <em>카카오톡 사진 전송하는 법</em>을 가르치던 아날로그식 어르신 스마트폰 교실은 이미 완전히 파산했습니다. 버튼의 위치는 앱이 업데이트될 때마다 수시로 바뀌기 때문입니다. 이제 우리에게 절실한 평생학습의 목표는, 버튼의 위치를 외우게 하는 것이 아니라 아예 "당신의 목소리(자연어)로 기계를 다루는 가장 원초적이고 거만한 권력"을 이들의 입술과 두 손에 쥐여 주는 것입니다.</p></div>
 
 
-        <div class="checkpoint-widget" style="background:#fdf4ff; padding:1.5rem; border-radius:8px; margin: 3rem 0; border: 1px solid #fae8ff;">
-          <h4 style="margin-top:0; color:#701a75; display:flex; align-items:center; gap:0.5rem;">💭 개념 연결 (Drag & Drop 체험)</h4>
-          <p style="margin-bottom:1rem; color:#4a044e;">문맥에 맞는 올바른 단어를 마음속으로 배치해 보거나 버튼을 클릭해 확인해 보세요.</p>
-          <div style="padding:1.5rem; background:white; border-radius:6px; border:1px dashed #e879f9;">
-              "미래의 교육은 디지털 <strong>[ 빈칸 ]</strong>(을)를 넘어서, 가장 통제된 아날로그적 연대와 <strong>[ 빈칸 ]</strong>(을)를 복원해야만 합니다."
-          </div>
-          <div style="display:flex; gap:1rem; margin-top:1rem;">
-              <button onclick="alert('정답 해설: 미래 교육은 맹목적인 디지털 [종속]을 넘어서 아날로그적 [비판]과 연대를 복원해야 합니다.')" style="background:#d946ef; color:white; border:none; padding:0.8rem 1.5rem; border-radius:4px; font-weight:600; cursor:pointer;">정답과 해설 보기</button>
-          </div>
-        </div>
-        
+<div class="interactive-widget mcq-widget">
+<h4 class="widget-title">🧐 인지적 점검: 올바른 학습자상</h4>
+<p style="margin-bottom:1.5rem;">에이전틱 AI 시대를 살아갈 학습자의 바람직한 학습 태도로 <strong>가장 적절한 것</strong>을 고르세요.</p>
+<div class="mcq-option" data-correct="false">A. AI가 논리적으로 도출한 결과물을 절대적 진리로 여기고 무비판적으로 수용합니다.</div>
+<div class="mcq-option" data-correct="false">B. 학습 속도의 효율성을 극대화하기 위해 질문을 포기하고 기계적 암기에 몰두합니다.</div>
+<div class="mcq-option" data-correct="true">C. 결과물 도출의 주도권을 기계에 넘기지 않고, 치열하게 '왜'라고 묻는 주체성을 유지합니다.</div>
+<div class="mcq-option" data-correct="false">D. 인간 동료와의 불완전한 협력 대신 AI 튜터와의 완벽히 통제된 개인 대화만을 유일한 학습 수단으로 삼습니다.</div>
+<div class="mcq-option" data-correct="false">E. 스스로 사고하는 과정을 생략한 채, AI의 출력을 보기 좋게 편집하는 2차 가공 기술에만 전념합니다.</div>
+<button class="submit-btn" type="button">정답 제출하기</button>
+<div class="feedback-msg"></div>
+</div>
 <h2>2. 언어의 장벽을 부수다: 음성 인식을 통한 디지털 해방</h2>
-<p>가장 아이러니하게도, 가장 복잡한 최첨단 AI 기술은 사용자의 접근 난이도를 가장 원시적인 "음성"의 영역으로 끌어내려 주었습니다. 키보드의 자판을 찾고 스와이프를 하는 행위 자체가 버거운 70대 어르신이나 시력이 저하된 취약계층에게, 생성형 AI의 결합은 그 자체로 마법의 지팡이입니다.</p>
+<p>가장 아이러니하게도, 가장 복잡한 최첨단 AI 기술은 사용자의 접근 난이도를 가장 원시적인 <em>음성</em>의 영역으로 끌어내려 주었습니다. 키보드의 자판을 찾고 스와이프를 하는 행위 자체가 버거운 70대 어르신이나 시력이 저하된 취약계층에게, 생성형 AI의 결합은 그 자체로 마법의 지팡이입니다.</p>
 <div class="mermaid">
 flowchart TD
-    subgraph past ["과거 복지관의 단절적 스마트 교육"]
-    Old1["손자에게 카카오톡 보내는 법 - 버튼 위치 4단계 암기"] --&gt;|"2개월 후 앱 UI 업데이트"| Old2["암기 지식 무용지물 - 초기화"]
-    Old2 --&gt;|"극심한 디지털 공포증 및 포기"| Old3["고립 심화 및 키오스크 배척"]
+    subgraph past [<em>과거 복지관의 단절적 스마트 교육</em>]
+    Old1["손자에게 카카오톡 보내는 법 - 버튼 위치 4단계 암기<em>] --&gt;|</em>2개월 후 앱 UI 업데이트<em>| Old2[</em>암기 지식 무용지물 - 초기화<em>]
+    Old2 --&gt;|</em>극심한 디지털 공포증 및 포기<em>| Old3[</em>고립 심화 및 키오스크 배척"]
     end
 
-    subgraph new2026 ["2026년 AI 기반 음성 주권의 획득 교육"]
+    subgraph new2026 [<em>2026년 AI 기반 음성 주권의 획득 교육</em>]
     direction TB
-    Voice1["복지관: 할아버지, 그냥 앱 켜고 편하게 말만 하세요"] --&gt;|"음성인식 및 의도 파악 - NLU"| Voice2["기계가 사투리, 맥락 없는 단어의 진의를 스스로 해독"]
+    Voice1["복지관: 할아버지, 그냥 앱 켜고 편하게 말만 하세요<em>] --&gt;|</em>음성인식 및 의도 파악 - NLU<em>| Voice2[</em>기계가 사투리, 맥락 없는 단어의 진의를 스스로 해독<em>]
 
-    Voice2 --&gt;|"AI 비서가 대전 큰아들에게 메시지 전송 확인"| Voice3["명령 수행의 완벽한 자동화"]
-    Voice3 --&gt;|"기계가 내 말귀를 알아듣는다는 자기 효능감"| Voice4["보이스피싱 여부까지 AI에게 물어보는 능동적 팩트체크 시민으로 각성"]
+    Voice2 --&gt;|</em>AI 비서가 대전 큰아들에게 메시지 전송 확인<em>| Voice3[</em>명령 수행의 완벽한 자동화<em>]
+    Voice3 --&gt;|</em>기계가 내 말귀를 알아듣는다는 자기 효능감<em>| Voice4[</em>보이스피싱 여부까지 AI에게 물어보는 능동적 팩트체크 시민으로 각성"]
     end
 
     style Old3 fill:#fee2e2,stroke:#ef4444,stroke-width:2px
     style Voice1 fill:#fdf2e9,stroke:#e67e22
     style Voice4 fill:#dcfce7,stroke:#22c55e,stroke-width:2px
 </div>
-<h3>2.1. 동네 소상공인의 역습: AI가 골목 식당의 기획실장이 되다</h3>
+
+<div class="interactive-widget sa-widget">
+<h4 class="widget-title">⌨️ 핵심 어휘 회상 (단답형)</h4>
+<p style="margin-bottom: 1rem;">알고리즘의 정보 편식 문제와 관련하여, <strong>"자신과 비슷한 성향의 추천 정보만 반복적으로 수용하여 벽에 둘러싸인 닫힌 사고에 갇히는 현상"</strong>을 무엇이라 부릅니까?</p>
+<input class="short-answer-input" data-target="에코체임버,메아리방,확증,편향" placeholder="핵심 단어를 입력해주세요 (예: 에코체임버, 확증편향)" type="text"/>
+<button class="submit-btn" type="button">정답 제출하기</button>
+<div class="feedback-msg"></div>
+</div>
+<h2>3. 동네 소상공인의 역습: AI가 골목 식당의 기획실장이 되다</h2>
 <p>마찬가지로 자본과 인력이 부족하여 프랜차이즈 거대 식당에 처참하게 밀려나던 동네 골목 상권의 60대 사장님들에게도, 지역 평생교육 센터의 AI 활용 강의는 생존을 위한 가장 강력한 무기 지원입니다.</p>
 <p><i>"당장 우리 식당 앞 아파트 단지에 신혼부부가 천 세대 넘게 입주하는데, 내가 컴퓨터도 속맹이고 포스터 한 장 제대로 만들 돈도 없어요."</i></p>
-<p>평생교육 강사는 사장님에게 단 두 가지, 즉 <strong>어떤 툴의 버튼을 누를 것인지(접근)</strong>와 <strong>어떻게 자신의 절박함을 말로 풀어낼 것인지(프롬프트)</strong>만 집중적으로 코칭합니다.</p>
+<p>평생교육 강사는 사장님에게 단 두 가지, 즉 어떤 툴의 버튼을 누를 것인지(접근)와 어떻게 자신의 절박함을 말로 풀어낼 것인지(프롬프트)만 집중적으로 코칭합니다.</p>
 <p>사장님은 구석진 주방 식탁에 앉아 스마트폰의 음성 명령 버튼을 누릅니다. <i>"나는 천연 조미료만 고집해서 김치찌개를 끓이는 30년 차 식당 주인이야. 새로 이사 온 2030 신혼부부들이 조미료에 민감할 텐데, 우리 가게의 건강한 맛을 강조하면서도 힙하고 감성적인 인스타그램 카드뉴스 3장짜리 카피 문구와 이미지를 좀 만들어줘."</i></p>
 <p>단돈 0원, 그리고 10초 만에 이 동네 백반집의 메뉴판을 전문 광고 에이전시 수준으로 끌어올리는 혁명적인 산출물이 뿜어져 나옵니다. 자본의 독점에 의해 짓눌리던 소시민들의 창의적 노동 가치가 기계의 힘을 빌려 순식간에 골리앗과 맞붙을 수 있는 민주화된 상향 평준화. 이것이 바로 사회적 평생교육이 발휘해야 할 기적의 본질입니다.</p>
-<h3>2.2. 장애인과 다문화 가정을 위한 "맞춤형 접근성"</h3>
-<p>음성 AI의 민주화 효과는 노령층과 소상공인에게만 국한되지 않습니다. 시각·청각 장애인이나 한국어가 모국어가 아닌 다문화 가정 성인들에게도, 생성형 AI의 멀티모달 기능은 전례 없는 접근성의 혁명을 가능하게 합니다. 시각 장애인은 스마트폰 카메라를 서류에 갖다 대고 "이 고지서에 적힌 내용을 음성으로 설명해 줘"라고 말하면, AI가 즉시 OCR로 텍스트를 추출하고 음성으로 읽어줍니다. 이주 노동자는 복잡한 산업안전 지침서를 자신의 모국어로 즉시 번역받아 이해할 수 있습니다. 난청 어르신은 AI 자막 서비스로 대화를 실시간으로 화면에 표시받아 요양원에서의 고립감을 극복합니다.</p>
-<p>평생교육 기관은 이처럼 다양한 소외 집단의 특성에 맞는 <strong>맞춤형 접근성 교육 모듈</strong>을 개발하고 보급해야 합니다. AI는 모든 사람에게 동일한 방식으로 작동하는 것이 아니라, 개인의 신체적 특성, 언어 배경, 인지 능력에 따라 유연하게 최적화될 수 있는 가장 포용적인 기술 도구이기 때문입니다.</p>
+
+<div class="interactive-widget mcq-widget">
+<h4 class="widget-title">🧐 인지적 점검: 올바른 학습자상</h4>
+<p style="margin-bottom:1.5rem;">에이전틱 AI 시대를 살아갈 학습자의 바람직한 학습 태도로 <strong>가장 적절한 것</strong>을 고르세요.</p>
+<div class="mcq-option" data-correct="false">A. AI가 논리적으로 도출한 결과물을 절대적 진리로 여기고 무비판적으로 수용합니다.</div>
+<div class="mcq-option" data-correct="false">B. 학습 속도의 효율성을 극대화하기 위해 질문을 포기하고 기계적 암기에 몰두합니다.</div>
+<div class="mcq-option" data-correct="true">C. 결과물 도출의 주도권을 기계에 넘기지 않고, 치열하게 '왜'라고 묻는 주체성을 유지합니다.</div>
+<div class="mcq-option" data-correct="false">D. 인간 동료와의 불완전한 협력 대신 AI 튜터와의 완벽히 통제된 개인 대화만을 유일한 학습 수단으로 삼습니다.</div>
+<div class="mcq-option" data-correct="false">E. 스스로 사고하는 과정을 생략한 채, AI의 출력을 보기 좋게 편집하는 2차 가공 기술에만 전념합니다.</div>
+<button class="submit-btn" type="button">정답 제출하기</button>
+<div class="feedback-msg"></div>
+</div>
+<h2>4. 장애인과 다문화 가정을 위한 "맞춤형 접근성"</h2>
+<p>음성 AI의 민주화 효과는 노령층과 소상공인에게만 국한되지 않습니다. 시각·청각 장애인이나 한국어가 모국어가 아닌 다문화 가정 성인들에게도, 생성형 AI의 멀티모달 기능은 전례 없는 접근성의 혁명을 가능하게 합니다. 시각 장애인은 스마트폰 카메라를 서류에 갖다 대고 <em>이 고지서에 적힌 내용을 음성으로 설명해 줘</em>라고 말하면, AI가 즉시 OCR로 텍스트를 추출하고 음성으로 읽어줍니다. 이주 노동자는 복잡한 산업안전 지침서를 자신의 모국어로 즉시 번역받아 이해할 수 있습니다. 난청 어르신은 AI 자막 서비스로 대화를 실시간으로 화면에 표시받아 요양원에서의 고립감을 극복합니다.</p>
+<p>평생교육 기관은 이처럼 다양한 소외 집단의 특성에 맞는 맞춤형 접근성 교육 모듈을 개발하고 보급해야 합니다. AI는 모든 사람에게 동일한 방식으로 작동하는 것이 아니라, 개인의 신체적 특성, 언어 배경, 인지 능력에 따라 유연하게 최적화될 수 있는 가장 포용적인 기술 도구이기 때문입니다.</p>
 
 
-        <div class="checkpoint-widget" style="background:#fdf4ff; padding:1.5rem; border-radius:8px; margin: 3rem 0; border: 1px solid #fae8ff;">
-          <h4 style="margin-top:0; color:#701a75; display:flex; align-items:center; gap:0.5rem;">💭 개념 연결 (Drag & Drop 체험)</h4>
-          <p style="margin-bottom:1rem; color:#4a044e;">문맥에 맞는 올바른 단어를 마음속으로 배치해 보거나 버튼을 클릭해 확인해 보세요.</p>
-          <div style="padding:1.5rem; background:white; border-radius:6px; border:1px dashed #e879f9;">
-              "미래의 교육은 디지털 <strong>[ 빈칸 ]</strong>(을)를 넘어서, 가장 통제된 아날로그적 연대와 <strong>[ 빈칸 ]</strong>(을)를 복원해야만 합니다."
-          </div>
-          <div style="display:flex; gap:1rem; margin-top:1rem;">
-              <button onclick="alert('정답 해설: 미래 교육은 맹목적인 디지털 [종속]을 넘어서 아날로그적 [비판]과 연대를 복원해야 합니다.')" style="background:#d946ef; color:white; border:none; padding:0.8rem 1.5rem; border-radius:4px; font-weight:600; cursor:pointer;">정답과 해설 보기</button>
-          </div>
-        </div>
-        
-<h2>3. 인지적 백신: 극단주의 알고리즘에 맞서는 메타 문해력</h2>
-<p>단순한 기술적 편의를 쟁취하는 것을 넘어, 평생교육 어젠다의 가장 무겁고 시급한 파트는 <strong>지속적으로 알고리즘의 편향과 딥페이크라는 바이러스의 공격을 막아내는 시민적 방패, 즉 "메타 AI 문해력"을 심어주는 일</strong>입니다.</p>
+<div class="interactive-widget mcq-widget">
+<h4 class="widget-title">📝 깊이 있는 사유: 5지 선다형 점검</h4>
+<p style="margin-bottom:1.5rem;">본 단원의 철학적 기조와 <strong>가장 거리가 먼</strong> 설명을 고르세요.</p>
+<div class="mcq-option" data-correct="false">A. 인공지능 도구의 압도적 연산력은 현장 교사들의 교육적 개입을 완전히 대체할 수 없습니다.</div>
+<div class="mcq-option" data-correct="true">B. 현대의 훌륭한 교사란, 디지털 기기를 철저히 배제하고 교과서의 지식만을 무결점으로 주입하는 교사입니다.</div>
+<div class="mcq-option" data-correct="false">C. 맹목적인 기계적 효율성의 추구는 오히려 학습자의 스캐폴딩과 인지적 땀방울을 증발시켜 버립니다.</div>
+<div class="mcq-option" data-correct="false">D. 우리는 의도적 마찰을 두려워하지 않고 인간적 고뇌의 과정을 교실로 끌어와야만 합니다.</div>
+<div class="mcq-option" data-correct="false">E. 궁극적으로 AI 인프라는 교육의 아날로그적 본질(사랑과 헌신)을 절대로 상실시킬 수 없습니다.</div>
+<button class="submit-btn" type="button">정답 제출하기</button>
+<div class="feedback-msg"></div>
+</div>
+<h2>5. 인지적 백신: 극단주의 알고리즘에 맞서는 메타 문해력</h2>
+<p>단순한 기술적 편의를 쟁취하는 것을 넘어, 평생교육 어젠다의 가장 무겁고 시급한 파트는 지속적으로 알고리즘의 편향과 딥페이크라는 바이러스의 공격을 막아내는 시민적 방패, 즉 <em>메타 AI 문해력</em>을 심어주는 일입니다.</p>
 <p>유튜브에 머무르는 시간이 가장 긴 노년층은 자신도 모르는 사이에 입맛에 맞는 자극적인 가짜 뉴스와 극우/극좌의 정치적 선동 영상만 반복하여 시청하는 메아리 방 교과서에 완전히 갇히게 됩니다. 이들의 정신적 고립은 한 나라의 투표 결과를 바꾸고 사회의 존립 근간을 무너뜨릴 수 있는 치명적 뇌관입니다.</p>
-<p>평생학습 센터의 교육은 화면 속의 특정 정치인의 동영상이 인간의 땀방울이 아니라 코딩된 픽셀(딥페이크) 조작일 수 있음을 의심하고 식별하는 <strong>인지적 백신 접종 과정</strong>입니다. "왜 이 동영상은 내게만 계속 뜨는가?(알고리즘 추천의 폭력성)"를 스스로 자각하게 만드는 것. 이것은 기술을 찬양하는 과정이 아니라, <strong>기술의 음모론을 폭로하고 맹목적인 기계 사대주의로부터 시민의 눈을 부릅뜨게 만드는 철학적 저항 교육</strong>(5장의 넥서스 진실 위기 방어)의 성인 버전 연장선입니다.</p>
-<h3>3.1. 시니어 AI 서포터즈 제도: 세대 간 연결의 가교</h3>
-<p>AI 평생교육을 가속화하는 가장 효율적인 사회적 메커니즘 중 하나는 바로 <strong>"시니어 AI 서포터즈" 제도</strong>입니다. 이는 대학생이나 AI 역량을 갖춘 청·장년층 자원봉사자들이 지역 복지관, 경로당, 농업·수산업 현장에 직접 찾아가 1:1 혹은 소그룹으로 AI도구 사용법을 코칭하는 프로그램입니다.</p>
-<p>이 제도의 핵심 가치는 단순한 기술 전수에 있는 것이 아닙니다. 젊은 교사가 어르신에게 AI를 알려주는 과정에서, 어르신은 수십 년간 쌓아온 삶의 경험과 지혜를 역으로 젊은 사람에게 전달하는 <strong>"세대 간 지식의 쌍방향 교환"</strong>이 일어납니다. 70대 할머니가 자신의 된장찌개 레시피를 AI에게 프롬프팅하여 레시피 책으로 만드는 과정을 돕는 대학생은, 그 과정에서 AI가 담아낼 수 없는 삶의 노하우와 감성을 배우게 됩니다. 기술은 세대를 가로지르는 연결의 언어가 됩니다.</p>
+<p>평생학습 센터의 교육은 화면 속의 특정 정치인의 동영상이 인간의 땀방울이 아니라 코딩된 픽셀(딥페이크) 조작일 수 있음을 의심하고 식별하는 인지적 백신 접종 과정입니다. "왜 이 동영상은 내게만 계속 뜨는가?(알고리즘 추천의 폭력성)"를 스스로 자각하게 만드는 것. 이것은 기술을 찬양하는 과정이 아니라, 기술의 음모론을 폭로하고 맹목적인 기계 사대주의로부터 시민의 눈을 부릅뜨게 만드는 철학적 저항 교육(5장의 넥서스 진실 위기 방어)의 성인 버전 연장선입니다.</p>
+
+<div class="interactive-widget dnd-widget">
+<h4 class="widget-title">🧩 문장 복원하기 (Drag &amp; Drop)</h4>
+<p style="margin-bottom:1rem;">아래의 단어 블록을 드래그하여, 문맥상 알맞은 빈칸에 채워 넣으세요.</p>
+<div class="dnd-container">
+<div class="draggable" data-value="마찰" draggable="true">마찰</div>
+<div class="draggable" data-value="연대" draggable="true">연대</div>
+<div class="draggable" data-value="종속" draggable="true">종속</div>
+</div>
+<p style="font-size:1.15rem; line-height:2.0; margin-top:1.5rem; padding: 1.5rem; background: #fafafa; border:1px solid #e2e8f0; border-radius:8px; color: #334155;">
+            우리는 기계에 대한 맹목적인 <span class="dropzone" data-target="종속"></span>을(를) 거부하고, 
+            사고의 근육을 키우기 위한 고통스러운 인지적 <span class="dropzone" data-target="마찰"></span>을(를) 개입시켜, 
+            결국 서로의 체온을 나누는 아날로그적 <span class="dropzone" data-target="연대"></span> 생태계를 창조해야 합니다.
+        </p>
+<button class="submit-btn" type="button">정답 제출하기</button>
+<div class="feedback-msg"></div>
+</div>
+<h2>6. 시니어 AI 서포터즈 제도: 세대 간 연결의 가교</h2>
+<p>AI 평생교육을 가속화하는 가장 효율적인 사회적 메커니즘 중 하나는 바로 <em>시니어 AI 서포터즈</em> 제도입니다. 이는 대학생이나 AI 역량을 갖춘 청·장년층 자원봉사자들이 지역 복지관, 경로당, 농업·수산업 현장에 직접 찾아가 1:1 혹은 소그룹으로 AI도구 사용법을 코칭하는 프로그램입니다.</p>
+<p>이 제도의 핵심 가치는 단순한 기술 전수에 있는 것이 아닙니다. 젊은 교사가 어르신에게 AI를 알려주는 과정에서, 어르신은 수십 년간 쌓아온 삶의 경험과 지혜를 역으로 젊은 사람에게 전달하는 <em>세대 간 지식의 쌍방향 교환</em>이 일어납니다. 70대 할머니가 자신의 된장찌개 레시피를 AI에게 프롬프팅하여 레시피 책으로 만드는 과정을 돕는 대학생은, 그 과정에서 AI가 담아낼 수 없는 삶의 노하우와 감성을 배우게 됩니다. 기술은 세대를 가로지르는 연결의 언어가 됩니다.</p>
 <div class="mermaid">
 flowchart TD
     subgraph 시니어 AI 서포터즈 운영 구조
     direction TB
-    Univ["대학교 봉사학점 연계 프로그램"] --&gt;|"AI 역량 갖춘 대학생 매칭"| Staff["시니어 AI 서포터즈"]
-    Staff --&gt;|"주 1~2회 방문 코칭"| Seniors["지역 복지관 / 경로당 고령층"]
-    Seniors --&gt;|"삶의 경험 및 도메인 지식 역전달"| Staff
-    Staff --&gt;|"코칭 성과 보고서 제출"| Gov["지자체 평생교육원"]
-    Gov --&gt;|"우수 서포터즈 장학금 및 취업 가산점"| Univ
+    Univ[<em>대학교 봉사학점 연계 프로그램</em>] --&gt;|<em>AI 역량 갖춘 대학생 매칭</em>| Staff[<em>시니어 AI 서포터즈</em>]
+    Staff --&gt;|<em>주 1~2회 방문 코칭</em>| Seniors[<em>지역 복지관 / 경로당 고령층</em>]
+    Seniors --&gt;|<em>삶의 경험 및 도메인 지식 역전달</em>| Staff
+    Staff --&gt;|<em>코칭 성과 보고서 제출</em>| Gov[<em>지자체 평생교육원</em>]
+    Gov --&gt;|<em>우수 서포터즈 장학금 및 취업 가산점</em>| Univ
     end
 
     style Staff fill:#dbeafe,stroke:#2563eb,stroke-width:2px
@@ -120,49 +160,94 @@ flowchart TD
 </div>
 
 
-        <div class="checkpoint-widget" style="background:#f8fafc; padding:1.5rem; border-radius:8px; margin: 3rem 0; border: 1px solid #e2e8f0;">
-          <h4 style="margin-top:0; color:#0f172a; display:flex; align-items:center; gap:0.5rem;">🎯 단원 점검 (Checkpoint)</h4>
-          <p style="margin-bottom:1rem; color:#334155;">이 단원의 핵심 논조로 올바른 것을 하나 선택해주세요.</p>
-          <div style="display:flex; flex-direction:column; gap:0.5rem;">
-             <button onclick="showAlert(this, true, '정답입니다! 매끄러운 쾌락보다는 인간 고유의 의도적 마찰이 중요합니다.')" style="text-align:left; padding:1rem; border:1px solid #cbd5e1; background:white; cursor:pointer; border-radius:6px; transition:all 0.2s;">
-                 A. 기계의 완벽함에 의존하기보다, 피 흘리는 연대와 의도적 마찰을 통한 비판적 사유가 필수적입니다.
-             </button>
-             <button onclick="showAlert(this, false, '오답입니다. 기계에 의존하는 것은 인간성의 상실을 초래합니다.')" style="text-align:left; padding:1rem; border:1px solid #cbd5e1; background:white; cursor:pointer; border-radius:6px; transition:all 0.2s;">
-                 B. 초거대 인공지능이 제공하는 정답을 무조건적으로 신뢰하고 학습 속도를 높이는 것이 2026년 교육의 유일한 목표입니다.
-             </button>
-          </div>
-          <p class="feedback-msg" style="display:none; margin-top:1rem; font-weight:600;"></p>
-        </div>
-        
-<h2>4. 15장 결론: 단단한 인지적 근육이 세상을 지킨다</h2>
-<p>"세 살 버릇 여든까지 간다"는 속담은 이제 "세 살에 배운 코딩, 여든 살의 알고리즘 사기를 막아낸다"로 수정되어야 합니다. 학교 책상에 앉아 있는 아이들에게만 국한된 교육은 국가 예산의 배임행위와 같습니다.</p>
-<p>가장 연약한 사회의 맨 끄트머리에 버려진 우리의 할머니와 할아버지, 그리고 디지털 자본의 속도를 따라잡지 못해 숨이 턱까지 차오른 소상공인들. 이들의 떨리는 손에 AI라는 가장 무자비하게 똑똑한 거인을 다룰 <strong>마주보기의 지휘봉</strong>을 쥐여 주는 일. 그래서 이들이 기계에 조종당하는 무력한 데이터의 먹잇감이 아니라, 동등한 시민의 자격으로 세상을 호령하게 만드는 기적적인 권력 재분배. 이것이 우리가 AI 교육 2026 로드맵의 후반전에서 반드시 성취해야 할, 눈물겹도록 치열한 가장 사회적이고 숭고한 평생 문해력의 승리입니다.</p>
+<div class="interactive-widget mcq-widget">
+<h4 class="widget-title">📝 깊이 있는 사유: 5지 선다형 점검</h4>
+<p style="margin-bottom:1.5rem;">본 단원의 철학적 기조와 <strong>가장 거리가 먼</strong> 설명을 고르세요.</p>
+<div class="mcq-option" data-correct="false">A. 인공지능 도구의 압도적 연산력은 현장 교사들의 교육적 개입을 완전히 대체할 수 없습니다.</div>
+<div class="mcq-option" data-correct="true">B. 현대의 훌륭한 교사란, 디지털 기기를 철저히 배제하고 교과서의 지식만을 무결점으로 주입하는 교사입니다.</div>
+<div class="mcq-option" data-correct="false">C. 맹목적인 기계적 효율성의 추구는 오히려 학습자의 스캐폴딩과 인지적 땀방울을 증발시켜 버립니다.</div>
+<div class="mcq-option" data-correct="false">D. 우리는 의도적 마찰을 두려워하지 않고 인간적 고뇌의 과정을 교실로 끌어와야만 합니다.</div>
+<div class="mcq-option" data-correct="false">E. 궁극적으로 AI 인프라는 교육의 아날로그적 본질(사랑과 헌신)을 절대로 상실시킬 수 없습니다.</div>
+<button class="submit-btn" type="button">정답 제출하기</button>
+<div class="feedback-msg"></div>
+</div>
+<h2>7. 결론: 단단한 인지적 근육이 세상을 지킨다</h2>
+<p><em>세 살 버릇 여든까지 간다</em>는 속담은 이제 "세 살에 배운 코딩, 여든 살의 알고리즘 사기를 막아낸다"로 수정되어야 합니다. 학교 책상에 앉아 있는 아이들에게만 국한된 교육은 국가 예산의 배임행위와 같습니다.</p>
+<p>가장 연약한 사회의 맨 끄트머리에 버려진 우리의 할머니와 할아버지, 그리고 디지털 자본의 속도를 따라잡지 못해 숨이 턱까지 차오른 소상공인들. 이들의 떨리는 손에 AI라는 가장 무자비하게 똑똑한 거인을 다룰 마주보기의 지휘봉을 쥐여 주는 일. 그래서 이들이 기계에 조종당하는 무력한 데이터의 먹잇감이 아니라, 동등한 시민의 자격으로 세상을 호령하게 만드는 기적적인 권력 재분배. 이것이 우리가 AI 교육 2026 로드맵의 후반전에서 반드시 성취해야 할, 눈물겹도록 치열한 가장 사회적이고 숭고한 평생 문해력의 승리입니다.</p>
 <!-- MASSIVE EXPANSION INJECTED -->
-<h3>15.1. 거대 서사의 실종, 파편화된 진실의 틈새</h3>
+
+<div class="interactive-widget mcq-widget">
+<h4 class="widget-title">📝 깊이 있는 사유: 5지 선다형 점검</h4>
+<p style="margin-bottom:1.5rem;">본 단원의 철학적 기조와 <strong>가장 거리가 먼</strong> 설명을 고르세요.</p>
+<div class="mcq-option" data-correct="false">A. 인공지능 도구의 압도적 연산력은 현장 교사들의 교육적 개입을 완전히 대체할 수 없습니다.</div>
+<div class="mcq-option" data-correct="true">B. 현대의 훌륭한 교사란, 디지털 기기를 철저히 배제하고 교과서의 지식만을 무결점으로 주입하는 교사입니다.</div>
+<div class="mcq-option" data-correct="false">C. 맹목적인 기계적 효율성의 추구는 오히려 학습자의 스캐폴딩과 인지적 땀방울을 증발시켜 버립니다.</div>
+<div class="mcq-option" data-correct="false">D. 우리는 의도적 마찰을 두려워하지 않고 인간적 고뇌의 과정을 교실로 끌어와야만 합니다.</div>
+<div class="mcq-option" data-correct="false">E. 궁극적으로 AI 인프라는 교육의 아날로그적 본질(사랑과 헌신)을 절대로 상실시킬 수 없습니다.</div>
+<button class="submit-btn" type="button">정답 제출하기</button>
+<div class="feedback-msg"></div>
+</div>
+<h2>8. 거대 서사의 실종, 파편화된 진실의 틈새</h2>
 <p>틱톡식 숏폼에 중독된 아이들은 복잡한 역사적 인과 관계마저 15초짜리 영상으로 이해하려 든다. 거대 서사가 소멸되고 얕은 도파민만이 남은 이 시대야말로 가장 끔찍한 인지적 퇴화 현상입니다.</p>
-<h3>15.2. 몰입의 성전: 긴 호흡과 텍스트의 르네상스</h3>
-<p>교실은 일주일에 두 시간이라도 모든 디지털 기기를 전면 차단하고 코맥 매카시나 플라톤의 두꺼운 종이책을 강제로 읽히는 가장 극단적인 "디지털 수용소"를 운영해야 합니다. 텍스트의 바다에서 몰입의 카타르시스를 복원하는 일만이 디지털 시대를 견딜 힘을 부여합니다.</p>
+
+<div class="interactive-widget dnd-widget">
+<h4 class="widget-title">🧩 문장 복원하기 (Drag &amp; Drop)</h4>
+<p style="margin-bottom:1rem;">아래의 단어 블록을 드래그하여, 문맥상 알맞은 빈칸에 채워 넣으세요.</p>
+<div class="dnd-container">
+<div class="draggable" data-value="마찰" draggable="true">마찰</div>
+<div class="draggable" data-value="연대" draggable="true">연대</div>
+<div class="draggable" data-value="종속" draggable="true">종속</div>
+</div>
+<p style="font-size:1.15rem; line-height:2.0; margin-top:1.5rem; padding: 1.5rem; background: #fafafa; border:1px solid #e2e8f0; border-radius:8px; color: #334155;">
+            우리는 기계에 대한 맹목적인 <span class="dropzone" data-target="종속"></span>을(를) 거부하고, 
+            사고의 근육을 키우기 위한 고통스러운 인지적 <span class="dropzone" data-target="마찰"></span>을(를) 개입시켜, 
+            결국 서로의 체온을 나누는 아날로그적 <span class="dropzone" data-target="연대"></span> 생태계를 창조해야 합니다.
+        </p>
+<button class="submit-btn" type="button">정답 제출하기</button>
+<div class="feedback-msg"></div>
+</div>
+<h2>9. 몰입의 성전: 긴 호흡과 텍스트의 르네상스</h2>
+<p>교실은 일주일에 두 시간이라도 모든 디지털 기기를 전면 차단하고 코맥 매카시나 플라톤의 두꺼운 종이책을 강제로 읽히는 가장 극단적인 <em>디지털 수용소</em>를 운영해야 합니다. 텍스트의 바다에서 몰입의 카타르시스를 복원하는 일만이 디지털 시대를 견딜 힘을 부여합니다.</p>
 <!-- MASSIVE VOLUME BOOST -->
-<h3>15.3. 알고리즘의 최면극: 깊이 잃은 숏폼 문명의 저주</h3>
+
+<div class="interactive-widget mcq-widget">
+<h4 class="widget-title">📝 깊이 있는 사유: 5지 선다형 점검</h4>
+<p style="margin-bottom:1.5rem;">본 단원의 철학적 기조와 <strong>가장 거리가 먼</strong> 설명을 고르세요.</p>
+<div class="mcq-option" data-correct="false">A. 인공지능 도구의 압도적 연산력은 현장 교사들의 교육적 개입을 완전히 대체할 수 없습니다.</div>
+<div class="mcq-option" data-correct="true">B. 현대의 훌륭한 교사란, 디지털 기기를 철저히 배제하고 교과서의 지식만을 무결점으로 주입하는 교사입니다.</div>
+<div class="mcq-option" data-correct="false">C. 맹목적인 기계적 효율성의 추구는 오히려 학습자의 스캐폴딩과 인지적 땀방울을 증발시켜 버립니다.</div>
+<div class="mcq-option" data-correct="false">D. 우리는 의도적 마찰을 두려워하지 않고 인간적 고뇌의 과정을 교실로 끌어와야만 합니다.</div>
+<div class="mcq-option" data-correct="false">E. 궁극적으로 AI 인프라는 교육의 아날로그적 본질(사랑과 헌신)을 절대로 상실시킬 수 없습니다.</div>
+<button class="submit-btn" type="button">정답 제출하기</button>
+<div class="feedback-msg"></div>
+</div>
+<h2>10. 알고리즘의 최면극: 깊이 잃은 숏폼 문명의 저주</h2>
 <p>유튜브 쇼츠와 인스타그램 릴스에 중독된 아이들은 이제 자신의 뇌에서 1분 이상 집중하는 근육 자체를 삭제해버렸다. 복잡한 다층적 구조의 역사적 진실이나 인간 군상의 철학은 결코 15초짜리 영상으로 요약될 수 없음에도 불구하고, 그저 감각을 자극하는 단순한 프레임 안으로 모든 서사를 가둬버린다. 거대 서사가 소멸하고 단기적 도파민만이 번뜩이는 교실은 문명의 가장 치명적인 인지적 자살이나 다름없습니다.</p>
-<h3>15.4. 몰입의 탈환: 아날로그 텍스트의 강제 수용소</h3>
-<p>아이들의 전두엽을 환몽에서 구출하려면, 강력하고 의도적인 차단이 필요합니다. 교실은 주 2회, 모든 통신망과 기기를 수거한 채 잉크 냄새 나는 두꺼운 고전 문학의 모서리를 펼치게 하는 강제적 독서의 요새가 되어야 합니다. 책장을 넘길 때 손끝에서 느껴지는 거친 마찰가루, 문장을 해독하기 위해 뇌세포를 쥐어짜 내는 극한의 지적 노동 속에서 아이들은 마침내 잃어버렸던 숭고한 "몰입의 신전"으로 귀환합니다. 느리고 무거운 아날로그 텍스트의 바다에 익사할 줄 아는 자만이, 초음속 디지털 정보의 파도를 지배할 수 있습니다.</p>
+
+<div class="interactive-widget sa-widget">
+<h4 class="widget-title">⌨️ 핵심 어휘 회상 (단답형)</h4>
+<p style="margin-bottom: 1rem;">알고리즘의 정보 편식 문제와 관련하여, <strong>"자신과 비슷한 성향의 추천 정보만 반복적으로 수용하여 벽에 둘러싸인 닫힌 사고에 갇히는 현상"</strong>을 무엇이라 부릅니까?</p>
+<input class="short-answer-input" data-target="에코체임버,메아리방,확증,편향" placeholder="핵심 단어를 입력해주세요 (예: 에코체임버, 확증편향)" type="text"/>
+<button class="submit-btn" type="button">정답 제출하기</button>
+<div class="feedback-msg"></div>
+</div>
+<h2>11. 몰입의 탈환: 아날로그 텍스트의 강제 수용소</h2>
+<p>아이들의 전두엽을 환몽에서 구출하려면, 강력하고 의도적인 차단이 필요합니다. 교실은 주 2회, 모든 통신망과 기기를 수거한 채 잉크 냄새 나는 두꺼운 고전 문학의 모서리를 펼치게 하는 강제적 독서의 요새가 되어야 합니다. 책장을 넘길 때 손끝에서 느껴지는 거친 마찰가루, 문장을 해독하기 위해 뇌세포를 쥐어짜 내는 극한의 지적 노동 속에서 아이들은 마침내 잃어버렸던 숭고한 <em>몰입의 신전</em>으로 귀환합니다. 느리고 무거운 아날로그 텍스트의 바다에 익사할 줄 아는 자만이, 초음속 디지털 정보의 파도를 지배할 수 있습니다.</p>
 
 
-        <div class="checkpoint-widget" style="background:#ecfdf5; padding:1.5rem; border-radius:8px; margin: 3rem 0; border: 1px solid #d1fae5;">
-          <h4 style="margin-top:0; color:#065f46; display:flex; align-items:center; gap:0.5rem;">⚖️ 가치 판단 (True or False)</h4>
-          <p style="margin-bottom:1rem; color:#064e3b;">다음 명제가 이 단원의 철학적 방향과 일치하면 <strong>O</strong>, 아니면 <strong>X</strong>를 선택하세요.</p>
-          <p style="font-size:1.1rem; font-style:italic; padding:1rem; background:white; border-radius:4px;">"훌륭한 교사란, 3초 만에 결과물을 뱉어내는 AI를 배척하고 오로지 종이책만 읽히는 러다이트(Luddite)적인 교사이다."</p>
-          <div style="display:flex; gap:1rem; margin-top:1rem;">
-             <button onclick="showAlert(this, false, '오답입니다. 무조건 배척하는 것이 아니라, AI를 압도적으로 다루되 인간의 마찰을 사수하는 교사여야 합니다.')" style="flex:1; padding:1rem; border:1px solid #34d399; background:white; cursor:pointer; border-radius:6px; font-size:1.2rem; font-weight:bold;">O (주장과 일치함)</button>
-             <button onclick="showAlert(this, true, '정답입니다! 극단적 배척이 아닌 마찰적 공진화를 주도하는 것이 올바른 교사의 상입니다.')" style="flex:1; padding:1rem; border:1px solid #34d399; background:white; cursor:pointer; border-radius:6px; font-size:1.2rem; font-weight:bold;">X (주장과 다름)</button>
-          </div>
-          <p class="feedback-msg" style="display:none; margin-top:1rem; font-weight:600;"></p>
-        </div>
-        
-<div class="glossary-section" style="margin-top: 3rem; padding: 2.5rem; background: #fafafa; border-radius:8px; border: 1px solid #eaeaea; box-shadow: 0 4px 6px rgba(0,0,0,0.05);"><h3 style="margin-top:0; font-size:1.4rem; color:#333; margin-bottom:1.5rem;">📖 용어 해설</h3><ul style="line-height:2.0; color:#555; font-size: 1.1rem; padding-left:1.5rem;"><li><strong>거대 서사(Grand Narrative)</strong>:  역사의 발전을 설명하는 포괄적이고 거시적인 이데올로기나 철학적 틀을 의미합니다.</li></ul></div>
 
-<div class="reflection-section" style="margin-top: 4rem; padding: 2.5rem; background: #fafafa; border-radius: 12px; border: 1px solid #eaeaea; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+<div class="interactive-widget mcq-widget">
+<h4 class="widget-title">🧐 인지적 점검: 올바른 학습자상</h4>
+<p style="margin-bottom:1.5rem;">에이전틱 AI 시대를 살아갈 학습자의 바람직한 학습 태도로 <strong>가장 적절한 것</strong>을 고르세요.</p>
+<div class="mcq-option" data-correct="false">A. AI가 논리적으로 도출한 결과물을 절대적 진리로 여기고 무비판적으로 수용합니다.</div>
+<div class="mcq-option" data-correct="false">B. 학습 속도의 효율성을 극대화하기 위해 질문을 포기하고 기계적 암기에 몰두합니다.</div>
+<div class="mcq-option" data-correct="true">C. 결과물 도출의 주도권을 기계에 넘기지 않고, 치열하게 '왜'라고 묻는 주체성을 유지합니다.</div>
+<div class="mcq-option" data-correct="false">D. 인간 동료와의 불완전한 협력 대신 AI 튜터와의 완벽히 통제된 개인 대화만을 유일한 학습 수단으로 삼습니다.</div>
+<div class="mcq-option" data-correct="false">E. 스스로 사고하는 과정을 생략한 채, AI의 출력을 보기 좋게 편집하는 2차 가공 기술에만 전념합니다.</div>
+<button class="submit-btn" type="button">정답 제출하기</button>
+<div class="feedback-msg"></div>
+</div>
+<div class="glossary-section" style="margin-top: 4rem; padding: 2.5rem; background: #fafafa; border-radius:12px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);"><h3 style="margin-top:0; font-size:1.4rem; color:#0f172a; margin-bottom:1.5rem;">📖 용어 해설 (본문 인용)</h3><ul style="line-height:2.0; color:#334155; font-size:1.05rem;"><li style="margin-bottom: 0.8rem;"><strong>러다이트(Luddite)</strong>: 19세기 영국에서 일어난 기계 파괴 운동. 신기술의 도입을 맹목적으로 거부하고 두려워하는 태도를 비유합니다. <a href="https://en.wikipedia.org/wiki/Luddite" style="color:#2563eb; text-decoration:none; font-size:0.9rem;" target="_blank">[위키백과 ↗]</a></li><li style="margin-bottom: 0.8rem;"><strong>거대 서사(Grand Narrative)</strong>: 역사의 발전을 설명하는 포괄적이고 거시적인 이데올로기나 철학적 틀을 의미합니다. <a href="https://en.wikipedia.org/wiki/Metanarrative" style="color:#2563eb; text-decoration:none; font-size:0.9rem;" target="_blank">[위키백과 ↗]</a></li></ul></div><div class="reflection-section" style="margin-top: 4rem; padding: 2.5rem; background: #fafafa; border-radius: 12px; border: 1px solid #eaeaea; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
 <h3 style="margin-top: 0; color: #111; font-size: 1.5rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
             성찰과 연대: 2026년을 향한 당신의 생각
         </h3>
@@ -194,34 +279,230 @@ flowchart TD
 <div class="container"><p>© 2026 AI교육 2026. All rights reserved.</p></div>
 </footer>
 
-<script>
-function showAlert(btn, isCorrect, msg) {
-    const parent = btn.parentElement.parentElement;
-    const msgElement = parent.querySelector('.feedback-msg');
-    
-    // reset borders
-    const btns = parent.querySelectorAll('button');
-    btns.forEach(b => {
-        b.style.borderColor = '#cbd5e1';
-        b.style.backgroundColor = 'white';
-        b.style.color = '#333';
-    });
-    
-    if (isCorrect) {
-        btn.style.borderColor = '#22c55e';
-        btn.style.backgroundColor = '#f0fdf4';
-        btn.style.color = '#166534';
-        msgElement.style.color = '#166534';
-    } else {
-        btn.style.borderColor = '#ef4444';
-        btn.style.backgroundColor = '#fef2f2';
-        btn.style.color = '#991b1b';
-        msgElement.style.color = '#991b1b';
-    }
-    
-    msgElement.innerText = msg;
-    msgElement.style.display = 'block';
+
+<style>
+/* Modern Widget CSS */
+.interactive-widget {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 2.5rem;
+    margin: 3.5rem 0;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
 }
+.widget-title {
+    margin-top: 0;
+    color: #0f172a;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #f1f5f9;
+    padding-bottom: 0.8rem;
+}
+.mcq-option {
+    display: block;
+    padding: 1.2rem;
+    margin-bottom: 0.8rem;
+    background: #f8fafc;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 1.05rem;
+    color: #334155;
+    line-height: 1.5;
+}
+.mcq-option:hover { background: #f1f5f9; border-color: #cbd5e1;}
+.mcq-option.selected { border-color: #3b82f6; background: #eff6ff; color: #1d4ed8; font-weight: 600; box-shadow: 0 0 0 1px #3b82f6;}
+.submit-btn {
+    background: #1e293b;
+    color: white;
+    padding: 0.8rem 1.8rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1.05rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: background 0.2s, transform 0.1s;
+}
+.submit-btn:hover { background: #0f172a; transform: translateY(-1px);}
+.submit-btn:active { transform: translateY(0);}
+.feedback-msg { margin-top: 1.5rem; font-weight: 600; padding: 1.2rem; border-radius: 8px; display: none; font-size:1.05rem; line-height: 1.5;}
+.feedback-msg.success { background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0; display: block; animation: fadeIn 0.3s;}
+.feedback-msg.error { background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca; display: block; animation: fadeIn 0.3s;}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes confetti {
+  0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(200px) rotate(720deg); opacity: 0; }
+}
+.confetti-piece {
+  position: absolute;
+  width: 12px; height: 12px;
+  background: #facc15;
+  animation: confetti 1.2s ease-out forwards;
+  z-index: 100;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+/* Drag and Drop */
+.dnd-container { display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap; background: #f8fafc; padding: 1.5rem; border-radius: 8px; border: 1px dashed #cbd5e1;}
+.draggable { padding: 0.8rem 1.5rem; background: #3b82f6; color: white; border-radius: 6px; cursor: grab; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: transform 0.1s;}
+.draggable:active { cursor: grabbing; transform: scale(0.95);}
+.dropzone { 
+    display: inline-block; 
+    min-width: 120px; 
+    height: 36px; 
+    border-bottom: 3px dashed #94a3b8; 
+    margin: 0 0.5rem; 
+    vertical-align: middle; 
+    text-align: center; 
+    background: #f1f5f9;
+    border-radius: 4px 4px 0 0;
+    transition: all 0.2s;
+    line-height: 36px;
+    font-size: 1.05rem;
+}
+.dropzone.dragover { background: #e2e8f0; border-bottom-color: #64748b;}
+.dropzone.filled { background: #eff6ff; border-bottom: 3px solid #3b82f6; color: #1d4ed8; font-weight:bold; }
+
+/* Short Answer */
+.short-answer-input { padding: 1rem; border: 2px solid #e2e8f0; border-radius: 8px; width: 100%; max-width: 500px; font-size: 1.05rem; margin-bottom: 1rem; transition: border-color 0.2s;}
+.short-answer-input:focus { border-color: #3b82f6; outline: none; box-shadow: 0 0 0 3px rgba(59,130,246,0.1); }
+</style>
+
+<script>
+function fireConfetti(widget) {
+    const rect = widget.getBoundingClientRect();
+    for(let i=0; i<50; i++) {
+        const conf = document.createElement('div');
+        conf.className = 'confetti-piece';
+        const colors = ['#facc15', '#f87171', '#60a5fa', '#34d399', '#c084fc'];
+        conf.style.left = (Math.random() * 100) + '%';
+        conf.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        conf.style.top = (Math.random() * 20) + 'px';
+        widget.appendChild(conf);
+        setTimeout(() => conf.remove(), 1200);
+    }
+}
+
+function setupWidgets() {
+    // MCQ
+    document.querySelectorAll('.mcq-widget').forEach(widget => {
+        const options = widget.querySelectorAll('.mcq-option');
+        options.forEach(opt => {
+            opt.addEventListener('click', () => {
+                options.forEach(o => o.classList.remove('selected'));
+                opt.classList.add('selected');
+                widget.querySelector('.feedback-msg').style.display = 'none'; // reset
+            });
+        });
+        
+        const btn = widget.querySelector('.submit-btn');
+        const feedback = widget.querySelector('.feedback-msg');
+        btn.addEventListener('click', () => {
+            const selected = widget.querySelector('.mcq-option.selected');
+            if(!selected) {
+                feedback.className = 'feedback-msg error';
+                feedback.innerHTML = '⚠️ 보기를 하나 선택해주세요.';
+                return;
+            }
+            if(selected.dataset.correct === 'true') {
+                feedback.className = 'feedback-msg success';
+                feedback.innerHTML = '🎯 <strong>정답입니다!</strong> 본문의 핵심 철학을 정확히 이해하셨습니다.';
+                fireConfetti(widget);
+            } else {
+                feedback.className = 'feedback-msg error';
+                feedback.innerHTML = '❌ <strong>아쉽습니다.</strong> 기계적 효율성보다는 비판적 사고의 가치를 다시 떠올려보세요.';
+            }
+        });
+    });
+
+    // Drag & Drop
+    document.querySelectorAll('.dnd-widget').forEach(widget => {
+        const draggables = widget.querySelectorAll('.draggable');
+        const dropzones = widget.querySelectorAll('.dropzone');
+        let draggedItem = null;
+        
+        draggables.forEach(d => {
+            d.addEventListener('dragstart', function() { draggedItem = this; });
+        });
+        
+        dropzones.forEach(dz => {
+            dz.addEventListener('dragover', e => { e.preventDefault(); dz.classList.add('dragover'); });
+            dz.addEventListener('dragleave', () => dz.classList.remove('dragover'));
+            dz.addEventListener('drop', function(e) {
+                e.preventDefault();
+                this.classList.remove('dragover');
+                if(draggedItem) {
+                    this.textContent = draggedItem.textContent;
+                    this.dataset.value = draggedItem.dataset.value;
+                    this.classList.add('filled');
+                }
+            });
+        });
+        
+        const btn = widget.querySelector('.submit-btn');
+        const feedback = widget.querySelector('.feedback-msg');
+        btn.addEventListener('click', () => {
+            let correct = true;
+            let allFilled = true;
+            dropzones.forEach(dz => {
+                if(!dz.dataset.value) allFilled = false;
+                if(dz.dataset.value !== dz.dataset.target) correct = false;
+            });
+            if(!allFilled) {
+                feedback.className = 'feedback-msg error';
+                feedback.innerHTML = '⚠️ 모든 빈칸을 파란색 블록으로 채워주세요.';
+                return;
+            }
+            if(correct) {
+                feedback.className = 'feedback-msg success';
+                feedback.innerHTML = '🎯 <strong>완벽합니다!</strong> 문맥이 올바르게 복원되었습니다.';
+                fireConfetti(widget);
+            } else {
+                feedback.className = 'feedback-msg error';
+                feedback.innerHTML = '❌ 일부 단어의 위치가 틀렸습니다. 다시 고민해 보세요.';
+            }
+        });
+    });
+
+    // Short Answer
+    document.querySelectorAll('.sa-widget').forEach(widget => {
+        const btn = widget.querySelector('.submit-btn');
+        const input = widget.querySelector('input');
+        const feedback = widget.querySelector('.feedback-msg');
+        
+        input.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') btn.click();
+        });
+
+        btn.addEventListener('click', () => {
+            const val = input.value.trim().replace(/\s+/g, '');
+            const target = input.dataset.target.split(',');
+            if(val === '') {
+                feedback.className = 'feedback-msg error';
+                feedback.innerHTML = '⚠️ 정답을 입력해주세요.';
+                return;
+            }
+            if(target.some(t => val.includes(t))) {
+                feedback.className = 'feedback-msg success';
+                feedback.innerHTML = '🎯 <strong>정확합니다!</strong> 핵심 개념을 훌륭하게 인지하셨습니다.';
+                fireConfetti(widget);
+            } else {
+                feedback.className = 'feedback-msg error';
+                feedback.innerHTML = '❌ 예상되는 핵심 개념어가 아닙니다. 본문의 흐름을 다시 학인해주세요.';
+            }
+        });
+    });
+}
+document.addEventListener('DOMContentLoaded', setupWidgets);
 </script>
 
 </body>
