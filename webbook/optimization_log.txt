@@ -24,3 +24,8 @@
 1. **CSS Layout Audit**: Check `style.css` for grid/flex inconsistencies across multi-viewport devices (Mobile breakpoints, contrast checks).
 2. **Font Handling**: Ensure fallback font stacks and self-hosted/preconnect patterns for rendering bottleneck mitigation.
 3. **Lazy Loading**: Audit img sizes and add `loading="lazy"` tags to media.
+
+## Cycle 2: Layout & Loading (2026-03-10)
+- **CSS Media Queries**: Appended @media (max-width: 768px) rules to styles.css to fix overflow on mobile screens.
+- **Font Preconnect**: Injected <link rel='preconnect' href='https://cdn.jsdelivr.net'> to all 20 pages resolving web-font download delays.
+- **Image Lazy-loading**: Appended loading='lazy' to all <img> and <iframe> blocks to increase FCP speed.
