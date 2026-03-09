@@ -1,0 +1,26 @@
+# Frontend Optimization Loop: Cycle 1 Log
+**Date**: 2026-03-10
+**Branch**: frontend_optimization_loop
+
+## Detected Bottlenecks (Cycle 1)
+1. Heavy duplication of inline `<style>` blocks for widgets (~80 lines per file).
+2. Heavy duplication of inline `<script>` logic for Confetti, Checkpoint events, and Reflection Cookie saves (~150 lines per file).
+3. Missing baseline accessibility: No `<html lang="ko">`.
+4. Missing basic SEO: No `<meta name="description">`.
+5. Outdated event coupling: Uses of `<button onclick="saveReflection(1)">` mixing HTML and JS behavior perfectly aligned for Cross-Site Scripting or tight coupling issues.
+
+## Interventions Applied
+- **Extraction Scripts (`optimize_frontend.py`)**: Spliced off all generic CSS logic to `/webbook/widgets.css` and JS to `/webbook/widgets.js`.
+- **Injection Scripts**: Appended `<link rel="stylesheet" href="widgets.css">` and `<script src="widgets.js" defer></script>` automatically across 20 HTML files (Chapters 1-20).
+- **DOM Refactoring**: Swapped `onclick="saveReflection(N)"` with standard `<button class="reflection-submit" data-chapter="N">`. Logic unified into `widgets.js` via Event Delegation.
+- **Accessibility/SEO**: Injected `<html>` lang parameters and meta descriptions programmatically.
+
+## Results
+- **Filesize Reduction**: Each `chapter-*.html` file shrank by roughly 6KB to 8KB of redundant inline code.
+- **Cache Optimization**: Users jumping from Chapter 1 to 2 no longer re-download widget scripting/styling boundaries as they are now securely cached in `widgets.css/.js`.
+- **Maintainability**: Future UI enhancements target exactly 2 files instead of 20 separately.
+
+## Next Steps for Cycle 2 (Proposal)
+1. **CSS Layout Audit**: Check `style.css` for grid/flex inconsistencies across multi-viewport devices (Mobile breakpoints, contrast checks).
+2. **Font Handling**: Ensure fallback font stacks and self-hosted/preconnect patterns for rendering bottleneck mitigation.
+3. **Lazy Loading**: Audit img sizes and add `loading="lazy"` tags to media.
