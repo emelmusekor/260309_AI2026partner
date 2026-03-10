@@ -47,22 +47,22 @@
 <p>가장 현명한 2026년 교육 국가 전략의 본질은, 민간 에듀테크(스타트업, 통신사, 글로벌 빅테크) 기업들이 피 튀기며 천문학적 돈을 쏟아부어 만들어낸 가장 뛰어난 최정상급 "원천 베이스 모델(Foundation Model/API)"의 멱살을 잡아채, 공교육 내부로 가장 우아하게, 그러나 가혹한 국가적 제어판 아래로 끌어들여 임대하는 방식입니다.</p>
 <div class="mermaid">
 flowchart TD
-    subgraph errModel [<em>잘못된 모델: 공교육의 식민지화</em>]
-    Err1["학교와 교사가 개별적으로 민간 특정 AI 수학 앱 도입<em>] --&gt;|</em>학생 데이터 무분별 사기업 유출<em>| Err2["</em>블랙박스 속 학생 등급 분류 수익화<em>"]
-    Err2 --&gt;|</em>플랫폼 락인 효과<em>| Err3["</em>사교육 앱 종속으로 인한 특정 기업 독점 특혜 시비""]
+    subgraph errModel [잘못된 모델: 공교육의 식민지화]
+    Err1["학교와 교사가 개별적으로 민간 특정 AI 수학 앱 도입"] --&gt;|학생 데이터 무분별 사기업 유출| Err2["블랙박스 속 학생 등급 분류 수익화"]
+    Err2 --&gt;|플랫폼 락인 효과| Err3["사교육 앱 종속으로 인한 특정 기업 독점 특혜 시비"]
     end
 
     subgraph rightModel ["2026년 국가 주도 생태계 룰: API 샌드박스 허브"]
     direction TB
-    Gov_API["교육부 클라우드 중앙 허브 - Data Privacy 및 API 관리소<em>]
+    Gov_API["교육부 클라우드 중앙 허브 - Data Privacy 및 API 관리소"]
 
-    Edu_Co1["</em>통신사 A - 자연어 음성 엔진 API 제공<em>"] --&gt;|</em>비식별 필터링 후 가동<em>| Gov_API
-    Edu_Co2["</em>스타트업 B - 수학 지식 추적 AI 제공<em>"] --&gt;|</em>교과서 기준 편향 점검 통과<em>| Gov_API
-    Big_Tech["</em>글로벌 기업 C - 시각 생성 엔진 제공<em>"] --&gt;|</em>투명성 감사 허가 시 진입"| Gov_API
+    Edu_Co1["통신사 A - 자연어 음성 엔진 API 제공"] --&gt;|비식별 필터링 후 가동| Gov_API
+    Edu_Co2["스타트업 B - 수학 지식 추적 AI 제공"] --&gt;|교과서 기준 편향 점검 통과| Gov_API
+    Big_Tech["글로벌 기업 C - 시각 생성 엔진 제공"] --&gt;|투명성 감사 허가 시 진입"| Gov_API
 
-    Gov_API --&gt;|<em>교사의 다중 선택권 허용</em>| School["<em>전국 교실의 대시보드 - 자유로운 모듈 조립</em>"]
+    Gov_API --&gt;|교사의 다중 선택권 허용| School["전국 교실의 대시보드 - 자유로운 모듈 조립"]
 
-    School --&gt;|"학생 데이터는 사기업 엔진에 남지 않고 공공 허브로 회귀<em>| Final["</em>데이터 주권 확보 및 상생의 조인트 벤처""]
+    School --&gt;|"학생 데이터는 사기업 엔진에 남지 않고 공공 허브로 회귀| Final["데이터 주권 확보 및 상생의 조인트 벤처""]
     end
 
     style Err3 fill:#fee2e2,stroke:#ef4444,stroke-width:2px

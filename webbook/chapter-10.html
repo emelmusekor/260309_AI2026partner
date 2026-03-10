@@ -50,21 +50,21 @@
 <p>이 어두운 광맥을 끊어내고 학교라는 신성한 공간을 지켜내기 위해, 교육 시스템 재구조화의 최종 마무리는 이른바 <em>책임 있는 AI 거버넌스</em>를 헌법적 수준에서 콘크리트로 다지는 일이어야 합니다.</p>
 <div class="mermaid">
 flowchart TD
-    subgraph Danger [<em>무방비 상태의 기업 주도적 데이터 종속성</em>]
+    subgraph Danger [무방비 상태의 기업 주도적 데이터 종속성]
     direction TB
-    S_Data["<em>학생의 취약점 및 학습 생체 데이터 무한 발생</em>"] --&gt;|약관 동의 하나로 무단 전송| B_Server["<em>빅테크/사교육 플랫폼의 영구적 블랙 클라우드</em>"]
-    B_Server --&gt;|개인정보 가공 및 평생 알고리즘 꼬리표 부착| G_Risk["<em>맞춤형 광고 노출 및 사회적 낙인</em>"]
+    S_Data["학생의 취약점 및 학습 생체 데이터 무한 발생"] --&gt;|약관 동의 하나로 무단 전송| B_Server["빅테크/사교육 플랫폼의 영구적 블랙 클라우드"]
+    B_Server --&gt;|개인정보 가공 및 평생 알고리즘 꼬리표 부착| G_Risk["맞춤형 광고 노출 및 사회적 낙인"]
     end
 
-    subgraph Defense [<em>2026년 공교육 거버넌스의 3중 방파제</em>]
+    subgraph Defense [2026년 공교육 거버넌스의 3중 방파제]
     direction TB
-    Gov_Net["공공 클라우드 통제소 (데이터 가명 처리 및 파기 권한 보장)<em>]
-    Audit["</em>알고리즘 영향 평가 위원회 (민관학 교사 연합)<em>"]
-    Right_OptOut["</em>학부모 및 학생의 <em>연결 안 될 권리</em> 명문화<em>"]
+    Gov_Net["공공 클라우드 통제소 (데이터 가명 처리 및 파기 권한 보장)"]
+    Audit["알고리즘 영향 평가 위원회 (민관학 교사 연합)"]
+    Right_OptOut["학부모 및 학생의 연결 안 될 권리 명문화"]
     
-    Gov_Net --&gt;|</em>사설 API 연동 시 철저한 비식별화, 기한 경과 시 영구 삭제 의무화<em>| Audit
-    Audit --&gt;|</em>편향적 프롬프트, 알고리즘 환각 등 6개월 1회 정기 불시 감사"| Gov_Net
-    Right_OptOut -.-&gt;|<em>AI의 개입을 전면 거부할 시민적 선택권 보장</em>| Gov_Net
+    Gov_Net --&gt;|사설 API 연동 시 철저한 비식별화, 기한 경과 시 영구 삭제 의무화| Audit
+    Audit --&gt;|편향적 프롬프트, 알고리즘 환각 등 6개월 1회 정기 불시 감사"| Gov_Net
+    Right_OptOut -.-&gt;|AI의 개입을 전면 거부할 시민적 선택권 보장| Gov_Net
     end
 
     style B_Server fill:#fee2e2,stroke:#ef4444,stroke-width:2px
