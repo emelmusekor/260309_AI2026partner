@@ -22,9 +22,24 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll('.mcq-widget').forEach(widget => {
         const options = widget.querySelectorAll('.mcq-option');
         options.forEach(opt => {
+            opt.setAttribute('role', 'button');
+            opt.setAttribute('tabindex', '0');
+            opt.setAttribute('aria-pressed', 'false');
+            
+            // Allow keyboard activation
+            opt.addEventListener('keydown', (e) => {
+                if(e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    opt.click();
+                }
+            });
             opt.addEventListener('click', () => {
-                options.forEach(o => o.classList.remove('selected'));
+                options.forEach(o => {
+                    o.classList.remove('selected');
+                    o.setAttribute('aria-pressed', 'false');
+                });
                 opt.classList.add('selected');
+                opt.setAttribute('aria-pressed', 'true');
             });
         });
         
@@ -55,7 +70,15 @@ document.addEventListener("DOMContentLoaded", () => {
         let draggedItem = null;
         
         draggables.forEach(d => {
-            d.addEventListener('dragstart', function() { draggedItem = this; });
+            d.setAttribute('tabindex', '0');
+            d.setAttribute('aria-grabbed', 'false');
+            d.addEventListener('dragstart', function() { 
+                draggedItem = this; 
+                this.setAttribute('aria-grabbed', 'true');
+            });
+            d.addEventListener('dragend', function() { 
+                this.setAttribute('aria-grabbed', 'false');
+            });
         });
         
         dropzones.forEach(dz => {

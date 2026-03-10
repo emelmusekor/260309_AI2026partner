@@ -124,3 +124,15 @@
     font-family: inherit; margin-bottom: 0.5rem;
 }
 .short-answer-input:focus { border-color: #3b82f6; }
+
+
+/* --- Phase 5 Cycle 3 Accessibility (a11y) --- */
+.mcq-option:focus-visible, .submit-btn:focus-visible, .short-answer-input:focus-visible, .draggable:focus-visible, .reflection-submit:focus-visible {
+    outline: 3px solid #ef4444;
+    outline-offset: 2px;
+}
+.mcq-option[role="button"]:focus {
+    /* For standard focus fallbacks */
+    border-color: #3b82f6;
+    background: #f8fafc;
+}
