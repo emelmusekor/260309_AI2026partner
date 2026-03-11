@@ -129,18 +129,12 @@ def replace_mermaid_with_vis(content):
                             enabled: true,
                             direction: '{direction}',
                             sortMethod: 'directed',
-                            nodeSpacing: 200,
-                            levelSeparation: 150
+                            nodeSpacing: 180,
+                            levelSeparation: 130
                         }}
                     }},
                     physics: {{
-                        enabled: true,
-                        hierarchicalRepulsion: {{ 
-                            nodeDistance: 150, 
-                            springLength: 100, 
-                            springConstant: 0.2, 
-                            damping: 0.7 
-                        }}
+                        enabled: false
                     }},
                     edges: {{ 
                         smooth: {{ type: 'cubicBezier', forceDirection: '{'vertical' if direction=='UD' else 'horizontal'}' }}, 
@@ -151,16 +145,18 @@ def replace_mermaid_with_vis(content):
                     }},
                     interaction: {{ 
                         hover: true, 
-                        dragNodes: true,
+                        dragNodes: false,
                         zoomView: false,
                         dragView: false
                     }}
                 }};
                 var network = new vis.Network(container, data, options);
                 
-                // Fit to canvas once stabilized to ensure it's visible at a glance
-                network.on("stabilizationIterationsDone", function () {{
-                    network.fit();
+                // Fit to canvas ensures complete visibility dynamically
+                network.once("beforeDrawing", function() {{
+                    network.fit({
+                        animation: false
+                    });
                 }});
             }});
             """
