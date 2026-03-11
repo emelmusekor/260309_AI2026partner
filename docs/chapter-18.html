@@ -48,6 +48,7 @@
 <div class="mermaid-wrapper" style="width: 100%; overflow-x: auto; background: #fdf8f5; padding: 2rem; border-radius: 12px; margin: 2rem 0; border: 1px solid #e2e8f0; text-align: center;">
 <pre class="mermaid" style="font-size: 1.25rem; font-family: Pretendard, sans-serif;">
 
+
 flowchart TD
     subgraph errModel [잘못된 모델: 공교육의 식민지화]
     Err1["학교와 교사가 개별적으로 민간 특정 AI 수학 앱 도입"] --&gt;|학생 데이터 무분별 사기업 유출| Err2["블랙박스 속 학생 등급 분류 수익화"]
@@ -60,17 +61,18 @@ flowchart TD
 
     Edu_Co1["통신사 A - 자연어 음성 엔진 API 제공"] --&gt;|비식별 필터링 후 가동| Gov_API
     Edu_Co2["스타트업 B - 수학 지식 추적 AI 제공"] --&gt;|교과서 기준 편향 점검 통과| Gov_API
-    Big_Tech["글로벌 기업 C - 시각 생성 엔진 제공"] --&gt;|투명성 감사 허가 시 진입"| Gov_API
+    Big_Tech["글로벌 기업 C - 시각 생성 엔진 제공"] --&gt;|"투명성 감사 허가 시 진입"| Gov_API
 
     Gov_API --&gt;|교사의 다중 선택권 허용| School["전국 교실의 대시보드 - 자유로운 모듈 조립"]
 
-    School --&gt;|"학생 데이터는 사기업 엔진에 남지 않고 공공 허브로 회귀| Final["데이터 주권 확보 및 상생의 조인트 벤처""]
+    School --&gt;|"학생 데이터는 사기업 엔진에 남지 않고 공공 허브로 회귀"| Final["데이터 주권 확보 및 상생의 조인트 벤처"]
     end
 
     style Err3 fill:#fee2e2,stroke:#ef4444,stroke-width:2px
     style Gov_API fill:#dbeafe,stroke:#2563eb,stroke-width:2px
     style School fill:#fdf2e9,stroke:#e67e22,stroke-width:2px
     style Final fill:#dcfce7,stroke:#22c55e,stroke-width:2px
+
 
 </pre>
 </div>

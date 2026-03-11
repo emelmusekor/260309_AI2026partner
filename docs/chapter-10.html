@@ -51,6 +51,7 @@
 <div class="mermaid-wrapper" style="width: 100%; overflow-x: auto; background: #fdf8f5; padding: 2rem; border-radius: 12px; margin: 2rem 0; border: 1px solid #e2e8f0; text-align: center;">
 <pre class="mermaid" style="font-size: 1.25rem; font-family: Pretendard, sans-serif;">
 
+
 flowchart TD
     subgraph Danger [무방비 상태의 기업 주도적 데이터 종속성]
     direction TB
@@ -65,7 +66,7 @@ flowchart TD
     Right_OptOut["학부모 및 학생의 연결 안 될 권리 명문화"]
     
     Gov_Net --&gt;|사설 API 연동 시 철저한 비식별화, 기한 경과 시 영구 삭제 의무화| Audit
-    Audit --&gt;|편향적 프롬프트, 알고리즘 환각 등 6개월 1회 정기 불시 감사"| Gov_Net
+    Audit --&gt;|"편향적 프롬프트, 알고리즘 환각 등 6개월 1회 정기 불시 감사"| Gov_Net
     Right_OptOut -.-&gt;|AI의 개입을 전면 거부할 시민적 선택권 보장| Gov_Net
     end
 
@@ -73,6 +74,7 @@ flowchart TD
     style Gov_Net fill:#dbeafe,stroke:#2563eb,stroke-width:2px
     style Audit fill:#dcfce7,stroke:#22c55e,stroke-width:2px
     style Right_OptOut fill:#fdf2e9,stroke:#e67e22
+
 
 </pre>
 </div>
