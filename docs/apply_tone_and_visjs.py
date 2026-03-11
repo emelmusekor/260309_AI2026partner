@@ -98,7 +98,7 @@ def parse_mermaid(text):
                 if u not in nodes: nodes[u] = u
                 if v not in nodes: nodes[v] = v
                 
-    vis_nodes = [{"id": k, "label": v, "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}} for k, v in nodes.items()]
+    vis_nodes = [{"id": k, "label": v, "shape": "box", "font": {"size": 22, "face": "Pretendard, sans-serif", "color": "#1e293b", "bold": True}, "margin": 12, "color": {"background": "#fdf2e9", "border": "#e67e22"}} for k, v in nodes.items()]
     return vis_nodes, edges, direction
 
 def replace_mermaid_with_vis(content):
@@ -129,8 +129,8 @@ def replace_mermaid_with_vis(content):
                             enabled: true,
                             direction: '{direction}',
                             sortMethod: 'directed',
-                            nodeSpacing: 180,
-                            levelSeparation: 130
+                            nodeSpacing: 300,
+                            levelSeparation: 200
                         }}
                     }},
                     physics: {{
@@ -138,13 +138,13 @@ def replace_mermaid_with_vis(content):
                     }},
                     edges: {{ 
                         smooth: {{ type: 'cubicBezier', forceDirection: '{'vertical' if direction=='UD' else 'horizontal'}' }}, 
-                        color: '#334155', 
-                        width: 3,
-                        font: {{ size: 14, color: '#1e293b', strokeWidth: 2, strokeColor: '#ffffff' }},
-                        arrows: {{ to: {{ scaleFactor: 1.2 }} }}
+                        color: '#1e293b', 
+                        width: 5,
+                        font: {{ size: 18, color: '#1e293b', strokeWidth: 3, strokeColor: '#ffffff', bold: true }},
+                        arrows: {{ to: {{ scaleFactor: 1.8 }} }}
                     }},
                     interaction: {{ 
-                        hover: true, 
+                        hover: false, 
                         dragNodes: false,
                         zoomView: false,
                         dragView: false
@@ -162,7 +162,7 @@ def replace_mermaid_with_vis(content):
             """
             script_injections.append(js_code)
             
-            return f'<div id="{net_id}" class="vis-network-container" style="width: 100%; height: 400px; border: 1px solid #e2e8f0; border-radius: 12px; background: #fafafa; margin: 2rem 0; cursor: grab; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);"></div>'
+            return f'<div id="{net_id}" class="vis-network-container" style="width: 100%; height: 600px; border: 1px solid #e2e8f0; border-radius: 12px; background: #f8fafc; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);"></div>'
         except Exception as e:
             print("Failed to parse", e)
             return match.group(0)
