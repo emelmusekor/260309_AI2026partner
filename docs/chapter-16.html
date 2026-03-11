@@ -20,7 +20,7 @@
 .mermaid { overflow-x: auto; text-align: center; margin: 2rem 0; clear:both; }
 .mermaid svg { max-width: 100%; height: auto; }
 </style><link href="widgets.css" rel="stylesheet"/><script defer="True" src="widgets.js"></script>
-<script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
 </head>
 <body>
 <header class="site-header" role="banner">
@@ -45,7 +45,32 @@
 <div class="highlight-box"><p style="margin:0;"><strong>직관에서 데이터로의 권력 이동</strong>은(는) 생성형 AI와 융합된 전국 단위의 클라우드 신경망 시스템의 도입은 이 지루한 종이 문서의 릴레이를 완전히 폭파시킨다. 앞으로의 교육 정책은 "몇몇 고위 관료의 30년 전 교육철학이나 정치적 직관"으로 톱다운 하달되는 것이 아닙니다. 매일 아침 전국의 500만 학생 태블릿에서 쏟아지는 수학 오답률의 패턴, 수십만 명 교사의 AI 교무비서 호출 로그 속에서 터져 나오는 실시간 빅데이터만이 유일하게 예산 배분과 정책 수립의 정당한 근거로 승인받는 투명한 사회학적 거버넌스로 완벽하게 진화하게 됩니다.</p></div>
 <h2>2. 초자동화 정책 대시보드의 작동 원리</h2>
 <p>2026년 교육부 장관과 시도 교육감의 집무실 벽에는 수십 개의 파이 차트와 꺾은선 그래프가 0.1초 단위로 숨 가쁘게 명멸하는 초대형 AI 정책 대시보드가 걸립니다. 이 대시보드는 과거 장학사들이 밤을 꼬박 새워 엑셀로 짜깁기한 정적인 보고서가 아닙니다. 살아서 펄떡이는 학교 현장의 맥박 그 자체입니다.</p>
-<div id="vis-net-5bbcd735" class="vis-network-container" style="width: 100%; height: 400px; border: 1px solid #e2e8f0; border-radius: 12px; background: #fafafa; margin: 2rem 0; cursor: grab; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);"></div>
+<div class="mermaid-wrapper" style="width: 100%; overflow-x: auto; background: #fdf8f5; padding: 2rem; border-radius: 12px; margin: 2rem 0; border: 1px solid #e2e8f0; text-align: center;">
+<pre class="mermaid" style="font-size: 1.25rem; font-family: Pretendard, sans-serif;">
+
+flowchart TD
+    subgraph past [과거의 아날로그 정책 결정 구조]
+    H1["학교 현장의 문제 발생 - 예: 특정 지역 수포자 급증"] --&gt;|교사 통계 작성 1개월| H2["교육지원청 취합 1개월"]
+    H2 --&gt;|교육부 보고서 작성 1개월| H3["뒷북 예산 편성 - 시의성 완벽 상실"]
+    end
+
+    subgraph new2026 [2026년 AI 실시간 정책 사령탑]
+    direction TB
+    D1["전국 1만 개 교실의 AI 튜터 서버 로그 - 수학 오답률, 우울증 관련 프롬프트 검색 빈도"] --&gt;|실시간 API 스트리밍| D2["국가 중앙 AI 클라우드 애널리틱스"]
+
+    D2 --&gt;|패턴 이상 징후 탐지| D3["경고 알람: A지역 중학교 2학년, 2주 연속 분수 단원 이해도 최저 수준 추락"]
+
+    D3 --&gt;|교육부 장관 자연어 질의| D4["초거대 언어 모델 국장 - AI Director"]
+    D4 --&gt;|정책 시뮬레이션: 예산별 성취도 회복 예측치 비교 보고서 즉시 산출| D5["데이터 기반의 즉각적 예산 집행 및 정책 하달 - 소요 시간 3시간"]
+    end
+
+    style H3 fill:#f1f5f9,stroke:#94a3b8
+    style D1 fill:#fdf2e9,stroke:#e67e22
+    style D4 fill:#dbeafe,stroke:#2563eb,stroke-width:2px
+    style D5 fill:#dcfce7,stroke:#22c55e,stroke-width:2px
+
+</pre>
+</div>
 <h2>3. 재난 예방형 예측 행정</h2>
 <p>의료계에 질병 예측 모델이 있듯, AI를 탑재한 교육 행정은 문제가 터진 후 반창고를 붙이는 사후 약방문에서 벗어나, 문제가 발생하기 6개월 전에 미리 예방 주사를 놓는 예측 체제로 넘어갑니다.</p>
 <p>예를 들어, 국가 중앙 서버의 AI는 특정 광역시의 초등학교 5~6학년 데이터를 긁어냅니다. 아이들이 태블릿에서 혼자 있기 싫어, 따돌림 대처법 같은 텍스트나 음성 프롬프트를 입력한 빈도수, 그리고 특정 학급 전체의 결석률과 보건실 방문 횟수 등 수백 개의 비정형 데이터를 기계학습으로 맞물려 돌립니다. 그리고 "B 중학교 내년 1학기 학교 폭력 발생 확률 85% 예측. 긴급 심리 상담 교사 2인 및 예방 예산 3,000만 원 선제 투입 권고"라는 붉은색 경고창을 교육장 모니터에 터트립니다.</p>
@@ -114,7 +139,7 @@
             성찰과 연대: 2026년을 향한 당신의 생각
         </h3>
 <p style="font-size: 1.15rem; color: #444; margin-bottom: 2rem; line-height: 1.6;">AI 에듀테크 상업 자본의 팽창 속에서, 공교육이 영리 기업의 논리에 휘둘리지 않기 위한 최후의 방어선(거버넌스)은 무엇입니까?</p>
-<textarea id="reflection-answer-16" placeholder="자신의 생각을 편안하고 솔직하게 기록해보세요..." style="width: 100%; height: 140px; padding: 1.2rem; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; font-size: 1.05rem; margin-bottom: 1.5rem; resize: vertical; box-sizing: border-box; background: #fff;"></textarea>
+<textarea id="reflection-answer-16" placeholder="자신의 생각을 편안하고 솔직하게 기록해보세요..." style="width: 100%; height: 700px; padding: 1.2rem; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; font-size: 1.05rem; margin-bottom: 1.5rem; resize: vertical; box-sizing: border-box; background: #fff;"></textarea>
 <button class="reflection-submit" data-chapter="16" style="background: #1a1a1a; color: white; border: none; padding: 1rem 2rem; border-radius: 8px; font-size: 1.05rem; font-weight: 600; cursor: pointer; transition: background 0.2s;">내 생각 제출하기 (로컬 저장)</button>
 <p id="save-msg-16" style="display: none; color: #22c55e; margin-top: 1rem; font-weight: 500; font-size: 1.05rem;">✓ 기기에 안전하게 저장되었습니다. 향후 서버 연동 시 익명으로 공유될 수 있습니다.</p>
 </div>
@@ -125,35 +150,16 @@
 <div class="container"><p>© 2026 AI교육 2026. All rights reserved.</p></div>
 </footer>
 
-<script>
 
-            document.addEventListener("DOMContentLoaded", function() {
-                if(typeof vis === 'undefined') return;
-                var container = document.getElementById('vis-net-5bbcd735');
-                var data = {
-                    nodes: new vis.DataSet([{"id": "H1", "label": "학교 현장의 문제 발생 - 예: 특정 지역 수포자 급증", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "H2", "label": "교육지원청 취합 1개월", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "H3", "label": "뒷북 예산 편성 - 시의성 완벽 상실", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "D1", "label": "전국 1만 개 교실의 AI 튜터 서버 로그 - 수학 오답률, 우울증 관련 프롬프트 검색 빈도", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "D2", "label": "국가 중앙 AI 클라우드 애널리틱스", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "D3", "label": "경고 알람: A지역 중학교 2학년, 2주 연속 분수 단원 이해도 최저 수준 추락", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "D4", "label": "초거대 언어 모델 국장 - AI Director", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "D5", "label": "데이터 기반의 즉각적 예산 집행 및 정책 하달 - 소요 시간 3시간", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}]),
-                    edges: new vis.DataSet([])
-                };
-                var options = {
-                    layout: {
-                        hierarchical: {
-                            enabled: true,
-                            direction: 'UD',
-                            sortMethod: 'directed',
-                            nodeSpacing: 250,
-                            levelSeparation: 150
-                        }
-                    },
-                    physics: {
-                        enabled: true,
-                        hierarchicalRepulsion: { nodeDistance: 200, springLength: 100, damping: 0.09 }
-                    },
-                    edges: { smooth: { type: 'cubicBezier', forceDirection: 'vertical' }, color: '#94a3b8', width: 2 },
-                    interaction: { hover: true, dragNodes: true }
-                };
-                new vis.Network(container, data, options);
-            });
-            
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ 
+    startOnLoad: true, 
+    theme: 'default',
+    securityLevel: 'loose',
+    flowchart: { htmlLabels: true, curve: 'basis' }
+  });
 </script>
 </body>
 </html>

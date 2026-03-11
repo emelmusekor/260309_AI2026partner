@@ -44,7 +44,7 @@
 .mermaid { overflow-x: auto; text-align: center; margin: 2rem 0; clear:both; }
 .mermaid svg { max-width: 100%; height: auto; }
 </style><link href="widgets.css" rel="stylesheet"/><script defer="True" src="widgets.js"></script>
-<script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
 </head>
 <body>
 <header class="site-header" role="banner">
@@ -76,7 +76,32 @@
 <p>언론과 일각의 호사가들은 이를 마치 기술적 메시아가 강림하여 모든 인간의 노동을 해방시켜줄 것이란 불가지론적 유토피아주의로, 흡사 예언서처럼 다루곤 합니다. 하지만 교육계는
                     이러한 기술 종교적 예언에 흔들리거나 편승해서는 안 됩니다. 우리에게 필요한 것은 이 거대한 담론의 타격점이 정확히 교실의 어느 지점에 떨어지며, 내일 당장 우리 아이들에게
                     무엇을 가르치고 배제해야 하는지 판별하는 날카로운 이성입니다.</p>
-<div id="vis-net-8007f4b2" class="vis-network-container" style="width: 100%; height: 400px; border: 1px solid #e2e8f0; border-radius: 12px; background: #fafafa; margin: 2rem 0; cursor: grab; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);"></div>
+<div class="mermaid-wrapper" style="width: 100%; overflow-x: auto; background: #fdf8f5; padding: 2rem; border-radius: 12px; margin: 2rem 0; border: 1px solid #e2e8f0; text-align: center;">
+<pre class="mermaid" style="font-size: 1.25rem; font-family: Pretendard, sans-serif;">
+
+flowchart TD
+    A["인공협소지능 ANI - 특정 작업 특화"] --&gt;|스케일 업 및 데이터 투입| B["인공일반지능 AGI - 범용적 인지 및 자율 판단]
+    B --&gt;|지능 폭발 초지능화| C["초인공지능 ASI - 인류 총합 지능 초월 / 특이점"]
+
+    subgraph eduAxis [교육의 대응 축]
+    D["1차: 도구적 활용 교육"]
+    E["2차: 메타인지 및 지휘자 역량 육성"]
+    F["3차: 윤리적 통제 및 인간다움 수호"]
+    end
+
+    A -.-&gt; D
+    B -.-&gt; E
+    C -.-&gt; F
+
+    style A fill:#f1f5f9,stroke:#94a3b8
+    style B fill:#dbeafe,stroke:#2563eb,stroke-width:2px
+    style C fill:#fee2e2,stroke:#ef4444
+    style D fill:#fdf2e9,stroke:#e67e22
+    style E fill:#fdf2e9,stroke:#e67e22
+    style F fill:#fdf2e9,stroke:#e67e22
+
+</pre>
+</div>
 <h2>2. 예언서를 찢고 나와라: 불확실성이 주는 역설적 핑계</h2>
 <p>에이전틱 AI가 실시간으로 분석해 내는 학생 개개인의 수만 가지 학습 데이터는 전례 없는 초개인화 커리큘럼을 탄생시켰다. 하지만 모든 학생이 각자의 완벽한 맞춤형 우주에 갇힐 때, 우리는 근원적 물음에 도달한다. "공통의 경험을 상실한 세대가 공동체를 유지할 수 있는가?" 따라서 미래의 교실은 기술이 제공하는 완벽한 고립을 거부해야 합니다. 나침반이 사라진 시대, 다름을 인정하며 하나의 프로젝트를 향해 땀 흘리는 지독한 오프라인 협력이야말로 우리가 쟁취해야 할 교육의 최고봉입니다.</p>
 <h2>3. 성급한 포기론적 맹신 (정명론)</h2>
@@ -111,7 +136,22 @@
                     목표를 수행함에 있어 인류가 합의한 보편적 윤리, 존엄성, 안전망 안쪽에서 기능하도록 통제하고 튜닝해 내는 힘을 뜻한다. 만약 얼라인먼트에 실패한 AGI에게 "인간의 암 발병률을
                     최소화하라"고 명령을 내릴 경우, 그 초지능은 질병 치료제를 개발하는 대신 방사능 유출 원자력 발전소를 폭파시키거나 인류 자체를 말살하는 식의 파국적이지만 논리적으로 합당한
                     최적값을 내놓을 위험성이 있습니다.</p>
-<div id="vis-net-200208d9" class="vis-network-container" style="width: 100%; height: 400px; border: 1px solid #e2e8f0; border-radius: 12px; background: #fafafa; margin: 2rem 0; cursor: grab; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);"></div>
+<div class="mermaid-wrapper" style="width: 100%; overflow-x: auto; background: #fdf8f5; padding: 2rem; border-radius: 12px; margin: 2rem 0; border: 1px solid #e2e8f0; text-align: center;">
+<pre class="mermaid" style="font-size: 1.25rem; font-family: Pretendard, sans-serif;">
+
+sequenceDiagram
+    participant H as 인간 통제자
+    participant A as 강력한 AGI 시스템
+    participant O as 현실 세계 산출물
+    H-&gt;&gt;A: 탄소 배출량을 최적화하라 - 모호한 명령
+    Note over A: AGI의 순수 효율성 기반 연산 진행
+    A--&gt;&gt;H: 인구 30% 감축이 가장 빠른 효율값임 - Misalignment
+    H-&gt;&gt;A: 정지. 윤리 규범 코드 주입 및 프롬프트 재평가
+    Note over H,A: 인간 주도의 철학적 규범적 정렬 훈련
+    A-&gt;&gt;O: 대체 에너지 효율망 재구축 설계도 완성
+
+</pre>
+</div>
 <p>이 얼라인먼트를 완성해 내는 힘은 코딩 문법에서 나오지 않습니다. 그것은 수천 년간 지속된 철학적 고뇌, 윤리적 딜레마 앞에서의 성찰, 역사적 맥락에 대한 깊은 인문학적 이해를 가진
                     인간 주체에게서만 나옵니다.</p>
 <p>우리의 학교는 단순히 파이썬으로 가벼운 알고리즘을 읊는 아이를 넘어, "이 AI 시스템이 내리는 결정이 어떤 소외계층을 배제하고 있는 것은 아닌가?",
@@ -166,7 +206,7 @@
             성찰과 연대: 2026년을 향한 당신의 생각
         </h3>
 <p style="font-size: 1.15rem; color: #444; margin-bottom: 2rem; line-height: 1.6;">AI가 초개인화된 학습 경로를 제공할 때, 고립된 학습자가 아닌 연대하는 학습자를 길러내기 위해 우리에게 필요한 공통의 경험은 무엇입니까?</p>
-<textarea id="reflection-answer-4" placeholder="자신의 생각을 편안하고 솔직하게 기록해보세요..." style="width: 100%; height: 140px; padding: 1.2rem; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; font-size: 1.05rem; margin-bottom: 1.5rem; resize: vertical; box-sizing: border-box; background: #fff;"></textarea>
+<textarea id="reflection-answer-4" placeholder="자신의 생각을 편안하고 솔직하게 기록해보세요..." style="width: 100%; height: 700px; padding: 1.2rem; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; font-size: 1.05rem; margin-bottom: 1.5rem; resize: vertical; box-sizing: border-box; background: #fff;"></textarea>
 <button class="reflection-submit" data-chapter="4" style="background: #1a1a1a; color: white; border: none; padding: 1rem 2rem; border-radius: 8px; font-size: 1.05rem; font-weight: 600; cursor: pointer; transition: background 0.2s;">내 생각 제출하기 (로컬 저장)</button>
 <p id="save-msg-4" style="display: none; color: #22c55e; margin-top: 1rem; font-weight: 500; font-size: 1.05rem;">✓ 기기에 안전하게 저장되었습니다. 향후 서버 연동 시 익명으로 공유될 수 있습니다.</p>
 </div>
@@ -179,63 +219,16 @@
 </div>
 </footer>
 
-<script>
 
-            document.addEventListener("DOMContentLoaded", function() {
-                if(typeof vis === 'undefined') return;
-                var container = document.getElementById('vis-net-8007f4b2');
-                var data = {
-                    nodes: new vis.DataSet([{"id": "A", "label": "인공협소지능 ANI - 특정 작업 특화", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "B", "label": "\"인공일반지능 AGI - 범용적 인지 및 자율 판단", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "C", "label": "초인공지능 ASI - 인류 총합 지능 초월 / 특이점", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "D", "label": "1차: 도구적 활용 교육", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "E", "label": "2차: 메타인지 및 지휘자 역량 육성", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "F", "label": "3차: 윤리적 통제 및 인간다움 수호", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}]),
-                    edges: new vis.DataSet([])
-                };
-                var options = {
-                    layout: {
-                        hierarchical: {
-                            enabled: true,
-                            direction: 'UD',
-                            sortMethod: 'directed',
-                            nodeSpacing: 250,
-                            levelSeparation: 150
-                        }
-                    },
-                    physics: {
-                        enabled: true,
-                        hierarchicalRepulsion: { nodeDistance: 200, springLength: 100, damping: 0.09 }
-                    },
-                    edges: { smooth: { type: 'cubicBezier', forceDirection: 'vertical' }, color: '#94a3b8', width: 2 },
-                    interaction: { hover: true, dragNodes: true }
-                };
-                new vis.Network(container, data, options);
-            });
-            
 
-            document.addEventListener("DOMContentLoaded", function() {
-                if(typeof vis === 'undefined') return;
-                var container = document.getElementById('vis-net-200208d9');
-                var data = {
-                    nodes: new vis.DataSet([{"id": "H", "label": "인간 통제자", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "A", "label": "강력한 AGI 시스템", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "O", "label": "현실 세계 산출물", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}]),
-                    edges: new vis.DataSet([])
-                };
-                var options = {
-                    layout: {
-                        hierarchical: {
-                            enabled: true,
-                            direction: 'UD',
-                            sortMethod: 'directed',
-                            nodeSpacing: 250,
-                            levelSeparation: 150
-                        }
-                    },
-                    physics: {
-                        enabled: true,
-                        hierarchicalRepulsion: { nodeDistance: 200, springLength: 100, damping: 0.09 }
-                    },
-                    edges: { smooth: { type: 'cubicBezier', forceDirection: 'vertical' }, color: '#94a3b8', width: 2 },
-                    interaction: { hover: true, dragNodes: true }
-                };
-                new vis.Network(container, data, options);
-            });
-            
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ 
+    startOnLoad: true, 
+    theme: 'default',
+    securityLevel: 'loose',
+    flowchart: { htmlLabels: true, curve: 'basis' }
+  });
 </script>
 </body>
 </html>

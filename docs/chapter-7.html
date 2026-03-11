@@ -20,7 +20,7 @@
 .mermaid { overflow-x: auto; text-align: center; margin: 2rem 0; clear:both; }
 .mermaid svg { max-width: 100%; height: auto; }
 </style><link href="widgets.css" rel="stylesheet"/><script defer="True" src="widgets.js"></script>
-<script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
 </head>
 <body>
 <header class="site-header" role="banner">
@@ -50,7 +50,37 @@
 <h2>2. 패러다임의 역전: 정답의 획득에서 질문의 육성으로</h2>
 <p>이 지독한 인지 부채의 늪에서 학생들을 구출해 내고 기계와의 진정한 공진의 궤도로 끌어올리기 위해서는 교육의 초점을 완전히 반대 방향으로 되돌려야 합니다. "어떻게 하면 AI에게서 우리가 원하는 정답을 빠르고, 요약된 형태로, 정확하게 얻어낼 것인가?"라는 프롬프트 엔지니어링 류의 얄팍한 기교적 처방전은 과감히 쓰레기통에 처박아야 합니다.</p>
 <p>미래의 훌륭한 교육 도메인은 이제 철저하게 위대한 질문의 설계로 방향을 틀어야만 합니다. 아무리 백과사전의 1만 배 지식을 품고 있는 초거대 AI라 한들, 그 깊은 심연에서 가치 있는 텍스트와 통찰을 수면 위로 끌어올리는 유일한 방아쇠는 결국 그것을 다루는 인간의 의도적인 입력, 즉 프롬프트의 질에 철저하게 종속되어 있기 때문입니다.</p>
-<div id="vis-net-85053bf0" class="vis-network-container" style="width: 100%; height: 400px; border: 1px solid #e2e8f0; border-radius: 12px; background: #fafafa; margin: 2rem 0; cursor: grab; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);"></div>
+<div class="mermaid-wrapper" style="width: 100%; overflow-x: auto; background: #fdf8f5; padding: 2rem; border-radius: 12px; margin: 2rem 0; border: 1px solid #e2e8f0; text-align: center;">
+<pre class="mermaid" style="font-size: 1.25rem; font-family: Pretendard, sans-serif;">
+
+flowchart TD
+    subgraph Past [과거의 선형적 인지 흡수 구조]
+    direction TB
+    L1["수동적이고 단답형인 질문 (무엇인가, 언제인가)"] --&gt;|기계적 검색| L2["교사/교과서/웹의 일방적이고 확정적인 답변"]
+    L2 --&gt;|비판적 여과 없음| L3["단기 기억으로의 맹목적 암기 후 휘발"]
+    end
+
+    subgraph Future [미래의 다이내믹 메타인지 나선형 루프 ]
+    direction TB
+    M1["맥락적/탐구적/철학적 프롬프트 (스스로 빚어낸 질문) 입력"] --&gt;|AI의 1차 출력| M2["AI의 매끄러운 1차 답변 생성물 대면"]
+    M2 --&gt;|답변에 매몰되지 않고 거리두기| M3{학습자의 인지적 의심과 검열 발동}
+    
+    M3 --&gt;|논리적 비약이나 편향성 발견| M4["날카로운 꼬리 질문  재입력"]
+    M3 --&gt;|현재의 사고 패러다임 전환 모색| M5["반대 입장 (Devil's Advocate) 시뮬레이션 요구"]
+    
+    M4 --&gt;|지식의 해체와 재구성| M6["새로운 지식의 융합 및 주체적 사고망 확장"]
+    M5 --&gt;|기울어진 지식의 교정"| M6
+    
+    M6 -.-&gt;|더욱 고도화된 호기심의 싹틈| M1
+    end
+
+    style Past fill:#f1f5f9,stroke:#94a3b8
+    style M1 fill:#dcfce7,stroke:#22c55e,stroke-width:2px
+    style M3 fill:#fee2e2,stroke:#ef4444,stroke-width:2px
+    style M6 fill:#dbeafe,stroke:#2563eb,stroke-width:2px
+
+</pre>
+</div>
 <h2>3. 프롬프트는 코딩 명령어가 아니라 철학 그 자체다</h2>
 <p>AI에게 던지는 질문은 더 이상 마우스 클릭이나 단순한 검색 키워드 입력이 아닙니다. 학생이 AI 튜터와 대화방을 열고 하얀 바탕의 입력창에 적어 내려가는 한 줄 한 줄의 문장은, 곧 현재 나의 세계관 크기와 인문학적 논리 구조를 텍스트의 파편으로 만천하에 객관적으로 끄집어내는 가장 투명한 철학적 행위입니다.</p>
 <p>수준이 낮고 평면적인 질문, 예컨대 지구 온난화에 대해 알려줘라는 단순 명령어는 AI로 하여금 위키백과 수준의 파편화되고 상투적인 정보를 영혼 없는 앵무새처럼 되풀이하게 만들 뿐이다. 질문의 해상도가 낮으면 답변의 해상도 역시 픽셀이 뭉개진 채로 튀어나온다. 하지만 고도로 맥락화된 철학적 배경이 깔린 질문, 예컨대 "지구 온난화를 막기 위한 선진국의 강력한 글로벌 탄소세 도입 정책이, 오늘 당장 공장을 돌려야만 생존할 수 있는 개발도상국의 경제 성장 및 기층민의 생존권과 정면으로 충돌할 때, 우리는 이 문제를 존 롤스의 정의론 관점에서 어떤 윤리적 우선순위를 두어 해결해야 하는지 비판적으로 논증해 줘"라는 질문은 전혀 다른 결과를 낳습니다. 이 질문은 기계의 수조 개 매개변수를 풀가동시켜 학부생, 아니 그 이상의 권위자 수준에 필적하는 날카로운 통찰력과 변증법적 대안을 뱉어내게 만듭니다. 기계는 인간이 먼저 던진 질문의 그릇 크기, 딱 그만큼만 찰랑거리며 작동합니다.</p>
@@ -118,7 +148,7 @@
             성찰과 연대: 2026년을 향한 당신의 생각
         </h3>
 <p style="font-size: 1.15rem; color: #444; margin-bottom: 2rem; line-height: 1.6;">평가가 더 이상 줄 세우기가 아닌 성장 궤적의 추적이 될 때, 학생과 학부모의 성적에 대한 불안을 어떻게 긍정적인 기대감으로 바꿀 수 있을까요?</p>
-<textarea id="reflection-answer-7" placeholder="자신의 생각을 편안하고 솔직하게 기록해보세요..." style="width: 100%; height: 140px; padding: 1.2rem; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; font-size: 1.05rem; margin-bottom: 1.5rem; resize: vertical; box-sizing: border-box; background: #fff;"></textarea>
+<textarea id="reflection-answer-7" placeholder="자신의 생각을 편안하고 솔직하게 기록해보세요..." style="width: 100%; height: 700px; padding: 1.2rem; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; font-size: 1.05rem; margin-bottom: 1.5rem; resize: vertical; box-sizing: border-box; background: #fff;"></textarea>
 <button class="reflection-submit" data-chapter="7" style="background: #1a1a1a; color: white; border: none; padding: 1rem 2rem; border-radius: 8px; font-size: 1.05rem; font-weight: 600; cursor: pointer; transition: background 0.2s;">내 생각 제출하기 (로컬 저장)</button>
 <p id="save-msg-7" style="display: none; color: #22c55e; margin-top: 1rem; font-weight: 500; font-size: 1.05rem;">✓ 기기에 안전하게 저장되었습니다. 향후 서버 연동 시 익명으로 공유될 수 있습니다.</p>
 </div>
@@ -129,35 +159,16 @@
 <div class="container"><p>© 2026 AI교육 2026. All rights reserved.</p></div>
 </footer>
 
-<script>
 
-            document.addEventListener("DOMContentLoaded", function() {
-                if(typeof vis === 'undefined') return;
-                var container = document.getElementById('vis-net-85053bf0');
-                var data = {
-                    nodes: new vis.DataSet([{"id": "L1", "label": "수동적이고 단답형인 질문 (무엇인가, 언제인가)", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "L2", "label": "교사/교과서/웹의 일방적이고 확정적인 답변", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "L3", "label": "단기 기억으로의 맹목적 암기 후 휘발", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "M1", "label": "맥락적/탐구적/철학적 프롬프트 (스스로 빚어낸 질문) 입력", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "M2", "label": "AI의 매끄러운 1차 답변 생성물 대면", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "M3", "label": "학습자의 인지적 의심과 검열 발동", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "M4", "label": "날카로운 꼬리 질문  재입력", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "M5", "label": "반대 입장 (Devil's Advocate) 시뮬레이션 요구", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "M6", "label": "새로운 지식의 융합 및 주체적 사고망 확장", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}]),
-                    edges: new vis.DataSet([])
-                };
-                var options = {
-                    layout: {
-                        hierarchical: {
-                            enabled: true,
-                            direction: 'UD',
-                            sortMethod: 'directed',
-                            nodeSpacing: 250,
-                            levelSeparation: 150
-                        }
-                    },
-                    physics: {
-                        enabled: true,
-                        hierarchicalRepulsion: { nodeDistance: 200, springLength: 100, damping: 0.09 }
-                    },
-                    edges: { smooth: { type: 'cubicBezier', forceDirection: 'vertical' }, color: '#94a3b8', width: 2 },
-                    interaction: { hover: true, dragNodes: true }
-                };
-                new vis.Network(container, data, options);
-            });
-            
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ 
+    startOnLoad: true, 
+    theme: 'default',
+    securityLevel: 'loose',
+    flowchart: { htmlLabels: true, curve: 'basis' }
+  });
 </script>
 </body>
 </html>

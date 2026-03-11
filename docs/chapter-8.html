@@ -20,7 +20,7 @@
 .mermaid { overflow-x: auto; text-align: center; margin: 2rem 0; clear:both; }
 .mermaid svg { max-width: 100%; height: auto; }
 </style><link href="widgets.css" rel="stylesheet"/><script defer="True" src="widgets.js"></script>
-<script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
 </head>
 <body>
 <header class="site-header" role="banner">
@@ -46,7 +46,34 @@
 <h2>2. 잉여 시간의 마법: 생성형 AI를 통한 행정의 초자동화</h2>
 <p>AI가 교육 현장에 진입하면서 교사들이 가장 먼저 도달해야 할 구원은, 최첨단 메타버스나 복잡한 알고리즘을 이용한 화려한 수업 쇼케이스가 아닙니다. 2026년 교실에 강림한 AI의 가장 첫 번째, 그리고 가장 시급한 임무는 바로 교사의 발목을 잡고 있는 막대한 행정 노동을 무자비할 정도로 완전하게 초자동화하여 파괴해 버리는 것입니다.</p>
 <p>글을 다듬고 문서를 요약하며, 정형화된 틀에 맞추어 보고서를 생성해 내는 것은 현재의 초거대 언어 모델이 지구상에서 가장 압도적으로 잘 수행하는 장기이다. 학생을 관찰하는 교사의 눈과 손에는 여유가 생기며, 키보드 타이핑 소리로만 가득했던 교무실에는 마침내 커피 한 잔을 마시며 동료 교사와 특정 학생의 심리 상태를 논의할 수 있는 값진 여백이 깃들게 됩니다.</p>
-<div id="vis-net-cb61973f" class="vis-network-container" style="width: 100%; height: 400px; border: 1px solid #e2e8f0; border-radius: 12px; background: #fafafa; margin: 2rem 0; cursor: grab; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);"></div>
+<div class="mermaid-wrapper" style="width: 100%; overflow-x: auto; background: #fdf8f5; padding: 2rem; border-radius: 12px; margin: 2rem 0; border: 1px solid #e2e8f0; text-align: center;">
+<pre class="mermaid" style="font-size: 1.25rem; font-family: Pretendard, sans-serif;">
+
+flowchart LR
+    subgraph past [과거: 행정 노동에 압사당한 교사]
+    T1["교사의 제한된 시간 에너지 - 100%"]
+    T1 --&gt;|행정 잡무, 생기부 타이핑, 공문 처리| C1["비본질적 업무 - 70%"]
+    T1 --&gt;|단순 지식 전달 수업| C2["수업 진행 - 25%"]
+    T1 --&gt;|상담 및 정서 교감| C3["인간적 돌봄 - 5% / 번아웃"]
+    end
+
+    subgraph future [미래: AI를 도입해 복원된 교사의 시간]
+    T2["교사의 재편된 시간 에너지 - 100%"]
+    AI_Agent["AI 교무비서 - 행정 자동화"]
+
+    T2 --&gt;|"AI 비서에게 프롬프트 지시 및 검수 - 10%"| AI_Agent
+    AI_Agent --&gt;|생기부 초안, 가정통신문, 공문 즉시 완성| Result1["비본질적 업무 해결"]
+
+    T2 --&gt;|질 높은 수업 디자인 - 40%| Result2["맞춤형 수업 기획"]
+    T2 --&gt;|"개별 심리 상담, 신체적 교감, 갈등 중재 - 50%| Result3["인간적 돌봄의 르네상스""]
+    end
+
+    style C3 fill:#fee2e2,stroke:#ef4444
+    style AI_Agent fill:#fdf2e9,stroke:#e67e22,stroke-width:2px
+    style Result3 fill:#dcfce7,stroke:#22c55e,stroke-width:2px
+
+</pre>
+</div>
 <h2>3. 일상의 기적: AI 교무비서의 적용 시나리오</h2>
 <p>구체적으로 AI는 교사의 하루를 얼마나 기적처럼 뜯어고칠 수 있을까요? 다음과 같이 숨 막히던 일상적 과업들을 기계가 순식간에 대체합니다.</p>
 <ul>
@@ -117,7 +144,7 @@
             성찰과 연대: 2026년을 향한 당신의 생각
         </h3>
 <p style="font-size: 1.15rem; color: #444; margin-bottom: 2rem; line-height: 1.6;">모든 지식이 AI를 통해 실시간으로 연결될 때, 각 교과목의 경계는 정말 사라져야 할까요, 아니면 새로운 형태로 재편되어야 할까요?</p>
-<textarea id="reflection-answer-8" placeholder="자신의 생각을 편안하고 솔직하게 기록해보세요..." style="width: 100%; height: 140px; padding: 1.2rem; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; font-size: 1.05rem; margin-bottom: 1.5rem; resize: vertical; box-sizing: border-box; background: #fff;"></textarea>
+<textarea id="reflection-answer-8" placeholder="자신의 생각을 편안하고 솔직하게 기록해보세요..." style="width: 100%; height: 700px; padding: 1.2rem; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; font-size: 1.05rem; margin-bottom: 1.5rem; resize: vertical; box-sizing: border-box; background: #fff;"></textarea>
 <button class="reflection-submit" data-chapter="8" style="background: #1a1a1a; color: white; border: none; padding: 1rem 2rem; border-radius: 8px; font-size: 1.05rem; font-weight: 600; cursor: pointer; transition: background 0.2s;">내 생각 제출하기 (로컬 저장)</button>
 <p id="save-msg-8" style="display: none; color: #22c55e; margin-top: 1rem; font-weight: 500; font-size: 1.05rem;">✓ 기기에 안전하게 저장되었습니다. 향후 서버 연동 시 익명으로 공유될 수 있습니다.</p>
 </div>
@@ -128,35 +155,16 @@
 <div class="container"><p>© 2026 AI교육 2026. All rights reserved.</p></div>
 </footer>
 
-<script>
 
-            document.addEventListener("DOMContentLoaded", function() {
-                if(typeof vis === 'undefined') return;
-                var container = document.getElementById('vis-net-cb61973f');
-                var data = {
-                    nodes: new vis.DataSet([{"id": "T1", "label": "교사의 제한된 시간 에너지 - 100%", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "C1", "label": "비본질적 업무 - 70%", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "C2", "label": "수업 진행 - 25%", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "C3", "label": "인간적 돌봄 - 5% / 번아웃", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "T2", "label": "교사의 재편된 시간 에너지 - 100%", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "AI_Agent", "label": "AI 교무비서 - 행정 자동화", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "Result1", "label": "비본질적 업무 해결", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "Result2", "label": "맞춤형 수업 기획", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "Result3", "label": "\"</em>인간적 돌봄의 르네상스\"\"", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}]),
-                    edges: new vis.DataSet([])
-                };
-                var options = {
-                    layout: {
-                        hierarchical: {
-                            enabled: true,
-                            direction: 'LR',
-                            sortMethod: 'directed',
-                            nodeSpacing: 250,
-                            levelSeparation: 150
-                        }
-                    },
-                    physics: {
-                        enabled: true,
-                        hierarchicalRepulsion: { nodeDistance: 200, springLength: 100, damping: 0.09 }
-                    },
-                    edges: { smooth: { type: 'cubicBezier', forceDirection: 'horizontal' }, color: '#94a3b8', width: 2 },
-                    interaction: { hover: true, dragNodes: true }
-                };
-                new vis.Network(container, data, options);
-            });
-            
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ 
+    startOnLoad: true, 
+    theme: 'default',
+    securityLevel: 'loose',
+    flowchart: { htmlLabels: true, curve: 'basis' }
+  });
 </script>
 </body>
 </html>

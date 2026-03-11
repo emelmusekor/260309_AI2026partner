@@ -20,7 +20,7 @@
 .mermaid { overflow-x: auto; text-align: center; margin: 2rem 0; clear:both; }
 .mermaid svg { max-width: 100%; height: auto; }
 </style><link href="widgets.css" rel="stylesheet"/><script defer="True" src="widgets.js"></script>
-<script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
 </head>
 <body>
 <header class="site-header" role="banner">
@@ -47,7 +47,43 @@
 <h2>2. 새로운 척도: "사고의 궤적"을 추적하다</h2>
 <p>교실 붕괴의 위기 속에서, 늦박자로 각성한 교육 당국과 깨어있는 교사들은 도저히 질 수 없는 평가 기준의 대전환을 강제당하게 됩니다. 그것은 채점자의 매서운 매의 눈을, 학생의 손끝에서 출력된 결과물에서 그 결과물에 오르기까지 학생이 모니터와 씨름했던 투쟁의 이면(裏面), 즉 프롬프트의 수정 내역과 질문의 진화 과정이라는 사고의 궤적으로 180도 회전시키는 것입니다.</p>
 <p>이 새로운 패러다임은 흔히 우리가 교육학에서 부르던 과정 중심 평가의 수준을 뛰어넘는 고난도의 초 인지 이력 추적이다. 쉽게 말해 아이가 어떤 논증의 무기고를 갖추고 AI를 코칭하여 최상의 대답을 착취해 냈는지, 그 모든 대화의 타임라인 로그 자체가 곧 평가의 유일무이한 답안지가 되는 셈입니다.</p>
-<div id="vis-net-118db39f" class="vis-network-container" style="width: 100%; height: 400px; border: 1px solid #e2e8f0; border-radius: 12px; background: #fafafa; margin: 2rem 0; cursor: grab; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);"></div>
+<div class="mermaid-wrapper" style="width: 100%; overflow-x: auto; background: #fdf8f5; padding: 2rem; border-radius: 12px; margin: 2rem 0; border: 1px solid #e2e8f0; text-align: center;">
+<pre class="mermaid" style="font-size: 1.25rem; font-family: Pretendard, sans-serif;">
+
+flowchart TD
+    subgraph 20세기 모델 [기존 지식 전달 시대 (결과주의)]
+    direction TB
+    Q_Old["교사의 질문과 과제 부여"] --&gt;|학생의 블랙박스 (사고 과정 은폐)| A_Old["정제된 최종 결과물 (리포트/시험지) 제출"]
+    A_Old --&gt;|시각적 완성도 및 정답 여부 채점| Eval_Old["학점 A~F 부여 (창작의 주체 확인 불능)"]
+    end
+
+    subgraph 2026년 모델 [AI 시대의 생성 교육 (사고의 궤적 추적)]
+    direction TB
+    Q_New["교사의 복합적 문제/딜레마 제시"] --&gt; M1["학생의 1차 프롬프트 (초기 가설)"]
+    M1 --&gt;|AI 답변| M2["학생의 2차 수정 프롬프트 (논리 교정 및 팩트체크)"]
+    M2 --&gt;|의도적 마찰| M3["학생의 3차 반박 프롬프트 (대립각/반대파 시뮬레이션)"]
+    
+    M3 --&gt;|최종 답변 도출| Result_New["최종 제출물 (보조 지표)"]
+    
+    M1 &amp; M2 &amp; M3 --&gt;|대화 기록 전체 추출 | Eval_New
+    
+    Eval_New{교사의 궤적 루브릭 채점 기준}
+    Eval_New -.-&gt;|"1. 질문의 깊이와 발전
+2. AI 편향 피드백 수용/거부의 타당성
+3. 정보 교차 검증의 투지| Final_Grade["과정 역량 인증 학점 부여"]
+    end
+
+    style A_Old fill:#f1f5f9,stroke:#94a3b8
+    style Eval_Old fill:#f1f5f9,stroke:#94a3b8
+    
+    style M1 fill:#fdf2e9,stroke:#e67e22
+    style M2 fill:#fdf2e9,stroke:#e67e22
+    style M3 fill:#fdf2e9,stroke:#e67e22
+    style Eval_New fill:#dbeafe,stroke:#2563eb,stroke-width:2px
+    style Final_Grade fill:#dcfce7,stroke:#22c55e,stroke-width:2px
+
+</pre>
+</div>
 <h2>3. 과정 추적 플랫폼과 프롬프트 포트폴리오</h2>
 <p>이러한 사고 궤적의 평가는 단순히 교사가 "너 이번에 AI 얼마나 썼니?"라고 면담하는 주먹구구식의 정성 평가로 이루어지는 것이 아닙니다. 기술이 초래한 붕괴를 바로잡기 위해 다시 고도화된 기술 생태계가 교실에 이식됩니다.</p>
 <p>학생들은 교육청이 제공하는 제한된 AI 서버 샌드박스 내에서 교실 무선망에 접속하여 과제를 수행합니다. 이 환경에서는 학생이 AI에게 처음 던진 모호한 질문, AI의 대답에 대해 학생이 어떻게 키보드로 반박하며 조건을 추가했는지, 그리고 그 글을 복사해서 자신의 워드 프로세서로 옮긴 뒤 어떤 단기 기억과 직관을 살려 오프라인 수정을 가했는지 시계열 데이터와 블록체인(기록 불가침) 기술이 결합되어 고스란히 저장됩니다.</p>
@@ -113,7 +149,7 @@
             성찰과 연대: 2026년을 향한 당신의 생각
         </h3>
 <p style="font-size: 1.15rem; color: #444; margin-bottom: 2rem; line-height: 1.6;">지식의 생산 비용이 0에 수렴하는 이 상황을 15세기 활자 혁명과 비교한다면, 지금 우리에게 가장 시급하게 필요한 새로운 문해력은 무엇입니까?</p>
-<textarea id="reflection-answer-9" placeholder="자신의 생각을 편안하고 솔직하게 기록해보세요..." style="width: 100%; height: 140px; padding: 1.2rem; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; font-size: 1.05rem; margin-bottom: 1.5rem; resize: vertical; box-sizing: border-box; background: #fff;"></textarea>
+<textarea id="reflection-answer-9" placeholder="자신의 생각을 편안하고 솔직하게 기록해보세요..." style="width: 100%; height: 700px; padding: 1.2rem; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; font-size: 1.05rem; margin-bottom: 1.5rem; resize: vertical; box-sizing: border-box; background: #fff;"></textarea>
 <button class="reflection-submit" data-chapter="9" style="background: #1a1a1a; color: white; border: none; padding: 1rem 2rem; border-radius: 8px; font-size: 1.05rem; font-weight: 600; cursor: pointer; transition: background 0.2s;">내 생각 제출하기 (로컬 저장)</button>
 <p id="save-msg-9" style="display: none; color: #22c55e; margin-top: 1rem; font-weight: 500; font-size: 1.05rem;">✓ 기기에 안전하게 저장되었습니다. 향후 서버 연동 시 익명으로 공유될 수 있습니다.</p>
 </div>
@@ -124,35 +160,16 @@
 <div class="container"><p>© 2026 AI교육 2026. All rights reserved.</p></div>
 </footer>
 
-<script>
 
-            document.addEventListener("DOMContentLoaded", function() {
-                if(typeof vis === 'undefined') return;
-                var container = document.getElementById('vis-net-118db39f');
-                var data = {
-                    nodes: new vis.DataSet([{"id": "Q_Old", "label": "교사의 질문과 과제 부여", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "A_Old", "label": "정제된 최종 결과물 (리포트/시험지) 제출", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "Eval_Old", "label": "학점 A~F 부여 (창작의 주체 확인 불능)", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "Q_New", "label": "교사의 복합적 문제/딜레마 제시", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "M1", "label": "학생의 1차 프롬프트 (초기 가설)", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "M2", "label": "학생의 2차 수정 프롬프트 (논리 교정 및 팩트체크)", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "M3", "label": "학생의 3차 반박 프롬프트 (대립각/반대파 시뮬레이션)", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "Result_New", "label": "최종 제출물 (보조 지표)", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "Eval_New", "label": "교사의 궤적 루브릭 채점 기준", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "Final_Grade", "label": "과정 역량 인증 학점 부여", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}]),
-                    edges: new vis.DataSet([])
-                };
-                var options = {
-                    layout: {
-                        hierarchical: {
-                            enabled: true,
-                            direction: 'UD',
-                            sortMethod: 'directed',
-                            nodeSpacing: 250,
-                            levelSeparation: 150
-                        }
-                    },
-                    physics: {
-                        enabled: true,
-                        hierarchicalRepulsion: { nodeDistance: 200, springLength: 100, damping: 0.09 }
-                    },
-                    edges: { smooth: { type: 'cubicBezier', forceDirection: 'vertical' }, color: '#94a3b8', width: 2 },
-                    interaction: { hover: true, dragNodes: true }
-                };
-                new vis.Network(container, data, options);
-            });
-            
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ 
+    startOnLoad: true, 
+    theme: 'default',
+    securityLevel: 'loose',
+    flowchart: { htmlLabels: true, curve: 'basis' }
+  });
 </script>
 </body>
 </html>

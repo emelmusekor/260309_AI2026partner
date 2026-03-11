@@ -20,7 +20,7 @@
 .mermaid { overflow-x: auto; text-align: center; margin: 2rem 0; clear:both; }
 .mermaid svg { max-width: 100%; height: auto; }
 </style><link href="widgets.css" rel="stylesheet"/><script defer="True" src="widgets.js"></script>
-<script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
 </head>
 <body>
 <header class="site-header" role="banner">
@@ -46,7 +46,31 @@
 <div class="highlight-box"><p style="margin:0;"><strong>기술이 모든 것을 해결해주리라는 가장 비극적인 치명적 환상</strong>은(는) 우리가 2026년 공교육을 살려내기 위해 도입한 저 찬란한 AI 기술은, 아이러니하게도 인간 스스로가 1만 년간 축적해 온 이성, 노력, 인내, 관용이라는 뇌의 생물학적 근육을 가장 순식간에 녹여버리고, 인간을 단지 AI가 던져준 달콤한 정답을 복사하는 돼지로 전락시킬 수 있는 치명적이고도 역사적인 독약이다. 편의성에 중독되는 순간, 교사는 데이터의 단순 관찰자로 전락하고 아이들은 환각의 노예로 사육된다. 이것이 우리가 맞닥뜨린 가장 싸늘하고도 본질적인 공포의 심연입니다.</p></div>
 <h2>2. 2026년 시대 교차점의 위대한 비전 선언문</h2>
 <p>그렇다면, 이 불가역적인 쓰나미 앞에서 인류는 어떤 선언을 이마에 피로 써 붙이고 교실의 문을 열어야 할까요? 이 19장의 결론은 대한민국의 교육 당국과 모든 50만 현장 교사, 그리고 학부모에게 바치는 피맺힌 AI교육 2026 비전 선언문이다.</p>
-<div id="vis-net-b9ac212d" class="vis-network-container" style="width: 100%; height: 400px; border: 1px solid #e2e8f0; border-radius: 12px; background: #fafafa; margin: 2rem 0; cursor: grab; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);"></div>
+<div class="mermaid-wrapper" style="width: 100%; overflow-x: auto; background: #fdf8f5; padding: 2rem; border-radius: 12px; margin: 2rem 0; border: 1px solid #e2e8f0; text-align: center;">
+<pre class="mermaid" style="font-size: 1.25rem; font-family: Pretendard, sans-serif;">
+
+flowchart TD
+    subgraph vision [AI교육 2026 비전 - 3대 절대 원칙]
+    direction TB
+    V_Top["인간을 위한 도구, 도구를 지배하는 인간 - Human over Machine"]
+
+    V_Top --&gt; V1["제1원칙: 의도적 마찰 - Intentional Friction"]
+    V_Top --&gt; V2["제2원칙: 하이터치의 절대성 - High-touch"]
+    V_Top --&gt; V3["제3원칙: 질문의 해상도 - Resolution of Prompt"]
+
+    V1 --&gt;|답을 주지 않고 좌절과 모호함을 즐기게 하라| V_Bottom["메타인지와 야생의 근육 폭발 - Grit"]
+    V2 --&gt;|기계가 할 수 없는 오직 하나: 눈물 닦아주기| V_Bottom
+    V3 --&gt;|기계의 목줄을 쥐는 권력 - 가장 위협적인 Prompt"| V_Bottom
+    end
+
+    style V_Top fill:#dbeafe,stroke:#2563eb,stroke-width:3px
+    style V_Bottom fill:#dcfce7,stroke:#22c55e,stroke-width:2px
+    style V1 fill:#fdf2e9,stroke:#e67e22
+    style V2 fill:#fdf2e9,stroke:#e67e22
+    style V3 fill:#fdf2e9,stroke:#e67e22
+
+</pre>
+</div>
 <h2>3. 제1원칙: "마찰"을 찬양하라</h2>
 <p>매끄럽고 유창한 학습은 환상이다. 진짜 배움은 언제나 불편하고 뼈가 쑤시는 고단함 속에서 피어납니다. AI가 던져주는 첫 번째, 두 번째 대답을 의심하고, 그 완벽한 확률론의 알고리즘에 맞서서 <i>"이 논리의 철학적 붕괴점은 어디입니까?"</i>라고 기계의 오류를 후벼 파며 밤을 새우는 아이들. 우리는 기계의 답변을 암기하는 아이가 아니라, 기계의 답변에 불만족하여 서가에서 도서관의 묵은 백과사전을 기어이 찢고야 마는 이 신경질적이고도 건강한 마찰의 투지를 교실 최고의 미덕으로 삼을 것을 맹세합니다.</p>
 <div class="interactive-widget mcq-widget" data-id="mcq-19">
@@ -69,7 +93,37 @@
 <p>기계를 신격화하는 대신 기계를 철저히 용병으로 경멸하듯 부려 먹어야 합니다. 수천 개의 환각과 편향, 가짜 뉴스를 향해 방아쇠를 당기는 권력은 오직 인간의 철학적 질문(메타인지)의 두께와 해상도에 달렸습니다. 우리는 기계 파도의 노예가 아니라, 그 파도의 목줄을 등허리 위에서 휘어잡고 세상을 호령해 나가는 가장 오만하고, 가장 도덕적이며, 철저하게 투명한 마에스트로 지휘관을 길러낼 것입니다.</p>
 <h2>6. AI교육 2026의 4단계 실현 로드맵: 이상에서 현실로</h2>
 <p>이 장대한 비전 선언문이 교실 현장에서 공허한 구호로 끝나지 않기 위해서는, 구체적이고 단계별로 실현 가능한 "AI교육 2026 실현 4단계 로드맵(4-Phase Roadmap)"이 반드시 수반되어야 합니다. 구호는 혁명을 만들지 못한다. 달력과 예산과 책임자가 있는 로드맵만이 교실을 바꿉니다.</p>
-<div id="vis-net-9c1323c9" class="vis-network-container" style="width: 100%; height: 400px; border: 1px solid #e2e8f0; border-radius: 12px; background: #fafafa; margin: 2rem 0; cursor: grab; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);"></div>
+<div class="mermaid-wrapper" style="width: 100%; overflow-x: auto; background: #fdf8f5; padding: 2rem; border-radius: 12px; margin: 2rem 0; border: 1px solid #e2e8f0; text-align: center;">
+<pre class="mermaid" style="font-size: 1.25rem; font-family: Pretendard, sans-serif;">
+
+flowchart TD
+    subgraph Phase1 [1단계 2026년 상반기: 기반 인프라 구축]
+    direction TB
+    P1a["전국 AI 교육 데이터 허브 클라우드 구축"] --&gt; P1b["교원 대상 마이크로 자격증 플랫폼 개설"]
+    end
+
+    subgraph Phase2 [2단계 2026년 하반기: 파일럿 학교 실증]
+    direction TB
+    P2a["시도별 파일럿 학교 10개교 선정, AI 튜터 + 데이터 대시보드 본격 운영] --&gt; P2b["현장 교사 피드백 기반 에듀테크 모듈 A/B 테스트""]
+    end
+
+    subgraph Phase3 [3단계 2027년: 단계적 전국 확산]
+    P3a["파일럿 성공 모델 기반, 전국 공립학교 AI 거버넌스 시스템 적용] --&gt; P3b["어린이 데이터 헌장 법령화 및 Parents Opt-out 제도 시행""]
+    end
+
+    subgraph Phase4 [4단계 2028년~: 자기 갱신 생태계]
+    P4a["대학·에듀테크·교육부 3자 AI 교육 생태계 표준 수립] --&gt; P4b["글로벌 AI교육 모델 수출 및 UNESCO 협력""]
+    end
+
+    Phase1 --&gt; Phase2 --&gt; Phase3 --&gt; Phase4
+
+    style Phase1 fill:#e8f4f8,stroke:#2563eb
+    style Phase2 fill:#fdf2e9,stroke:#e67e22
+    style Phase3 fill:#f0fdf4,stroke:#22c55e
+    style Phase4 fill:#fdf4ff,stroke:#9333ea
+
+</pre>
+</div>
 <p>이 4단계 로드맵은 어느 한 단계가 실패했을 때, 다음 단계로의 강제 이행이 아닌 당해 단계의 철저한 재검토와 수정을 우선적으로 허용하는 애자일한 교육 정책 접근법을 전제한다. 교육 시스템의 혁명은 IT 스타트업의 스프린트처럼 빠를 수는 없습니다. 가장 느리고 가장 복잡한 사회적 유기체인 학교와 교사집단이 진정으로 변화를 내면화할 스스로의 시간을 존중하는 것, 이것이 이 로드맵의 가장 핵심적인 인간 중심적 철학입니다.</p>
 <h2>3. 에필로그: 인간 교사의 마지막 이름은 사랑입니다랑h2&gt;
 <p>책을 덮으며 우리는 다시 처음, 출발 선상이었던 교실의 문고리를 잡고 뒤를 돌아봅니다.</p>
@@ -114,7 +168,7 @@
             성찰과 연대: 2026년을 향한 당신의 생각
         </h3>
 <p style="font-size: 1.15rem; color: #444; margin-bottom: 2rem; line-height: 1.6;">모든 것이 완벽하게 통제되고 수치화되는 알고리즘 사회 속에서, 공교육은 어떻게 학생들에게 방황할 자유와 실패할 특권을 보장할 수 있을까요?</p>
-<textarea id="reflection-answer-19" placeholder="자신의 생각을 편안하고 솔직하게 기록해보세요..." style="width: 100%; height: 140px; padding: 1.2rem; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; font-size: 1.05rem; margin-bottom: 1.5rem; resize: vertical; box-sizing: border-box; background: #fff;"></textarea>
+<textarea id="reflection-answer-19" placeholder="자신의 생각을 편안하고 솔직하게 기록해보세요..." style="width: 100%; height: 700px; padding: 1.2rem; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; font-size: 1.05rem; margin-bottom: 1.5rem; resize: vertical; box-sizing: border-box; background: #fff;"></textarea>
 <button class="reflection-submit" data-chapter="19" style="background: #1a1a1a; color: white; border: none; padding: 1rem 2rem; border-radius: 8px; font-size: 1.05rem; font-weight: 600; cursor: pointer; transition: background 0.2s;">내 생각 제출하기 (로컬 저장)</button>
 <p id="save-msg-19" style="display: none; color: #22c55e; margin-top: 1rem; font-weight: 500; font-size: 1.05rem;">✓ 기기에 안전하게 저장되었습니다. 향후 서버 연동 시 익명으로 공유될 수 있습니다.</p>
 </div>
@@ -125,63 +179,16 @@
 <div class="container"><p>© 2026 AI교육 2026. All rights reserved.</p></div>
 </footer>
 
-<script>
 
-            document.addEventListener("DOMContentLoaded", function() {
-                if(typeof vis === 'undefined') return;
-                var container = document.getElementById('vis-net-b9ac212d');
-                var data = {
-                    nodes: new vis.DataSet([{"id": "V_Top", "label": "인간을 위한 도구, 도구를 지배하는 인간 - Human over Machine", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "V1", "label": "제1원칙: 의도적 마찰 - Intentional Friction", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "V2", "label": "제2원칙: 하이터치의 절대성 - High-touch", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "V3", "label": "제3원칙: 질문의 해상도 - Resolution of Prompt", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "V_Bottom", "label": "메타인지와 야생의 근육 폭발 - Grit", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}]),
-                    edges: new vis.DataSet([])
-                };
-                var options = {
-                    layout: {
-                        hierarchical: {
-                            enabled: true,
-                            direction: 'UD',
-                            sortMethod: 'directed',
-                            nodeSpacing: 250,
-                            levelSeparation: 150
-                        }
-                    },
-                    physics: {
-                        enabled: true,
-                        hierarchicalRepulsion: { nodeDistance: 200, springLength: 100, damping: 0.09 }
-                    },
-                    edges: { smooth: { type: 'cubicBezier', forceDirection: 'vertical' }, color: '#94a3b8', width: 2 },
-                    interaction: { hover: true, dragNodes: true }
-                };
-                new vis.Network(container, data, options);
-            });
-            
 
-            document.addEventListener("DOMContentLoaded", function() {
-                if(typeof vis === 'undefined') return;
-                var container = document.getElementById('vis-net-9c1323c9');
-                var data = {
-                    nodes: new vis.DataSet([{"id": "P1a", "label": "전국 AI 교육 데이터 허브 클라우드 구축", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "P1b", "label": "교원 대상 마이크로 자격증 플랫폼 개설", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "P2a", "label": "\"시도별 파일럿 학교 10개교 선정, AI 튜터 + 데이터 대시보드 본격 운영", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "P2b", "label": "\"현장 교사 피드백 기반 에듀테크 모듈 A/B 테스트\"\"", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "P3a", "label": "\"파일럿 성공 모델 기반, 전국 공립학교 AI 거버넌스 시스템 적용", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "P3b", "label": "\"어린이 데이터 헌장 법령화 및 Parents Opt-out 제도 시행\"\"", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "P4a", "label": "\"대학·에듀테크·교육부 3자 AI 교육 생태계 표준 수립", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "P4b", "label": "\"글로벌 AI교육 모델 수출 및 UNESCO 협력\"\"", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}]),
-                    edges: new vis.DataSet([])
-                };
-                var options = {
-                    layout: {
-                        hierarchical: {
-                            enabled: true,
-                            direction: 'UD',
-                            sortMethod: 'directed',
-                            nodeSpacing: 250,
-                            levelSeparation: 150
-                        }
-                    },
-                    physics: {
-                        enabled: true,
-                        hierarchicalRepulsion: { nodeDistance: 200, springLength: 100, damping: 0.09 }
-                    },
-                    edges: { smooth: { type: 'cubicBezier', forceDirection: 'vertical' }, color: '#94a3b8', width: 2 },
-                    interaction: { hover: true, dragNodes: true }
-                };
-                new vis.Network(container, data, options);
-            });
-            
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ 
+    startOnLoad: true, 
+    theme: 'default',
+    securityLevel: 'loose',
+    flowchart: { htmlLabels: true, curve: 'basis' }
+  });
 </script>
 </body>
 </html>

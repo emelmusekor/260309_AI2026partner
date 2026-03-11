@@ -20,7 +20,7 @@
 .mermaid { overflow-x: auto; text-align: center; margin: 2rem 0; clear:both; }
 .mermaid svg { max-width: 100%; height: auto; }
 </style><link href="widgets.css" rel="stylesheet"/><script defer="True" src="widgets.js"></script>
-<script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
 </head>
 <body>
 <header class="site-header" role="banner">
@@ -45,7 +45,29 @@
 <div class="highlight-box"><p style="margin:0;"><strong>기술적 경로우대석은 없습니다</strong>은(는) 기존의 복지관이나 주민센터에서 문자 메시지 보내는 법, 카카오톡 사진 전송하는 법을 가르치던 아날로그식 어르신 스마트폰 교실은 이미 완전히 파산했습니다. 버튼의 위치는 앱이 업데이트될 때마다 수시로 바뀌기 때문이다. 이제 우리에게 절실한 평생학습의 목표는, 버튼의 위치를 외우게 하는 것이 아니라 아예 "당신의 목소리(자연어)로 기계를 다루는 가장 원초적이고 거만한 권력"을 이들의 입술과 두 손에 쥐여 주는 것입니다.</p></div>
 <h2>2. 언어의 장벽을 부수다: 음성 인식을 통한 디지털 해방</h2>
 <p>가장 아이러니하게도, 가장 복잡한 최첨단 AI 기술은 사용자의 접근 난이도를 가장 원시적인 음성의 영역으로 끌어내려 주었습니다. 키보드의 자판을 찾고 스와이프를 하는 행위 자체가 버거운 70대 어르신이나 시력이 저하된 취약계층에게, 생성형 AI의 결합은 그 자체로 마법의 지팡이입니다.</p>
-<div id="vis-net-de492b2d" class="vis-network-container" style="width: 100%; height: 400px; border: 1px solid #e2e8f0; border-radius: 12px; background: #fafafa; margin: 2rem 0; cursor: grab; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);"></div>
+<div class="mermaid-wrapper" style="width: 100%; overflow-x: auto; background: #fdf8f5; padding: 2rem; border-radius: 12px; margin: 2rem 0; border: 1px solid #e2e8f0; text-align: center;">
+<pre class="mermaid" style="font-size: 1.25rem; font-family: Pretendard, sans-serif;">
+
+flowchart TD
+    subgraph past [과거 복지관의 단절적 스마트 교육]
+    Old1["손자에게 카카오톡 보내는 법 - 버튼 위치 4단계 암기"] --&gt;|2개월 후 앱 UI 업데이트| Old2["암기 지식 무용지물 - 초기화"]
+    Old2 --&gt;|극심한 디지털 공포증 및 포기| Old3["고립 심화 및 키오스크 배척"]
+    end
+
+    subgraph new2026 [2026년 AI 기반 음성 주권의 획득 교육]
+    direction TB
+    Voice1["복지관: 할아버지, 그냥 앱 켜고 편하게 말만 하세요"] --&gt;|음성인식 및 의도 파악 - NLU| Voice2["기계가 사투리, 맥락 없는 단어의 진의를 스스로 해독"]
+
+    Voice2 --&gt;|AI 비서가 대전 큰아들에게 메시지 전송 확인| Voice3["명령 수행의 완벽한 자동화"]
+    Voice3 --&gt;|기계가 내 말귀를 알아듣는다는 자기 효능감| Voice4["보이스피싱 여부까지 AI에게 물어보는 능동적 팩트체크 시민으로 각성"]
+    end
+
+    style Old3 fill:#fee2e2,stroke:#ef4444,stroke-width:2px
+    style Voice1 fill:#fdf2e9,stroke:#e67e22
+    style Voice4 fill:#dcfce7,stroke:#22c55e,stroke-width:2px
+
+</pre>
+</div>
 <h2>3. 동네 소상공인의 역습: AI가 골목 식당의 기획실장이 되다</h2>
 <p>마찬가지로 자본과 인력이 부족하여 프랜차이즈 거대 식당에 처참하게 밀려나던 동네 골목 상권의 60대 사장님들에게도, 지역 평생교육 센터의 AI 활용 강의는 생존을 위한 가장 강력한 무기 지원입니다.</p>
 <p><i>"당장 우리 식당 앞 아파트 단지에 신혼부부가 천 세대 넘게 입주하는데, 내가 컴퓨터도 속맹이고 포스터 한 장 제대로 만들 돈도 없어요."</i></p>
@@ -73,7 +95,25 @@
 <h2>6. 시니어 AI 서포터즈 제도: 세대 간 연결의 가교</h2>
 <p>AI 평생교육을 가속화하는 가장 효율적인 사회적 메커니즘 중 하나는 바로 시니어 AI 서포터즈 제도이다. 이는 대학생이나 AI 역량을 갖춘 청·장년층 자원봉사자들이 지역 복지관, 경로당, 농업·수산업 현장에 직접 찾아가 1:1 혹은 소그룹으로 AI도구 사용법을 코칭하는 프로그램입니다.</p>
 <p>이 제도의 핵심 가치는 단순한 기술 전수에 있는 것이 아닙니다. 젊은 교사가 어르신에게 AI를 알려주는 과정에서, 어르신은 수십 년간 쌓아온 삶의 경험과 지혜를 역으로 젊은 사람에게 전달하는 세대 간 지식의 쌍방향 교환이 일어납니다. 70대 할머니가 자신의 된장찌개 레시피를 AI에게 프롬프팅하여 레시피 책으로 만드는 과정을 돕는 대학생은, 그 과정에서 AI가 담아낼 수 없는 삶의 노하우와 감성을 배우게 됩니다. 기술은 세대를 가로지르는 연결의 언어가 됩니다.</p>
-<div id="vis-net-56f57a9b" class="vis-network-container" style="width: 100%; height: 400px; border: 1px solid #e2e8f0; border-radius: 12px; background: #fafafa; margin: 2rem 0; cursor: grab; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);"></div>
+<div class="mermaid-wrapper" style="width: 100%; overflow-x: auto; background: #fdf8f5; padding: 2rem; border-radius: 12px; margin: 2rem 0; border: 1px solid #e2e8f0; text-align: center;">
+<pre class="mermaid" style="font-size: 1.25rem; font-family: Pretendard, sans-serif;">
+
+flowchart TD
+    subgraph 시니어 AI 서포터즈 운영 구조
+    direction TB
+    Univ["대학교 봉사학점 연계 프로그램"] --&gt;|AI 역량 갖춘 대학생 매칭| Staff["시니어 AI 서포터즈"]
+    Staff --&gt;|주 1~2회 방문 코칭| Seniors["지역 복지관 / 경로당 고령층"]
+    Seniors --&gt;|삶의 경험 및 도메인 지식 역전달| Staff
+    Staff --&gt;|코칭 성과 보고서 제출| Gov["지자체 평생교육원"]
+    Gov --&gt;|우수 서포터즈 장학금 및 취업 가산점| Univ
+    end
+
+    style Staff fill:#dbeafe,stroke:#2563eb,stroke-width:2px
+    style Seniors fill:#fdf2e9,stroke:#e67e22
+    style Gov fill:#dcfce7,stroke:#22c55e,stroke-width:2px
+
+</pre>
+</div>
 <div class="interactive-widget dnd-widget" data-id="dnd-15">
 <h4 class="widget-title">🧩 보편적 설계 (Drag &amp; Drop)</h4>
 <p style="margin-bottom:1rem;">아래의 단어 블록을 드래그하여, 문맥상 알맞은 빈칸에 채워 넣으세요.</p>
@@ -113,7 +153,7 @@
             성찰과 연대: 2026년을 향한 당신의 생각
         </h3>
 <p style="font-size: 1.15rem; color: #444; margin-bottom: 2rem; line-height: 1.6;">교사 양성 과정(사범대, 교육대)이 AI 시대에 맞게 재편된다면, 예비 교사들이 가장 먼저 배워야 할 기술 외적인 학문은 무엇이 되어야 할까요?</p>
-<textarea id="reflection-answer-15" placeholder="자신의 생각을 편안하고 솔직하게 기록해보세요..." style="width: 100%; height: 140px; padding: 1.2rem; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; font-size: 1.05rem; margin-bottom: 1.5rem; resize: vertical; box-sizing: border-box; background: #fff;"></textarea>
+<textarea id="reflection-answer-15" placeholder="자신의 생각을 편안하고 솔직하게 기록해보세요..." style="width: 100%; height: 700px; padding: 1.2rem; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; font-size: 1.05rem; margin-bottom: 1.5rem; resize: vertical; box-sizing: border-box; background: #fff;"></textarea>
 <button class="reflection-submit" data-chapter="15" style="background: #1a1a1a; color: white; border: none; padding: 1rem 2rem; border-radius: 8px; font-size: 1.05rem; font-weight: 600; cursor: pointer; transition: background 0.2s;">내 생각 제출하기 (로컬 저장)</button>
 <p id="save-msg-15" style="display: none; color: #22c55e; margin-top: 1rem; font-weight: 500; font-size: 1.05rem;">✓ 기기에 안전하게 저장되었습니다. 향후 서버 연동 시 익명으로 공유될 수 있습니다.</p>
 </div>
@@ -124,63 +164,16 @@
 <div class="container"><p>© 2026 AI교육 2026. All rights reserved.</p></div>
 </footer>
 
-<script>
 
-            document.addEventListener("DOMContentLoaded", function() {
-                if(typeof vis === 'undefined') return;
-                var container = document.getElementById('vis-net-de492b2d');
-                var data = {
-                    nodes: new vis.DataSet([{"id": "Old1", "label": "손자에게 카카오톡 보내는 법 - 버튼 위치 4단계 암기", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "Old2", "label": "암기 지식 무용지물 - 초기화", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "Old3", "label": "고립 심화 및 키오스크 배척", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "Voice1", "label": "복지관: 할아버지, 그냥 앱 켜고 편하게 말만 하세요", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "Voice2", "label": "기계가 사투리, 맥락 없는 단어의 진의를 스스로 해독", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "Voice3", "label": "명령 수행의 완벽한 자동화", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "Voice4", "label": "보이스피싱 여부까지 AI에게 물어보는 능동적 팩트체크 시민으로 각성", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}]),
-                    edges: new vis.DataSet([])
-                };
-                var options = {
-                    layout: {
-                        hierarchical: {
-                            enabled: true,
-                            direction: 'UD',
-                            sortMethod: 'directed',
-                            nodeSpacing: 250,
-                            levelSeparation: 150
-                        }
-                    },
-                    physics: {
-                        enabled: true,
-                        hierarchicalRepulsion: { nodeDistance: 200, springLength: 100, damping: 0.09 }
-                    },
-                    edges: { smooth: { type: 'cubicBezier', forceDirection: 'vertical' }, color: '#94a3b8', width: 2 },
-                    interaction: { hover: true, dragNodes: true }
-                };
-                new vis.Network(container, data, options);
-            });
-            
 
-            document.addEventListener("DOMContentLoaded", function() {
-                if(typeof vis === 'undefined') return;
-                var container = document.getElementById('vis-net-56f57a9b');
-                var data = {
-                    nodes: new vis.DataSet([{"id": "Univ", "label": "대학교 봉사학점 연계 프로그램", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "Staff", "label": "시니어 AI 서포터즈", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "Seniors", "label": "지역 복지관 / 경로당 고령층", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "Gov", "label": "지자체 평생교육원", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}]),
-                    edges: new vis.DataSet([])
-                };
-                var options = {
-                    layout: {
-                        hierarchical: {
-                            enabled: true,
-                            direction: 'UD',
-                            sortMethod: 'directed',
-                            nodeSpacing: 250,
-                            levelSeparation: 150
-                        }
-                    },
-                    physics: {
-                        enabled: true,
-                        hierarchicalRepulsion: { nodeDistance: 200, springLength: 100, damping: 0.09 }
-                    },
-                    edges: { smooth: { type: 'cubicBezier', forceDirection: 'vertical' }, color: '#94a3b8', width: 2 },
-                    interaction: { hover: true, dragNodes: true }
-                };
-                new vis.Network(container, data, options);
-            });
-            
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ 
+    startOnLoad: true, 
+    theme: 'default',
+    securityLevel: 'loose',
+    flowchart: { htmlLabels: true, curve: 'basis' }
+  });
 </script>
 </body>
 </html>

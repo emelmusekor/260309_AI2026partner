@@ -71,7 +71,7 @@
 .mermaid { overflow-x: auto; text-align: center; margin: 2rem 0; clear:both; }
 .mermaid svg { max-width: 100%; height: auto; }
 </style><link href="widgets.css" rel="stylesheet"/><script defer="True" src="widgets.js"></script>
-<script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
 </head>
 <body>
 <header class="site-header" role="banner">
@@ -118,7 +118,33 @@
                         튜터"가 각자의 고유한 1/3의 몫을 온전히 분담하며 유기적으로 상호작용하는 새로운 교육 삼각형을 입체적으로 복원해 내야 합니다.</p>
 <p>이 삼각형은 어느 한쪽이 다른 한쪽을 지배하는 종속적인 구조가 아닙니다. 톱니바퀴처럼 서로의 결핍을 채워주며 끝없이 회전하는 다이내믹한 공진화의 동맹입니다.
                     아래의 매커니즘 흐름도를 통해 과거와 미래의 역학 구조가 어떻게 달라지는지 명확히 살필 수 있습니다.</p>
-<div id="vis-net-877328b5" class="vis-network-container" style="width: 100%; height: 400px; border: 1px solid #e2e8f0; border-radius: 12px; background: #fafafa; margin: 2rem 0; cursor: grab; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);"></div>
+<div class="mermaid-wrapper" style="width: 100%; overflow-x: auto; background: #fdf8f5; padding: 2rem; border-radius: 12px; margin: 2rem 0; border: 1px solid #e2e8f0; text-align: center;">
+<pre class="mermaid" style="font-size: 1.25rem; font-family: Pretendard, sans-serif;">
+
+flowchart TD
+    subgraph Past [과거의 선형 구조 - 1차원적 하향식]
+    direction TB
+    T_Old["인간 교사 - 지식의 철저한 독점자"] --&gt;|지식의 일방향 전달 및 주입| S_Old["학생 - 수동적 정보 수용자"]
+    end
+
+    subgraph Future [미래의 3차원 삼각형 구조: 공진화 네트워크]
+    direction TB
+    T_New["인간 교사 - 정서적 멘토 + 수업 환경 기획자"]
+    S_New["학생 - 목적을 부여하는 주도적 학습의 주체"]
+    AI["AI 에이전트 / 튜터 - 무한 지식망 + 맞춤형 루틴 훈련 제공"]
+
+    T_New --&gt;|학습 테마 및 목표 설계, AI 편향성 견제| AI
+    AI --&gt;|학생의 인지 데이터, 성취도 실시간 대시보드 브리핑| T_New
+
+    S_New --&gt;|파편적 호기심과 무한 프롬프트 입력| AI
+    AI --&gt;|개인화 수준에 맞춘 루틴 훈련 및 즉각 피드백| S_New
+
+    T_New --&gt;|결손 정서 교감, 인생 진로 상담, 윤리적 마찰 제공| S_New
+    S_New --&gt;|사회적 상호작용 및 오프라인 메이커 활동 결과 공유"| T_New
+    end
+
+</pre>
+</div>
 <h2>3. 삼각형의 꼭짓점 심층 분석: 기계의 몫, 학생의 몫, 인간의 몫</h2>
 <p>이 삼각 동맹이 형태만 갖춘 전시 행정이 아니라 실제 교실에서 붕괴되지 않고 견고하게 유지되기 위해서는, 세 주체가 각기 서로를 침범(월권)하지 않고 가장 잘할 수 있는 영역에
                     최적화하여 자신의 역할을 극대화해야 합니다. 특히 교사와 기계의 역할 분담을 명확히 하는 이른바 인지적 영토 획정이 필수적입니다.</p>
@@ -247,7 +273,7 @@
             성찰과 연대: 2026년을 향한 당신의 생각
         </h3>
 <p style="font-size: 1.15rem; color: #444; margin-bottom: 2rem; line-height: 1.6;">생성 에이전트가 모든 초안을 3초 만에 작성해주는 환경에서, 우리는 학생들에게 글을 쓴다는 것의 의미를 어떻게 다시 정의하고 가르쳐야 할까요?</p>
-<textarea id="reflection-answer-6" placeholder="자신의 생각을 편안하고 솔직하게 기록해보세요..." style="width: 100%; height: 140px; padding: 1.2rem; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; font-size: 1.05rem; margin-bottom: 1.5rem; resize: vertical; box-sizing: border-box; background: #fff;"></textarea>
+<textarea id="reflection-answer-6" placeholder="자신의 생각을 편안하고 솔직하게 기록해보세요..." style="width: 100%; height: 700px; padding: 1.2rem; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; font-size: 1.05rem; margin-bottom: 1.5rem; resize: vertical; box-sizing: border-box; background: #fff;"></textarea>
 <button class="reflection-submit" data-chapter="6" style="background: #1a1a1a; color: white; border: none; padding: 1rem 2rem; border-radius: 8px; font-size: 1.05rem; font-weight: 600; cursor: pointer; transition: background 0.2s;">내 생각 제출하기 (로컬 저장)</button>
 <p id="save-msg-6" style="display: none; color: #22c55e; margin-top: 1rem; font-weight: 500; font-size: 1.05rem;">✓ 기기에 안전하게 저장되었습니다. 향후 서버 연동 시 익명으로 공유될 수 있습니다.</p>
 </div>
@@ -260,35 +286,16 @@
 </div>
 </footer>
 
-<script>
 
-            document.addEventListener("DOMContentLoaded", function() {
-                if(typeof vis === 'undefined') return;
-                var container = document.getElementById('vis-net-877328b5');
-                var data = {
-                    nodes: new vis.DataSet([{"id": "T_Old", "label": "인간 교사 - 지식의 철저한 독점자", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "S_Old", "label": "학생 - 수동적 정보 수용자", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "T_New", "label": "인간 교사 - 정서적 멘토 + 수업 환경 기획자", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "S_New", "label": "학생 - 목적을 부여하는 주도적 학습의 주체", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "AI", "label": "AI 에이전트 / 튜터 - 무한 지식망 + 맞춤형 루틴 훈련 제공", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}]),
-                    edges: new vis.DataSet([])
-                };
-                var options = {
-                    layout: {
-                        hierarchical: {
-                            enabled: true,
-                            direction: 'UD',
-                            sortMethod: 'directed',
-                            nodeSpacing: 250,
-                            levelSeparation: 150
-                        }
-                    },
-                    physics: {
-                        enabled: true,
-                        hierarchicalRepulsion: { nodeDistance: 200, springLength: 100, damping: 0.09 }
-                    },
-                    edges: { smooth: { type: 'cubicBezier', forceDirection: 'vertical' }, color: '#94a3b8', width: 2 },
-                    interaction: { hover: true, dragNodes: true }
-                };
-                new vis.Network(container, data, options);
-            });
-            
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ 
+    startOnLoad: true, 
+    theme: 'default',
+    securityLevel: 'loose',
+    flowchart: { htmlLabels: true, curve: 'basis' }
+  });
 </script>
 </body>
 </html>

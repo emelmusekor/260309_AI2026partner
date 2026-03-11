@@ -20,7 +20,7 @@
 .mermaid { overflow-x: auto; text-align: center; margin: 2rem 0; clear:both; }
 .mermaid svg { max-width: 100%; height: auto; }
 </style><link href="widgets.css" rel="stylesheet"/><script defer="True" src="widgets.js"></script>
-<script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
 </head>
 <body>
 <header class="site-header" role="banner">
@@ -44,7 +44,27 @@
 <p>구텐베르크의 인쇄기는 자신이 찍어내는 책이 마녀사냥을 부추기는 글인지 셰익스피어의 희곡인지 이해하지 못했습니다. 라디오 스피커는 독재자의 선동에 혐오감을 느끼지 못한 채 그저 주파수를 증폭시킬 뿐이었습니다. 인간만이 의미를 이해하고, 인간만이 정보를 편집하여 권력을 행사했습니다.</p>
 <div class="highlight-box"><p style="margin:0;"><strong>기술적 특이점을 넘어선 편집의 특이점</strong>은(는) 그러나 지금 우리가 마주한 AI 기반의 알고리즘(추천, 생성 알고리즘) 네트워크는 역사상 최초의 비인간 편집자이다. 유튜브의 추천 알고리즘과 틱톡의 피드는 청소년의 도파민을 자극하는 법을 우리 자신보다 더 잘 알며, 사용자 맞춤형으로 텍스트를 조합하는 LLM은 우리가 무의식적으로 소비할 가장 그럴싸한 진실을 대량으로 주조해내고 있습니다.</p></div>
 <p>이 지점에서 교육의 렌즈는 치명적으로 심각한 방향 전환을 요구받는다. 교실에서 딥페이크나 가짜 뉴스를 팩트테크하는 기술 몇 가지를 가르치는 것만으로는 부족한다. 우리는 아이들을, 거대 자본이 독점한 스스로 학습하고 판단하는 렉서스의 먹잇감이 되지 않도록 무장시켜야 합니다.</p>
-<div id="vis-net-25900331" class="vis-network-container" style="width: 100%; height: 400px; border: 1px solid #e2e8f0; border-radius: 12px; background: #fafafa; margin: 2rem 0; cursor: grab; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);"></div>
+<div class="mermaid-wrapper" style="width: 100%; overflow-x: auto; background: #fdf8f5; padding: 2rem; border-radius: 12px; margin: 2rem 0; border: 1px solid #e2e8f0; text-align: center;">
+<pre class="mermaid" style="font-size: 1.25rem; font-family: Pretendard, sans-serif;">
+
+flowchart LR
+    subgraph past [과거의 매체: 도구적 전송망]
+    P1["인간 발신자"] --&gt;|의도와 편집| M1["수동적 미디어 - 인쇄 및 TV"]
+    M1 --&gt;|일방향 전달| R1["인간 수신자"]
+    end
+
+    subgraph present [현재의 매체: 인지적 매개망]
+    P2["다수의 인간 데이터"] --&gt;|알고리즘 학습| AI["비인간 편집자 - AI 추천 및 자동 생성"]
+    AI --&gt;|초개인화된 편향 피드| R2["인간 수신자"]
+    R2 --&gt;|반응 데이터 재학습| AI
+    end
+
+    style M1 fill:#f1f5f9,stroke:#94a3b8
+    style AI fill:#fee2e2,stroke:#ef4444,stroke-width:2px
+    style R2 fill:#e8f4f8,stroke:#5d98c4
+
+</pre>
+</div>
 <h2>2. 딥페이크와 진공 창출: 진실의 종언</h2>
 <p>2024년, 전 세계를 휩쓴 선거판과 심지어 학교 교실 내부에서도 가장 파괴적인 위력으로 등장한 것이 바로 딥페이크와 가짜 생성 이미지들이다. 교사나 동급생의 얼굴을 합성하여 조작된 폭력적, 혐오적 이미지를 만들어내는 범죄적 행태는 이미 학교 폭력의 새로운 뇌관이 되었습니다.</p>
 <p>그러나 이보다 더 무서운 철학적 파국은 진실의 부재(Liars Dividend)' 현상이다. 거짓된 영상과 정보가 홍수처럼 범람하는 세상에서는 대중이 무엇이 참인지 검증하기를 아예 포기해 버리는 상태, 즉 모든 텍스트와 사진에 대해 냉소적으로 돌변하는 허무주의가 만연하게 됩니다. 정치인은 명백히 자신이 저지른 부정부패의 증거 영상 앞에서도 저것은 AI가 조작한 딥페이크라고 우겨대며 빠져나가는 극단적인 후기-진실 사회로 진입했습니다.</p>
@@ -67,7 +87,26 @@
 </div>
 <h2>5. 렌즈를 바꾸다: 정보 권력 시대의 새로운 교육 목표</h2>
 <p>1부 전체를 관통하며 우리가 도달한 결론은 자명한다. AI 교육은 단발성 IT 연수가 아니라 전 지구적인 인지 전쟁에서 살아남기 위한 생존 무기이자 진실을 감별하는 렌즈여야 합니다. 이를 위해 교실은 다음과 같은 3대 방어 기제를 커리큘럼의 심장부에 심어야 합니다.</p>
-<div id="vis-net-dc999a34" class="vis-network-container" style="width: 100%; height: 400px; border: 1px solid #e2e8f0; border-radius: 12px; background: #fafafa; margin: 2rem 0; cursor: grab; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);"></div>
+<div class="mermaid-wrapper" style="width: 100%; overflow-x: auto; background: #fdf8f5; padding: 2rem; border-radius: 12px; margin: 2rem 0; border: 1px solid #e2e8f0; text-align: center;">
+<pre class="mermaid" style="font-size: 1.25rem; font-family: Pretendard, sans-serif;">
+
+flowchart TD
+    Core["정보 권력 시대의 디지털 시민성 핵심 기제"]
+    Core --&gt; Pillar1["1. 알고리즘 리터러시"]
+    Core --&gt; Pillar2["2. 팩트체크 시스템 내재화"]
+    Core --&gt; Pillar3["3. 인간 주체성의 수호"]
+    
+    Pillar1 -.-&gt; Detail1(추천 알고리즘의 수익 구조(도파민 경제) 파악)
+    Pillar2 -.-&gt; Detail2(AI 환각 식별, 교차 검증, 원본 출처 확인)
+    Pillar3 -.-&gt; Detail3("맹신 거부, 의도적 디지털 마찰, 접속 단절 능력")
+
+    style Core fill:#dbeafe,stroke:#2563eb,stroke-width:2px
+    style Pillar1 fill:#fdf2e9,stroke:#e67e22
+    style Pillar2 fill:#fdf2e9,stroke:#e67e22
+    style Pillar3 fill:#fdf2e9,stroke:#e67e22
+
+</pre>
+</div>
 <h2>6. 제1기제: 보이지 않는 손 해부하기 (알고리즘 리터러시)</h2>
 <p>아이들이 틱톡과 쇼츠를 무한히 스크롤할 때, 그 뒤에는 스탠퍼드 출신의 심리학자들과 딥러닝 개발자들이 구축한 정교한 인지 해킹 알고리즘이 작동하고 있음을 폭로해야 합니다. 내가 화가 나고, 슬프고, 무언가 사고 싶게 만드는 그 욕망이 나의 내부에서 자연스럽게 발원한 것인지, 아니면 거대 자본이 코딩한 AI의 매끄러운 추천 경로에 의해 설계당한 것인지 객관화하는 메타인지 훈련입니다.</p>
 <p>알고리즘 리터러시 교육의 구체적인 현장 실습으로는, 학생들이 동일한 키워드(기후변화)를 다른 계정(각자의 스마트폰)으로 유튜브에서 검색했을 때 나타나는 결과를 비교하는 실험이 효과적이다. 왜 어떤 아이의 피드에는 기후변화 긍정적 대응 영상이 뜨고, 다른 아이에게는 기후변화 음모론 영상이 뜨는지를 즉각적이고 생생하게 체험함으로써, 알고리즘이 진실을 전달하는 것이 아니라 클릭을 최대화하도록 설계된 장치임을 체화하는 것입니다.</p>
@@ -123,7 +162,7 @@
             성찰과 연대: 2026년을 향한 당신의 생각
         </h3>
 <p style="font-size: 1.15rem; color: #444; margin-bottom: 2rem; line-height: 1.6;">기계가 학생의 감정과 학습 상태를 데이터로 읽어내는 시대에, 오직 인간 교사만이 포착할 수 있는 데이터 밖의 신호(예: 침묵의 질감)는 무엇이 있을까요?</p>
-<textarea id="reflection-answer-5" placeholder="자신의 생각을 편안하고 솔직하게 기록해보세요..." style="width: 100%; height: 140px; padding: 1.2rem; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; font-size: 1.05rem; margin-bottom: 1.5rem; resize: vertical; box-sizing: border-box; background: #fff;"></textarea>
+<textarea id="reflection-answer-5" placeholder="자신의 생각을 편안하고 솔직하게 기록해보세요..." style="width: 100%; height: 700px; padding: 1.2rem; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; font-size: 1.05rem; margin-bottom: 1.5rem; resize: vertical; box-sizing: border-box; background: #fff;"></textarea>
 <button class="reflection-submit" data-chapter="5" style="background: #1a1a1a; color: white; border: none; padding: 1rem 2rem; border-radius: 8px; font-size: 1.05rem; font-weight: 600; cursor: pointer; transition: background 0.2s;">내 생각 제출하기 (로컬 저장)</button>
 <p id="save-msg-5" style="display: none; color: #22c55e; margin-top: 1rem; font-weight: 500; font-size: 1.05rem;">✓ 기기에 안전하게 저장되었습니다. 향후 서버 연동 시 익명으로 공유될 수 있습니다.</p>
 </div>
@@ -134,63 +173,16 @@
 <div class="container"><p>© 2026 AI교육 2026. All rights reserved.</p></div>
 </footer>
 
-<script>
 
-            document.addEventListener("DOMContentLoaded", function() {
-                if(typeof vis === 'undefined') return;
-                var container = document.getElementById('vis-net-25900331');
-                var data = {
-                    nodes: new vis.DataSet([{"id": "P1", "label": "인간 발신자", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "M1", "label": "수동적 미디어 - 인쇄 및 TV", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "R1", "label": "인간 수신자", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "P2", "label": "다수의 인간 데이터", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "AI", "label": "비인간 편집자 - AI 추천 및 자동 생성", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "R2", "label": "인간 수신자", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}]),
-                    edges: new vis.DataSet([])
-                };
-                var options = {
-                    layout: {
-                        hierarchical: {
-                            enabled: true,
-                            direction: 'LR',
-                            sortMethod: 'directed',
-                            nodeSpacing: 250,
-                            levelSeparation: 150
-                        }
-                    },
-                    physics: {
-                        enabled: true,
-                        hierarchicalRepulsion: { nodeDistance: 200, springLength: 100, damping: 0.09 }
-                    },
-                    edges: { smooth: { type: 'cubicBezier', forceDirection: 'horizontal' }, color: '#94a3b8', width: 2 },
-                    interaction: { hover: true, dragNodes: true }
-                };
-                new vis.Network(container, data, options);
-            });
-            
 
-            document.addEventListener("DOMContentLoaded", function() {
-                if(typeof vis === 'undefined') return;
-                var container = document.getElementById('vis-net-dc999a34');
-                var data = {
-                    nodes: new vis.DataSet([{"id": "Core", "label": "정보 권력 시대의 디지털 시민성 핵심 기제", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "Pillar1", "label": "1. 알고리즘 리터러시", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "Pillar2", "label": "2. 팩트체크 시스템 내재화", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "Pillar3", "label": "3. 인간 주체성의 수호", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "Detail1", "label": "추천 알고리즘의 수익 구조(도파민 경제", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "Detail2", "label": "AI 환각 식별, 교차 검증, 원본 출처 확인", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "Detail3", "label": "맹신 거부, 의도적 디지털 마찰, 접속 단절 능력", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}]),
-                    edges: new vis.DataSet([])
-                };
-                var options = {
-                    layout: {
-                        hierarchical: {
-                            enabled: true,
-                            direction: 'UD',
-                            sortMethod: 'directed',
-                            nodeSpacing: 250,
-                            levelSeparation: 150
-                        }
-                    },
-                    physics: {
-                        enabled: true,
-                        hierarchicalRepulsion: { nodeDistance: 200, springLength: 100, damping: 0.09 }
-                    },
-                    edges: { smooth: { type: 'cubicBezier', forceDirection: 'vertical' }, color: '#94a3b8', width: 2 },
-                    interaction: { hover: true, dragNodes: true }
-                };
-                new vis.Network(container, data, options);
-            });
-            
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ 
+    startOnLoad: true, 
+    theme: 'default',
+    securityLevel: 'loose',
+    flowchart: { htmlLabels: true, curve: 'basis' }
+  });
 </script>
 </body>
 </html>

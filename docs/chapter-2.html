@@ -17,7 +17,7 @@
 .mermaid { overflow-x: auto; text-align: center; margin: 2rem 0; clear:both; }
 .mermaid svg { max-width: 100%; height: auto; }
 </style><link href="widgets.css" rel="stylesheet"/><script defer="True" src="widgets.js"></script>
-<script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
 </head>
 <body>
 <header class="site-header" role="banner">
@@ -41,7 +41,23 @@
 <p>1990년대의 열린 교육과 멀티미디어 PC 보급, 2000년대의 전자 칠판 및 ICT 활용 교육, 2010년대의 스마트 스쿨과 1인 1태블릿 PC 배급, 그리고 불과 몇 년 전 코로나19 직후 불어닥쳤던 거품 낀 에듀테크 메타버스 열풍까지. 새로운 IT 기술이 등장할 때마다 사회는 그것이 학교의 낡은 주입식 교육을 끝장내고 진정한 맞춤형 교육을 실현할 마법의 지팡이인 양 추앙했습니다.</p>
 <div class="highlight-box"><p style="margin:0;"><strong>기술 컨설팅 기업 가트너의 하이프 사이클</strong>은(는) 새로운 기술이 등장할 때 대중의 기대 심리가 겪는 5단계를 묘사한 모델이다. 교육계의 기술 도입 역사는 이 곡선의 무자비함을 정확히 증명해왔습니다. 우리는 매번 부풀려진 기대의 정점에서 흥분하고 예산을 쏟아부었으나, 결국 환멸의 계곡으로 처박혀 먼지 쌓인 하드웨어만을 남기곤 했습니다.</p></div>
 <p>그러나 수조 원의 예산이 투입된 그 수많은 에듀테크 혁명 이후, 과연 우리 아이들의 비판적 사고력은 기술 투입량에 비례하여 비약적으로 성장했습니까? 대답은 안타깝게도 아니오이다. 칠판이 분필에서 스마트 터치스크린으로 형태만 바뀌었을 뿐, 교사가 앞에서 지식을 일방향적으로 전송하고 학생이 그것을 받아 적는 교실의 본력은 꿈쩍도 하지 않았습니다. 태블릿 PC는 창의적 도구가 되기보다 문제 풀이 앱을 띄우거나 영상을 시청하는 수동적 단말기로 전락하기 일쑤였습니다.</p>
-<div id="vis-net-335878c2" class="vis-network-container" style="width: 100%; height: 400px; border: 1px solid #e2e8f0; border-radius: 12px; background: #fafafa; margin: 2rem 0; cursor: grab; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);"></div>
+<div class="mermaid-wrapper" style="width: 100%; overflow-x: auto; background: #fdf8f5; padding: 2rem; border-radius: 12px; margin: 2rem 0; border: 1px solid #e2e8f0; text-align: center;">
+<pre class="mermaid" style="font-size: 1.25rem; font-family: Pretendard, sans-serif;">
+
+flowchart LR
+    A["기술 촉발 Innovation"] --&gt;|황홀경| B["기대의 정점 Peak of Inflated Expectations"]
+    B --&gt;|한계 노출| C["환멸의 계곡 Trough of Disillusionment"]
+    C --&gt;|재평가/교정| D["계몽의 비탈 Slope of Enlightenment"]
+    D --&gt;|실질적 교육 안착| E["생산성의 안정기 Plateau of Productivity"]
+    
+    style A fill:#ffffff,stroke:#8ab6d6
+    style B fill:#fdf2e9,stroke:#e67e22,stroke-width:2px
+    style C fill:#f1f5f9,stroke:#94a3b8
+    style D fill:#ffffff,stroke:#8ab6d6
+    style E fill:#e8f4f8,stroke:#5d98c4,stroke-width:2px
+
+</pre>
+</div>
 <h2>2. 환멸의 계곡은 왜 필연적인가?</h2>
 <p>교육계의 하이프 사이클이 유독 가파르고 그 추락이 뼈아픈 이유는, 학교라는 공간이 지닌 특유의 생체적 복잡성(Biological &amp; Social Complexity)을 기술자들과 관료들이 번번이 무시하기 때문이다. 기업의 소프트웨어 시연회장에서 매끄럽게 돌아가는 AI 튜터 프로그램은 빛과 소음이 절제된 이상적 환경의 결과물입니다.</p>
 <p>하지만 현실의 교실은 매 순간 돌발 변수(쉬는 시간의 다툼, 와이파이 혼선, 집중력이 흩어진 30명의 각기 다른 감정 상태 등)가 난무하는 일종의 유기체이다. 하드웨어의 미세한 버그나 로그인 지연 사태 3초만으로도 수업 흐름 전체가 깨지며, 학생들은 신기술의 인터페이스에 곧 매력을 잃습니다. 화려한 시연에 속아 섣불리 막대한 예산으로 인프라를 깔아버리는 정부의 하향식 정책은 필연적으로 현장 교사들의 피로감과 냉소를 부르고, 이는 곧 환멸의 계곡이라는 거대한 무덤으로 직행하게 만듭니다.</p>
@@ -61,7 +77,26 @@
 </div>
 <h2>4. 목적 잃은 수단의 비극</h2>
 <p>다가오는 AI 교육 시대 역시 이 수단과 목적의 전도 현상에서 자유롭지 못한다. 현재 많은 학교의 AI 도입 추진단은 "어떻게 하면 최신 거대 언어 모델을 학교 서버에 무사히 연동시킬 것인가, 내년에 몇 대의 AI 단말기를 추가 예산으로 확보할 것인가"와 같은 수단적 과제에만 혈안이 되어 있습니다.</p>
-<div id="vis-net-506351cc" class="vis-network-container" style="width: 100%; height: 400px; border: 1px solid #e2e8f0; border-radius: 12px; background: #fafafa; margin: 2rem 0; cursor: grab; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);"></div>
+<div class="mermaid-wrapper" style="width: 100%; overflow-x: auto; background: #fdf8f5; padding: 2rem; border-radius: 12px; margin: 2rem 0; border: 1px solid #e2e8f0; text-align: center;">
+<pre class="mermaid" style="font-size: 1.25rem; font-family: Pretendard, sans-serif;">
+
+graph TD
+    subgraph past [과거의 실패: 기술 중심 접근]
+    T1["기술 인프라 보급"] --&gt;|강제 투입| T2["교사 및 학생의 혼란"]
+    T2 --&gt;|사용률 저조| T3["환멸과 예산 낭비"]
+    end
+    subgraph future [미래의 성공: 목적 중심 접근]
+    P1["교육적 목적 정의 - 비판적 사고, 창의성, 연대"] --&gt;|목적 달성을 위한 도구 탐색| P2["AI 기술 선별 도입"]
+    P2 --&gt;|교사의 재구조화 개입| P3["메타 인지적 학습 및 공진 창출"]
+    end
+
+    style T1 fill:#f1f5f9,stroke:#94a3b8
+    style T3 fill:#fee2e2,stroke:#ef4444
+    style P1 fill:#dcfce7,stroke:#22c55e,stroke-width:2px
+    style P3 fill:#dbeafe,stroke:#2563eb
+
+</pre>
+</div>
 <p>우리는 다시 원점의 질문으로 돌아가야 합니다. "무엇을 위한 AI인가?"</p>
 <p>학생의 수학 점수 백분위를 올리기 위한 도구인가요? 아니면 교사의 채점 시간을 덜어주어 행정 편의를 높이기 위함인가요? 만약 목표가 그것뿐이라면, 굳이 막대한 전력 소모와 거버넌스 위험을 초래하는 생성형 AI를 투입할 필요조차 없습니다. 구시대의 Rule-based(규칙 기반) 알고리즘이나 OMR 카드로도 충분히 가능한 일입니다.<br/>
 기초학력이 무너지고 소셜 미디어 알고리즘에 아이들의 정신 건강이 잠식당하는 이 시대에 진정 학교가 AI를 통해 이루어야 할 목적은, 모든 아이가 정보의 파편에 이리저리 휘둘리지 않고 거대 데이터 속에 숨은 인간적 가치와 진실의 맥락을 길어 올리는 강인한 지적 근육을 만들어주는 것입니다. 목적의식 없는 기계의 도입은, 엔진 없이 바퀴만 달린 화려한 마차를 절벽으로 밀어버리는 것과 같습니다.</p>
@@ -115,7 +150,7 @@
             성찰과 연대: 2026년을 향한 당신의 생각
         </h3>
 <p style="font-size: 1.15rem; color: #444; margin-bottom: 2rem; line-height: 1.6;">기술의 도입이 오히려 인간의 고유한 권위(사랑, 연대, 철학적 사유)를 부각시킨 역사적 사례들을 떠올려 볼 때, 2026년 교사의 진정한 권위는 어디에서 비롯될 것이라 생각하십니까?</p>
-<textarea id="reflection-answer-2" placeholder="자신의 생각을 편안하고 솔직하게 기록해보세요..." style="width: 100%; height: 140px; padding: 1.2rem; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; font-size: 1.05rem; margin-bottom: 1.5rem; resize: vertical; box-sizing: border-box; background: #fff;"></textarea>
+<textarea id="reflection-answer-2" placeholder="자신의 생각을 편안하고 솔직하게 기록해보세요..." style="width: 100%; height: 700px; padding: 1.2rem; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; font-size: 1.05rem; margin-bottom: 1.5rem; resize: vertical; box-sizing: border-box; background: #fff;"></textarea>
 <button class="reflection-submit" data-chapter="2" style="background: #1a1a1a; color: white; border: none; padding: 1rem 2rem; border-radius: 8px; font-size: 1.05rem; font-weight: 600; cursor: pointer; transition: background 0.2s;">내 생각 제출하기 (로컬 저장)</button>
 <p id="save-msg-2" style="display: none; color: #22c55e; margin-top: 1rem; font-weight: 500; font-size: 1.05rem;">✓ 기기에 안전하게 저장되었습니다. 향후 서버 연동 시 익명으로 공유될 수 있습니다.</p>
 </div>
@@ -126,63 +161,16 @@
 <div class="container"><p>© 2026 AI교육 2026. All rights reserved.</p></div>
 </footer>
 
-<script>
 
-            document.addEventListener("DOMContentLoaded", function() {
-                if(typeof vis === 'undefined') return;
-                var container = document.getElementById('vis-net-335878c2');
-                var data = {
-                    nodes: new vis.DataSet([{"id": "A", "label": "기술 촉발\nInnovation", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "B", "label": "기대의 정점\nPeak of Inflated Expectations", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "C", "label": "환멸의 계곡\nTrough of Disillusionment", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "D", "label": "계몽의 비탈\nSlope of Enlightenment", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "E", "label": "생산성의 안정기\nPlateau of Productivity", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}]),
-                    edges: new vis.DataSet([])
-                };
-                var options = {
-                    layout: {
-                        hierarchical: {
-                            enabled: true,
-                            direction: 'LR',
-                            sortMethod: 'directed',
-                            nodeSpacing: 250,
-                            levelSeparation: 150
-                        }
-                    },
-                    physics: {
-                        enabled: true,
-                        hierarchicalRepulsion: { nodeDistance: 200, springLength: 100, damping: 0.09 }
-                    },
-                    edges: { smooth: { type: 'cubicBezier', forceDirection: 'horizontal' }, color: '#94a3b8', width: 2 },
-                    interaction: { hover: true, dragNodes: true }
-                };
-                new vis.Network(container, data, options);
-            });
-            
 
-            document.addEventListener("DOMContentLoaded", function() {
-                if(typeof vis === 'undefined') return;
-                var container = document.getElementById('vis-net-506351cc');
-                var data = {
-                    nodes: new vis.DataSet([{"id": "T1", "label": "기술 인프라 보급", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "T2", "label": "교사 및 학생의 혼란", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "T3", "label": "환멸과 예산 낭비", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "P1", "label": "교육적 목적 정의 - 비판적 사고, 창의성, 연대", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "P2", "label": "AI 기술 선별 도입", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "P3", "label": "메타 인지적 학습 및 공진 창출", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}]),
-                    edges: new vis.DataSet([])
-                };
-                var options = {
-                    layout: {
-                        hierarchical: {
-                            enabled: true,
-                            direction: 'UD',
-                            sortMethod: 'directed',
-                            nodeSpacing: 250,
-                            levelSeparation: 150
-                        }
-                    },
-                    physics: {
-                        enabled: true,
-                        hierarchicalRepulsion: { nodeDistance: 200, springLength: 100, damping: 0.09 }
-                    },
-                    edges: { smooth: { type: 'cubicBezier', forceDirection: 'vertical' }, color: '#94a3b8', width: 2 },
-                    interaction: { hover: true, dragNodes: true }
-                };
-                new vis.Network(container, data, options);
-            });
-            
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ 
+    startOnLoad: true, 
+    theme: 'default',
+    securityLevel: 'loose',
+    flowchart: { htmlLabels: true, curve: 'basis' }
+  });
 </script>
 </body>
 </html>

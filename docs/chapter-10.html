@@ -20,7 +20,7 @@
 .mermaid { overflow-x: auto; text-align: center; margin: 2rem 0; clear:both; }
 .mermaid svg { max-width: 100%; height: auto; }
 </style><link href="widgets.css" rel="stylesheet"/><script defer="True" src="widgets.js"></script>
-<script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
 </head>
 <body>
 <header class="site-header" role="banner">
@@ -48,7 +48,34 @@
 </div>
 <h2>2. 학교의 수호: 공적 거버넌스와 데이터의 방파제 설계</h2>
 <p>이 어두운 광맥을 끊어내고 학교라는 신성한 공간을 지켜내기 위해, 교육 시스템 재구조화의 최종 마무리는 이른바 책임 있는 AI 거버넌스를 헌법적 수준에서 콘크리트로 다지는 일이어야 합니다.</p>
-<div id="vis-net-51fb13f2" class="vis-network-container" style="width: 100%; height: 400px; border: 1px solid #e2e8f0; border-radius: 12px; background: #fafafa; margin: 2rem 0; cursor: grab; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);"></div>
+<div class="mermaid-wrapper" style="width: 100%; overflow-x: auto; background: #fdf8f5; padding: 2rem; border-radius: 12px; margin: 2rem 0; border: 1px solid #e2e8f0; text-align: center;">
+<pre class="mermaid" style="font-size: 1.25rem; font-family: Pretendard, sans-serif;">
+
+flowchart TD
+    subgraph Danger [무방비 상태의 기업 주도적 데이터 종속성]
+    direction TB
+    S_Data["학생의 취약점 및 학습 생체 데이터 무한 발생"] --&gt;|약관 동의 하나로 무단 전송| B_Server["빅테크/사교육 플랫폼의 영구적 블랙 클라우드"]
+    B_Server --&gt;|개인정보 가공 및 평생 알고리즘 꼬리표 부착| G_Risk["맞춤형 광고 노출 및 사회적 낙인"]
+    end
+
+    subgraph Defense [2026년 공교육 거버넌스의 3중 방파제]
+    direction TB
+    Gov_Net["공공 클라우드 통제소 (데이터 가명 처리 및 파기 권한 보장)"]
+    Audit["알고리즘 영향 평가 위원회 (민관학 교사 연합)"]
+    Right_OptOut["학부모 및 학생의 연결 안 될 권리 명문화"]
+    
+    Gov_Net --&gt;|사설 API 연동 시 철저한 비식별화, 기한 경과 시 영구 삭제 의무화| Audit
+    Audit --&gt;|편향적 프롬프트, 알고리즘 환각 등 6개월 1회 정기 불시 감사"| Gov_Net
+    Right_OptOut -.-&gt;|AI의 개입을 전면 거부할 시민적 선택권 보장| Gov_Net
+    end
+
+    style B_Server fill:#fee2e2,stroke:#ef4444,stroke-width:2px
+    style Gov_Net fill:#dbeafe,stroke:#2563eb,stroke-width:2px
+    style Audit fill:#dcfce7,stroke:#22c55e,stroke-width:2px
+    style Right_OptOut fill:#fdf2e9,stroke:#e67e22
+
+</pre>
+</div>
 <h2>3. 방어선 제1원칙: 알고리즘에 대한 설명 요구권과 편향성 투쟁</h2>
 <p>AI 거버넌스의 시작은 소위 비밀스러운 블랙박스 알고리즘의 뚜껑을 강제로 열어젖히는 설명 요구권에 있습니다. 만약 특정 학교나 교육청에서 도입한 AI 튜터 시스템이, 유색 인종이나 가난한 빈민가 지역의 수학 성적 등급 수치를 의도적으로 낮게 확률 예측하여 교사에게 잘못된 인지 편향을 유도했다면 어떻게 분노하고 처벌해야 할까요?</p>
 <p>지금까지의 교사들은 "버튼을 누르니 이렇게 나왔습니다. 오류인 것 같습니다."라며 순진하게 납품 업체의 콜센터에 항의하는 선에서 머물렀습니다. 하지만 2026년 이후의 교장과 교사 및 정책 입안자들은 알고리즘 독점 기업의 회장실을 찾아가, 이 편향적인 결과값이 대체 어떤 원천 데이터의 오염에서 비롯되었는지, 그 가중치 공식을 백일하에 투명하게 공개하라고 명령할 수 있는 막강한 법적 교육 감사권을 휘둘러야 합니다. 교육이 기업의 영리 자본보다 도덕적으로 압도적 우위에 서지 않는 한, 아이들은 공정한 출발선 대신 코딩된 차별의 바닥에서 경주를 시작해야 합니다.</p>
@@ -113,7 +140,7 @@
             성찰과 연대: 2026년을 향한 당신의 생각
         </h3>
 <p style="font-size: 1.15rem; color: #444; margin-bottom: 2rem; line-height: 1.6;">학생 개개인의 인지 모델을 AI가 완벽히 파악한다면, 이는 완벽한 맞춤형 교육일까요, 아니면 알고리즘에 의한 또 다른 의미의 통제일까요?</p>
-<textarea id="reflection-answer-10" placeholder="자신의 생각을 편안하고 솔직하게 기록해보세요..." style="width: 100%; height: 140px; padding: 1.2rem; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; font-size: 1.05rem; margin-bottom: 1.5rem; resize: vertical; box-sizing: border-box; background: #fff;"></textarea>
+<textarea id="reflection-answer-10" placeholder="자신의 생각을 편안하고 솔직하게 기록해보세요..." style="width: 100%; height: 700px; padding: 1.2rem; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; font-size: 1.05rem; margin-bottom: 1.5rem; resize: vertical; box-sizing: border-box; background: #fff;"></textarea>
 <button class="reflection-submit" data-chapter="10" style="background: #1a1a1a; color: white; border: none; padding: 1rem 2rem; border-radius: 8px; font-size: 1.05rem; font-weight: 600; cursor: pointer; transition: background 0.2s;">내 생각 제출하기 (로컬 저장)</button>
 <p id="save-msg-10" style="display: none; color: #22c55e; margin-top: 1rem; font-weight: 500; font-size: 1.05rem;">✓ 기기에 안전하게 저장되었습니다. 향후 서버 연동 시 익명으로 공유될 수 있습니다.</p>
 </div>
@@ -124,35 +151,16 @@
 <div class="container"><p>© 2026 AI교육 2026. All rights reserved.</p></div>
 </footer>
 
-<script>
 
-            document.addEventListener("DOMContentLoaded", function() {
-                if(typeof vis === 'undefined') return;
-                var container = document.getElementById('vis-net-51fb13f2');
-                var data = {
-                    nodes: new vis.DataSet([{"id": "S_Data", "label": "학생의 취약점 및 학습 생체 데이터 무한 발생", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "B_Server", "label": "빅테크/사교육 플랫폼의 영구적 블랙 클라우드", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "G_Risk", "label": "맞춤형 광고 노출 및 사회적 낙인", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "Gov_Net", "label": "공공 클라우드 통제소 (데이터 가명 처리 및 파기 권한 보장)", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "Audit", "label": "알고리즘 영향 평가 위원회 (민관학 교사 연합)", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "Right_OptOut", "label": "학부모 및 학생의 연결 안 될 권리 명문화", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}]),
-                    edges: new vis.DataSet([])
-                };
-                var options = {
-                    layout: {
-                        hierarchical: {
-                            enabled: true,
-                            direction: 'UD',
-                            sortMethod: 'directed',
-                            nodeSpacing: 250,
-                            levelSeparation: 150
-                        }
-                    },
-                    physics: {
-                        enabled: true,
-                        hierarchicalRepulsion: { nodeDistance: 200, springLength: 100, damping: 0.09 }
-                    },
-                    edges: { smooth: { type: 'cubicBezier', forceDirection: 'vertical' }, color: '#94a3b8', width: 2 },
-                    interaction: { hover: true, dragNodes: true }
-                };
-                new vis.Network(container, data, options);
-            });
-            
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ 
+    startOnLoad: true, 
+    theme: 'default',
+    securityLevel: 'loose',
+    flowchart: { htmlLabels: true, curve: 'basis' }
+  });
 </script>
 </body>
 </html>

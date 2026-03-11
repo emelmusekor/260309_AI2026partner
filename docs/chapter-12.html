@@ -20,7 +20,7 @@
 .mermaid { overflow-x: auto; text-align: center; margin: 2rem 0; clear:both; }
 .mermaid svg { max-width: 100%; height: auto; }
 </style><link href="widgets.css" rel="stylesheet"/><script defer="True" src="widgets.js"></script>
-<script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
 </head>
 <body>
 <header class="site-header" role="banner">
@@ -45,7 +45,30 @@
 <div class="highlight-box"><p style="margin:0;"><strong>학문적 울타리의 증발</strong>은(는) 그러나 AI 튜터 시스템과 초거대 언어 모델이 클라우드 위로 올라서는 순간, 그 견고했던 시간표와 교과서의 장벽은 산산이 부서집니다. AI는 태생적으로 인류가 축적한 전 학문(Ph.D. 수준의 역사, 물리학, 컴퓨터 공학, 문학)의 데이터를 한 그릇 안에서 무경계로 융합하고 패턴화하여 대답하는 거대한 잡식성 두뇌이기 때문이다.  따라서 AI가 도입된 2026년 이후의 교실 프로젝트는 생물학 단원을 복습해보자 식의 고립된 미션이 될 수 없습니다. 모든 교과의 지식들을 믹서기에 갈아 넣듯 거침없이 뒤섞고 융합하여 실제 세상을 향한 해결책으로 조립해 내는 메이커형 창조 교육으로 완전히 진화해야 합니다.</p></div>
 <h2>2. 무경계 프로젝트 수업의 전형: 지역사회 문제 해결형 메이커스</h2>
 <p>우리가 제안하는 탐구형·메이커형 AI 프로젝트 수업의 본질은 화면 속의 가상 텍스트 놀이가 아닙니다. 그것은 3장(챗봇을 넘어서)에서 논의한 피지컬 AI(센서, 로보틱스, 아두이노 보드)의 개념을 교실로 끌어내려, 아이들의 두 손에 데이터 수집 장치를 쥐어주고 교문 밖 진짜 현실의 흙먼지를 뒤집어쓰게 하는 가장 야성적인 현장 실습입니다.</p>
-<div id="vis-net-f880b47e" class="vis-network-container" style="width: 100%; height: 400px; border: 1px solid #e2e8f0; border-radius: 12px; background: #fafafa; margin: 2rem 0; cursor: grab; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);"></div>
+<div class="mermaid-wrapper" style="width: 100%; overflow-x: auto; background: #fdf8f5; padding: 2rem; border-radius: 12px; margin: 2rem 0; border: 1px solid #e2e8f0; text-align: center;">
+<pre class="mermaid" style="font-size: 1.25rem; font-family: Pretendard, sans-serif;">
+
+flowchart TD
+    subgraph stage1 [1단계: 발견과 융합]
+    P1["환경 문제 데이터 발견 - 교문 앞 심각한 미세먼지 수치] --&gt;|AI 챗봇 검색 및 팩트체크| P2["다교과 지식 융합 - 과학 원리 + 사회적 건강 불평등""]
+    end
+
+    subgraph stage2 [2단계: 피지컬 AI 메이커스]
+    P2 --&gt;|AI 코드 생성기 Copilot 활용| P3["아두이노 미세먼지 측정 센서 펌웨어 코딩"]
+    P3 --&gt;|3D 프린터 및 데이터 보드 연결| P4["물리적 디바이스 조립 및 등하교길 데이터 수집망 구축"]
+    end
+
+    subgraph stage3 [3단계: 가치 창출과 행동]
+    P4 --&gt;|수집된 수만 건의 Raw Data 입력| P5["AI 데이터 애널리틱스 분석 - 시각화 대시보드 생성"]
+    P5 --&gt;|AI 논증 도우미 첨삭| P6["지역 시청에 민원 제출서 발송 - 통학로 살수차 배치 요구"]
+    end
+
+    style P1 fill:#dcfce7,stroke:#22c55e
+    style P4 fill:#fdf2e9,stroke:#e67e22,stroke-width:2px
+    style P6 fill:#dbeafe,stroke:#2563eb,stroke-width:2px
+
+</pre>
+</div>
 <h2>3. 초등 고학년: 데이터를 무기로 구청장에게 편지 쓰기</h2>
 <p>구체적인 현장의 렌즈로 시나리오를 들여다보겠습니다. 초등학교 5학년 국어 시간에 설득하는 글쓰기, 수학 시간에 평균과 그래프, 그리고 실과 시간에 소프트웨어의 기초를 배우는 한 주가 도래했습니다. 과거라면 각기 다른 교사의 지시 아래 국어 공책에 뻔한 편지를 쓰고, 수학 익힘책을 채점하며 끝났을 것입니다.</p>
 <p>그러나 AI-융합 프로젝트 수업은 이 모든 시간을 하나의 거대한 어벤저스 급 지역사회 구출 작전으로 통합합니다.</p>
@@ -115,7 +138,7 @@
             성찰과 연대: 2026년을 향한 당신의 생각
         </h3>
 <p style="font-size: 1.15rem; color: #444; margin-bottom: 2rem; line-height: 1.6;">앰비언트 컴퓨팅 기반의 학습 공간에서 일어나는 상호작용은 기존 아날로그 교실의 상호작용과 어떤 한계와 철학적 가능성을 지닙니까?</p>
-<textarea id="reflection-answer-12" placeholder="자신의 생각을 편안하고 솔직하게 기록해보세요..." style="width: 100%; height: 140px; padding: 1.2rem; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; font-size: 1.05rem; margin-bottom: 1.5rem; resize: vertical; box-sizing: border-box; background: #fff;"></textarea>
+<textarea id="reflection-answer-12" placeholder="자신의 생각을 편안하고 솔직하게 기록해보세요..." style="width: 100%; height: 700px; padding: 1.2rem; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; font-size: 1.05rem; margin-bottom: 1.5rem; resize: vertical; box-sizing: border-box; background: #fff;"></textarea>
 <button class="reflection-submit" data-chapter="12" style="background: #1a1a1a; color: white; border: none; padding: 1rem 2rem; border-radius: 8px; font-size: 1.05rem; font-weight: 600; cursor: pointer; transition: background 0.2s;">내 생각 제출하기 (로컬 저장)</button>
 <p id="save-msg-12" style="display: none; color: #22c55e; margin-top: 1rem; font-weight: 500; font-size: 1.05rem;">✓ 기기에 안전하게 저장되었습니다. 향후 서버 연동 시 익명으로 공유될 수 있습니다.</p>
 </div>
@@ -126,35 +149,16 @@
 <div class="container"><p>© 2026 AI교육 2026. All rights reserved.</p></div>
 </footer>
 
-<script>
 
-            document.addEventListener("DOMContentLoaded", function() {
-                if(typeof vis === 'undefined') return;
-                var container = document.getElementById('vis-net-f880b47e');
-                var data = {
-                    nodes: new vis.DataSet([{"id": "P1", "label": "\"환경 문제 데이터 발견 - 교문 앞 심각한 미세먼지 수치", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "P2", "label": "\"다교과 지식 융합 - 과학 원리 + 사회적 건강 불평등\"\"", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "P3", "label": "아두이노 미세먼지 측정 센서 펌웨어 코딩", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "P4", "label": "물리적 디바이스 조립 및 등하교길 데이터 수집망 구축", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "P5", "label": "AI 데이터 애널리틱스 분석 - 시각화 대시보드 생성", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "P6", "label": "지역 시청에 민원 제출서 발송 - 통학로 살수차 배치 요구", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}]),
-                    edges: new vis.DataSet([])
-                };
-                var options = {
-                    layout: {
-                        hierarchical: {
-                            enabled: true,
-                            direction: 'UD',
-                            sortMethod: 'directed',
-                            nodeSpacing: 250,
-                            levelSeparation: 150
-                        }
-                    },
-                    physics: {
-                        enabled: true,
-                        hierarchicalRepulsion: { nodeDistance: 200, springLength: 100, damping: 0.09 }
-                    },
-                    edges: { smooth: { type: 'cubicBezier', forceDirection: 'vertical' }, color: '#94a3b8', width: 2 },
-                    interaction: { hover: true, dragNodes: true }
-                };
-                new vis.Network(container, data, options);
-            });
-            
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ 
+    startOnLoad: true, 
+    theme: 'default',
+    securityLevel: 'loose',
+    flowchart: { htmlLabels: true, curve: 'basis' }
+  });
 </script>
 </body>
 </html>
