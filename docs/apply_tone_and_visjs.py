@@ -129,18 +129,39 @@ def replace_mermaid_with_vis(content):
                             enabled: true,
                             direction: '{direction}',
                             sortMethod: 'directed',
-                            nodeSpacing: 250,
+                            nodeSpacing: 200,
                             levelSeparation: 150
                         }}
                     }},
                     physics: {{
                         enabled: true,
-                        hierarchicalRepulsion: {{ nodeDistance: 200, springLength: 100, damping: 0.09 }}
+                        hierarchicalRepulsion: {{ 
+                            nodeDistance: 150, 
+                            springLength: 100, 
+                            springConstant: 0.2, 
+                            damping: 0.7 
+                        }}
                     }},
-                    edges: {{ smooth: {{ type: 'cubicBezier', forceDirection: '{'vertical' if direction=='UD' else 'horizontal'}' }}, color: '#94a3b8', width: 2 }},
-                    interaction: {{ hover: true, dragNodes: true }}
+                    edges: {{ 
+                        smooth: {{ type: 'cubicBezier', forceDirection: '{'vertical' if direction=='UD' else 'horizontal'}' }}, 
+                        color: '#334155', 
+                        width: 3,
+                        font: {{ size: 14, color: '#1e293b', strokeWidth: 2, strokeColor: '#ffffff' }},
+                        arrows: {{ to: {{ scaleFactor: 1.2 }} }}
+                    }},
+                    interaction: {{ 
+                        hover: true, 
+                        dragNodes: true,
+                        zoomView: false,
+                        dragView: false
+                    }}
                 }};
-                new vis.Network(container, data, options);
+                var network = new vis.Network(container, data, options);
+                
+                // Fit to canvas once stabilized to ensure it's visible at a glance
+                network.on("stabilizationIterationsDone", function () {{
+                    network.fit();
+                }});
             }});
             """
             script_injections.append(js_code)
