@@ -7,8 +7,6 @@
 <title>19장. 결론: 인간을 위한 도구, 도구를 지배하는 인간 | AI교육 2026 비전 선언문</title>
 <link href="https://cdn.jsdelivr.net" rel="preconnect"/><link crossorigin="" href="https://cdn.jsdelivr.net" rel="preconnect"/><link as="style" crossorigin="" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet"/>
 <link href="styles.css" rel="stylesheet"/>
-<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-<script>mermaid.initialize({ startOnLoad: true, theme: 'base', look: 'handDrawn', themeVariables: { primaryColor: '#fdf2e9' } });</script>
 <style>
         .mermaid { background: #fdf2e9; padding: 2rem; border-radius: 12px; margin: 2rem 0; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); display: flex; justify-content: center; font-size: 1.1rem; }
         .article-content h2 { margin-top: 3.5rem; color: var(--primary-color); border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; line-height: 1.4; }
@@ -21,7 +19,9 @@
 <style>
 .mermaid { overflow-x: auto; text-align: center; margin: 2rem 0; clear:both; }
 .mermaid svg { max-width: 100%; height: auto; }
-</style><link href="widgets.css" rel="stylesheet"/><script defer="True" src="widgets.js"></script></head>
+</style><link href="widgets.css" rel="stylesheet"/><script defer="True" src="widgets.js"></script>
+<script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+</head>
 <body>
 <header class="site-header" role="banner">
 <div class="container header-content">
@@ -40,35 +40,15 @@
 <article class="container">
 <div class="article-content">
 <h2>1. 거대한 여정의 끝, 그리고 가장 두려운 질문의 시작</h2>
-<p>수백 년을 버텨온 공교육의 낡은 철골 구조 위에 2026년형 초거대 AI를 이식하는 이 방대한 시스템 재설계의 끝에서, 우리는 가장 근원적인 질문에 봉착합니다. 기술적 낙관주의에 취해 있을 시간은 없습니다. 우리가 맞닥뜨린 치명적 환상은 기술이 아이들의 노력마저 대신해 줄 것이라는 착각입니다. 인간의 이성과 노력, 투지라는 생물학적 근육은 기계가 완벽해질수록 더욱 격렬하게 훈련되어야만 합니다. 결론은 명확하다. 기계의 달콤한 답습을 거부하고 마찰을 기꺼이 인내하는 자만이, 기계를 부리는 가장 위대한 인간 중심의 권력을 손에 쥘 것입니다.</p>
+<p>수백 년을 버텨온 공교육의 낡은 철골 구조 위에 2026년형 초거대 AI를 이식하는 이 방대한 시스템 재설계의 끝에서, 우리는 가장 근원적인 질문에 봉착한다. 기술적 낙관주의에 취해 있을 시간은 없다. 우리가 맞닥뜨린 치명적 환상은 기술이 아이들의 노력마저 대신해 줄 것이라는 착각이다. 인간의 이성과 노력, 투지라는 생물학적 근육은 기계가 완벽해질수록 더욱 격렬하게 훈련되어야만 한다. 결론은 명확하다. 기계의 달콤한 답습을 거부하고 마찰을 기꺼이 인내하는 자만이, 기계를 부리는 가장 위대한 인간 중심의 권력을 손에 쥘 것이다.</p>
 <p>가장 밑바닥 교실의 칸막이를 뜯어내고(3부), 교사의 잃어버린 권위와 시간을 복원시켰으며(2부), 가장 느리고 아픈 아이의 손을 잡아끌어주는 자비로운 딥러닝 그물망을 던졌고, 마침내 국가 행정의 뇌수까지 가장 투명한 데이터 구조로 완전히 갈아 끼웠습니다(4부).</p>
-<p>그러나 이 숨 가쁜 혁명의 끄트머리인 19장 결론에 다다른 지금, 우리는 모든 기술적 낙관론과 장밋빛 정책 로드맵을 잠시 책상 서랍 속에 밀어 넣어야만 합니다. 우리는 구글이나 오픈AI의 신제품 발표회장에 박수를 치러 온 구경꾼들이 아니라, 이 무서운 피조물이 아이들의 뇌파를 잠식하기 전에 심장부에 브레이크를 달아야 하는 <em>마지막 인간 중심주의자</em>들이기 때문입니다.</p>
-<div class="highlight-box"><p style="margin:0;"><strong>기술이 모든 것을 해결해주리라는 가장 비극적인 치명적 환상</strong>은(는) 우리가 2026년 공교육을 살려내기 위해 도입한 저 찬란한 AI 기술은, 아이러니하게도 인간 스스로가 1만 년간 축적해 온 이성, 노력, 인내, 관용이라는 뇌의 생물학적 근육을 가장 순식간에 녹여버리고, 인간을 단지 <em>AI가 던져준 달콤한 정답을 복사하는 돼지</em>로 전락시킬 수 있는 치명적이고도 역사적인 독약입니다. 편의성에 중독되는 순간, 교사는 데이터의 단순 관찰자로 전락하고 아이들은 환각의 노예로 사육됩니다. 이것이 우리가 맞닥뜨린 가장 싸늘하고도 본질적인 공포의 심연입니다.</p></div>
+<p>그러나 이 숨 가쁜 혁명의 끄트머리인 19장 결론에 다다른 지금, 우리는 모든 기술적 낙관론과 장밋빛 정책 로드맵을 잠시 책상 서랍 속에 밀어 넣어야만 한다. 우리는 구글이나 오픈AI의 신제품 발표회장에 박수를 치러 온 구경꾼들이 아니라, 이 무서운 피조물이 아이들의 뇌파를 잠식하기 전에 심장부에 브레이크를 달아야 하는 <em>마지막 인간 중심주의자</em>들이기 때문입니다.</p>
+<div class="highlight-box"><p style="margin:0;"><strong>기술이 모든 것을 해결해주리라는 가장 비극적인 치명적 환상</strong>은(는) 우리가 2026년 공교육을 살려내기 위해 도입한 저 찬란한 AI 기술은, 아이러니하게도 인간 스스로가 1만 년간 축적해 온 이성, 노력, 인내, 관용이라는 뇌의 생물학적 근육을 가장 순식간에 녹여버리고, 인간을 단지 <em>AI가 던져준 달콤한 정답을 복사하는 돼지</em>로 전락시킬 수 있는 치명적이고도 역사적인 독약이다. 편의성에 중독되는 순간, 교사는 데이터의 단순 관찰자로 전락하고 아이들은 환각의 노예로 사육된다. 이것이 우리가 맞닥뜨린 가장 싸늘하고도 본질적인 공포의 심연입니다.</p></div>
 <h2>2. 2026년 시대 교차점의 위대한 비전 선언문</h2>
-<p>그렇다면, 이 불가역적인 쓰나미 앞에서 인류는 어떤 선언을 이마에 피로 써 붙이고 교실의 문을 열어야 할까요? 이 19장의 결론은 대한민국의 교육 당국과 모든 50만 현장 교사, 그리고 학부모에게 바치는 피맺힌 <em>AI교육 2026 비전 선언문</em>입니다.</p>
-<div class="mermaid">
-flowchart TD
-    subgraph vision [AI교육 2026 비전 - 3대 절대 원칙]
-    direction TB
-    V_Top["인간을 위한 도구, 도구를 지배하는 인간 - Human over Machine"]
-
-    V_Top --&gt; V1["제1원칙: 의도적 마찰 - Intentional Friction"]
-    V_Top --&gt; V2["제2원칙: 하이터치의 절대성 - High-touch"]
-    V_Top --&gt; V3["제3원칙: 질문의 해상도 - Resolution of Prompt"]
-
-    V1 --&gt;|답을 주지 않고 좌절과 모호함을 즐기게 하라| V_Bottom["메타인지와 야생의 근육 폭발 - Grit"]
-    V2 --&gt;|기계가 할 수 없는 오직 하나: 눈물 닦아주기| V_Bottom
-    V3 --&gt;|기계의 목줄을 쥐는 권력 - 가장 위협적인 Prompt"| V_Bottom
-    end
-
-    style V_Top fill:#dbeafe,stroke:#2563eb,stroke-width:3px
-    style V_Bottom fill:#dcfce7,stroke:#22c55e,stroke-width:2px
-    style V1 fill:#fdf2e9,stroke:#e67e22
-    style V2 fill:#fdf2e9,stroke:#e67e22
-    style V3 fill:#fdf2e9,stroke:#e67e22
-</div>
+<p>그렇다면, 이 불가역적인 쓰나미 앞에서 인류는 어떤 선언을 이마에 피로 써 붙이고 교실의 문을 열어야 할까요? 이 19장의 결론은 대한민국의 교육 당국과 모든 50만 현장 교사, 그리고 학부모에게 바치는 피맺힌 <em>AI교육 2026 비전 선언문</em>이다.</p>
+<div id="vis-net-b9ac212d" class="vis-network-container" style="width: 100%; height: 400px; border: 1px solid #e2e8f0; border-radius: 12px; background: #fafafa; margin: 2rem 0; cursor: grab; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);"></div>
 <h2>3. 제1원칙: "마찰"을 찬양하라</h2>
-<p>매끄럽고 유창한 학습은 환상입니다. 진짜 배움은 언제나 불편하고 뼈가 쑤시는 고단함 속에서 피어납니다. AI가 던져주는 첫 번째, 두 번째 대답을 의심하고, 그 완벽한 확률론의 알고리즘에 맞서서 <i>"이 논리의 철학적 붕괴점은 어디입니까?"</i>라고 기계의 오류를 후벼 파며 밤을 새우는 아이들. 우리는 기계의 답변을 암기하는 아이가 아니라, 기계의 답변에 불만족하여 서가에서 도서관의 묵은 백과사전을 기어이 찢고야 마는 이 신경질적이고도 건강한 <em>마찰의 투지</em>를 교실 최고의 미덕으로 삼을 것을 맹세합니다.</p>
+<p>매끄럽고 유창한 학습은 환상이다. 진짜 배움은 언제나 불편하고 뼈가 쑤시는 고단함 속에서 피어납니다. AI가 던져주는 첫 번째, 두 번째 대답을 의심하고, 그 완벽한 확률론의 알고리즘에 맞서서 <i>"이 논리의 철학적 붕괴점은 어디입니까?"</i>라고 기계의 오류를 후벼 파며 밤을 새우는 아이들. 우리는 기계의 답변을 암기하는 아이가 아니라, 기계의 답변에 불만족하여 서가에서 도서관의 묵은 백과사전을 기어이 찢고야 마는 이 신경질적이고도 건강한 <em>마찰의 투지</em>를 교실 최고의 미덕으로 삼을 것을 맹세합니다.</p>
 <div class="interactive-widget mcq-widget" data-id="mcq-19">
 <h4 class="widget-title">📝 깊이 있는 사유: 인간다움의 수호</h4>
 <p style="margin-bottom:1.5rem;">본서의 결론에서 강조하는, 기계가 도저히 모방할 수 없는 인류 최후의 프리미엄은 무엇인가?</p>
@@ -78,51 +58,25 @@ flowchart TD
 <div class="mcq-option" data-correct="false">어떤 상황에서도 절대 실패하지 않는 완결 무결한 논리력</div>
 <div class="mcq-option" data-correct="false">24시간 쉬지 않고 일할 수 있는 체력</div>
 <button class="submit-btn" type="button">정답 제출하기</button>
-<div class="feedback-msg" data-error-msg="❌ 기계가 모방할 수 없는 아날로그적 온기와 연대를 놓치고 있습니다." data-success-msg="🎯 가장 뜨거운 정답입니다! 불완전성의 사랑만이 우리의 가장 완벽한 무기입니다."></div>
+<div class="feedback-msg" data-error-msg="❌ 기계가 모방할 수 없는 아날로그적 온기와 연대를 놓치고 있다." data-success-msg="🎯 가장 뜨거운 정답입니다! 불완전성의 사랑만이 우리의 가장 완벽한 무기입니다."></div>
 </div>
 <h2>4. 제2원칙: "하이터치"의 성역을 사수하라</h2>
-<p>행정 자동화로 확보된 교사의 1분 1초의 잉여 시간은 단 한 방울도 서류 작업이나 승진 경쟁에 다시 쓰일 수 없습니다. 이 시간은 전적으로 부모의 이혼, 학교 폭력, 가난, 그리고 심리적 공황으로 인해 교실 가장 어두운 벤치에서 고개를 떨구고 있는 가장 상처받은 아이의 어깨 위로 100% 모조리 부어져야 합니다.</p>
-<p>기계가 미적분학의 원리를 소수점 100자리까지 완벽하게 스크린에 띄우더라도, 기계는 결코 화면 밖으로 손을 내밀어 우울증에 빠진 아이의 뺨을 쓰다듬으며 <i><em>선생님은 너의 실패가 자랑스럽다</em></i>라고 눈물방울을 떨어뜨려 줄 수 없습니다. 기계가 압도할수록, 가장 비효율적이고 지극히 진흙탕처럼 끈적한 그 지점, <em>인간다움과 연대</em>만이 교육 현장의 가장 위대하고도 절대 불침번의 보루가 됩니다.</p>
+<p>행정 자동화로 확보된 교사의 1분 1초의 잉여 시간은 단 한 방울도 서류 작업이나 승진 경쟁에 다시 쓰일 수 없다. 이 시간은 전적으로 부모의 이혼, 학교 폭력, 가난, 그리고 심리적 공황으로 인해 교실 가장 어두운 벤치에서 고개를 떨구고 있는 가장 상처받은 아이의 어깨 위로 100% 모조리 부어져야 한다.</p>
+<p>기계가 미적분학의 원리를 소수점 100자리까지 완벽하게 스크린에 띄우더라도, 기계는 결코 화면 밖으로 손을 내밀어 우울증에 빠진 아이의 뺨을 쓰다듬으며 <i><em>선생님은 너의 실패가 자랑스럽다</em></i>라고 눈물방울을 떨어뜨려 줄 수 없다. 기계가 압도할수록, 가장 비효율적이고 지극히 진흙탕처럼 끈적한 그 지점, <em>인간다움과 연대</em>만이 교육 현장의 가장 위대하고도 절대 불침번의 보루가 된다.</p>
 <h2>5. 제3원칙: "질문"의 폭력적 권력을 쟁취하라</h2>
 <p>다가오는 미래는 아는 자의 세상이 아니라, 미친 듯이 파괴적인 질문을 던지는 자의 황금시대입니다.</p>
-<p>수조 원의 쩐의 전쟁으로 무장한 초국적 빅테크가 교실에 실시간으로 데이터를 퍼부어댈 때, 우리의 아이들은 그 거대 기업의 알고리즘 낚싯바늘에 순한 양처럼 코가 꿰인 소비자이자 맹목적인 디지털 식민지 원주민으로 전락할 위험 1순위 타기팅 대상입니다. 우리는 아이들의 양손에 기계를 다스릴 가장 날카로운 <em>비판적 질문의 채찍</em>을 쥐여 주입합니다.</p>
-<p>기계를 신격화하는 대신 기계를 철저히 용병으로 경멸하듯 부려 먹어야 합니다. 수천 개의 환각과 편향, 가짜 뉴스를 향해 방아쇠를 당기는 권력은 오직 인간의 철학적 질문(메타인지)의 두께와 해상도에 달렸습니다. 우리는 기계 파도의 노예가 아니라, 그 파도의 목줄을 등허리 위에서 휘어잡고 세상을 호령해 나가는 가장 오만하고, 가장 도덕적이며, 철저하게 투명한 마에스트로 지휘관을 길러낼 것입니다.</p>
+<p>수조 원의 쩐의 전쟁으로 무장한 초국적 빅테크가 교실에 실시간으로 데이터를 퍼부어댈 때, 우리의 아이들은 그 거대 기업의 알고리즘 낚싯바늘에 순한 양처럼 코가 꿰인 소비자이자 맹목적인 디지털 식민지 원주민으로 전락할 위험 1순위 타기팅 대상이다. 우리는 아이들의 양손에 기계를 다스릴 가장 날카로운 <em>비판적 질문의 채찍</em>을 쥐여 주입합니다.</p>
+<p>기계를 신격화하는 대신 기계를 철저히 용병으로 경멸하듯 부려 먹어야 한다. 수천 개의 환각과 편향, 가짜 뉴스를 향해 방아쇠를 당기는 권력은 오직 인간의 철학적 질문(메타인지)의 두께와 해상도에 달렸습니다. 우리는 기계 파도의 노예가 아니라, 그 파도의 목줄을 등허리 위에서 휘어잡고 세상을 호령해 나가는 가장 오만하고, 가장 도덕적이며, 철저하게 투명한 마에스트로 지휘관을 길러낼 것이다.</p>
 <h2>6. AI교육 2026의 4단계 실현 로드맵: 이상에서 현실로</h2>
-<p>이 장대한 비전 선언문이 교실 현장에서 공허한 구호로 끝나지 않기 위해서는, 구체적이고 단계별로 실현 가능한 "AI교육 2026 실현 4단계 로드맵(4-Phase Roadmap)"이 반드시 수반되어야 합니다. 구호는 혁명을 만들지 못합니다. 달력과 예산과 책임자가 있는 로드맵만이 교실을 바꿉니다.</p>
-<div class="mermaid">
-flowchart TD
-    subgraph Phase1 [1단계 2026년 상반기: 기반 인프라 구축]
-    direction TB
-    P1a["전국 AI 교육 데이터 허브 클라우드 구축"] --&gt; P1b["교원 대상 마이크로 자격증 플랫폼 개설"]
-    end
-
-    subgraph Phase2 [2단계 2026년 하반기: 파일럿 학교 실증]
-    direction TB
-    P2a["시도별 파일럿 학교 10개교 선정, AI 튜터 + 데이터 대시보드 본격 운영] --&gt; P2b["현장 교사 피드백 기반 에듀테크 모듈 A/B 테스트""]
-    end
-
-    subgraph Phase3 [3단계 2027년: 단계적 전국 확산]
-    P3a["파일럿 성공 모델 기반, 전국 공립학교 AI 거버넌스 시스템 적용] --&gt; P3b["어린이 데이터 헌장 법령화 및 Parents Opt-out 제도 시행""]
-    end
-
-    subgraph Phase4 [4단계 2028년~: 자기 갱신 생태계]
-    P4a["대학·에듀테크·교육부 3자 AI 교육 생태계 표준 수립] --&gt; P4b["글로벌 AI교육 모델 수출 및 UNESCO 협력""]
-    end
-
-    Phase1 --&gt; Phase2 --&gt; Phase3 --&gt; Phase4
-
-    style Phase1 fill:#e8f4f8,stroke:#2563eb
-    style Phase2 fill:#fdf2e9,stroke:#e67e22
-    style Phase3 fill:#f0fdf4,stroke:#22c55e
-    style Phase4 fill:#fdf4ff,stroke:#9333ea
-</div>
-<p>이 4단계 로드맵은 어느 한 단계가 실패했을 때, 다음 단계로의 강제 이행이 아닌 당해 단계의 철저한 재검토와 수정을 우선적으로 허용하는 <em>애자일한 교육 정책 접근법</em>을 전제합니다. 교육 시스템의 혁명은 IT 스타트업의 스프린트처럼 빠를 수는 없습니다. 가장 느리고 가장 복잡한 사회적 유기체인 학교와 교사집단이 진정으로 변화를 내면화할 스스로의 시간을 존중하는 것, 이것이 이 로드맵의 가장 핵심적인 인간 중심적 철학입니다.</p>
+<p>이 장대한 비전 선언문이 교실 현장에서 공허한 구호로 끝나지 않기 위해서는, 구체적이고 단계별로 실현 가능한 "AI교육 2026 실현 4단계 로드맵(4-Phase Roadmap)"이 반드시 수반되어야 한다. 구호는 혁명을 만들지 못한다. 달력과 예산과 책임자가 있는 로드맵만이 교실을 바꿉니다.</p>
+<div id="vis-net-9c1323c9" class="vis-network-container" style="width: 100%; height: 400px; border: 1px solid #e2e8f0; border-radius: 12px; background: #fafafa; margin: 2rem 0; cursor: grab; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);"></div>
+<p>이 4단계 로드맵은 어느 한 단계가 실패했을 때, 다음 단계로의 강제 이행이 아닌 당해 단계의 철저한 재검토와 수정을 우선적으로 허용하는 <em>애자일한 교육 정책 접근법</em>을 전제한다. 교육 시스템의 혁명은 IT 스타트업의 스프린트처럼 빠를 수는 없다. 가장 느리고 가장 복잡한 사회적 유기체인 학교와 교사집단이 진정으로 변화를 내면화할 스스로의 시간을 존중하는 것, 이것이 이 로드맵의 가장 핵심적인 인간 중심적 철학입니다.</p>
 <h2>3. 에필로그: 인간 교사의 마지막 이름은 사랑입니다랑h2&gt;
 <p>책을 덮으며 우리는 다시 처음, 출발 선상이었던 교실의 문고리를 잡고 뒤를 돌아봅니다.</p>
-<p>칠판의 분필 가루가 스마트보드의 픽셀로 변하고, 종이 교과서가 인공지능 홀로그램 비서로 대체된 2026년. 너무나 많은 것이 기적처럼 변증법적 혁명으로 바뀌었지만, 오직 단 하나, 수천 년 전 소크라테스가 아고라 광장에서 제자들과 모래바람을 맞으며 나눴던 그 기적, 율곡 이이가 제자를 쓰다듬으며 나눴던 그 숨결, 즉 <strong>인간이 다른 인간의 뇌파와 심장을 건드려 세계관 자체를 폭발시키는 그 원초적인 화학작용</strong>만큼은 결단코 인공지능 서버 안으로 다운로드될 수 없습니다.</p>
+<p>칠판의 분필 가루가 스마트보드의 픽셀로 변하고, 종이 교과서가 인공지능 홀로그램 비서로 대체된 2026년. 너무나 많은 것이 기적처럼 변증법적 혁명으로 바뀌었지만, 오직 단 하나, 수천 년 전 소크라테스가 아고라 광장에서 제자들과 모래바람을 맞으며 나눴던 그 기적, 율곡 이이가 제자를 쓰다듬으며 나눴던 그 숨결, 즉 <strong>인간이 다른 인간의 뇌파와 심장을 건드려 세계관 자체를 폭발시키는 그 원초적인 화학작용</strong>만큼은 결단코 인공지능 서버 안으로 다운로드될 수 없다.</p>
 <div class="quote-block">
 <strong>그래서 AI가 가져온 기적의 진짜 이름은 기술이 아니라 재발견입니다:</strong><br/>
-    기계가 지루하고 소모적인 모든 지식 전달 노동을 무자비하게 쓸어가 준 덕분에, 교사는 비로소 평가 기계라는 오명에서 벗어나 오직 인류 고유의 성역 안으로 당당히 발을 비벼 넣습니다. 이제 우리는 미적분을 외우는 아이의 입술이 아니라, 그 아이가 세상을 향해 띄우는 불안한 눈동자의 흔들림 하나하나만을 숨막히도록 주시할 것입니다. <br/><br/>가장 눈부신 과학 속에서 우리는 가장 아날로그적인 피와 눈물을 만납니다. <strong>AI교육 2026 로드맵의 종착지, 가장 차가운 슈퍼컴퓨터의 끝엔 언제나 가장 뜨거운 인간 교사 그리고 아이들과의 맹목적인 사랑이 서리 맺혀 기다리고 있을 것입니다.</strong> 이 고독하고도 웅장한 항해에 탑승하신 모든 분들의 지독한 건투를 빕니다.
+    기계가 지루하고 소모적인 모든 지식 전달 노동을 무자비하게 쓸어가 준 덕분에, 교사는 비로소 평가 기계라는 오명에서 벗어나 오직 인류 고유의 성역 안으로 당당히 발을 비벼 넣습니다. 이제 우리는 미적분을 외우는 아이의 입술이 아니라, 그 아이가 세상을 향해 띄우는 불안한 눈동자의 흔들림 하나하나만을 숨막히도록 주시할 것이다. <br/><br/>가장 눈부신 과학 속에서 우리는 가장 아날로그적인 피와 눈물을 만납니다. <strong>AI교육 2026 로드맵의 종착지, 가장 차가운 슈퍼컴퓨터의 끝엔 언제나 가장 뜨거운 인간 교사 그리고 아이들과의 맹목적인 사랑이 서리 맺혀 기다리고 있을 것이다.</strong> 이 고독하고도 웅장한 항해에 탑승하신 모든 분들의 지독한 건투를 빕니다.
 </div>
 <!-- MASSIVE EXPANSION INJECTED -->
 <div class="interactive-widget dnd-widget" data-id="dnd-19">
@@ -140,14 +94,14 @@ flowchart TD
 <div class="feedback-msg"></div>
 </div>
 <h2>7. 인간을 포기할 수 없는 이유와 오만한 사령관들</h2>
-<p>아무리 매끄럽고 완벽한 기계의 시대라 할지라도, 인간은 스스로 불완전함의 마찰을 견뎌내며 어두운 동굴을 더듬는 고통의 특권을 포기해선 안 됩니다. 환상에서 깨어나 체온과 피 냄새를 굳건히 사수하라.</p>
-<p>아이들은 에이전틱 AI의 등허리에 올라타 가장 날카로운 프롬프트를 휘두르는 <em>오만하고 냉혹한 지휘관</em>인 동시에, 동료의 상처에 무릎 꿇는 가장 지극한 영적 치유자로 각성하게 될 것입니다.</p>
+<p>아무리 매끄럽고 완벽한 기계의 시대라 할지라도, 인간은 스스로 불완전함의 마찰을 견뎌내며 어두운 동굴을 더듬는 고통의 특권을 포기해선 안 된다. 환상에서 깨어나 체온과 피 냄새를 굳건히 사수하라.</p>
+<p>아이들은 에이전틱 AI의 등허리에 올라타 가장 날카로운 프롬프트를 휘두르는 <em>오만하고 냉혹한 지휘관</em>인 동시에, 동료의 상처에 무릎 꿇는 가장 지극한 영적 치유자로 각성하게 될 것이다.</p>
 <!-- MASSIVE VOLUME BOOST -->
 <h2>8. 가장 높은 곳에서 울리는 아날로그의 찬가</h2>
-<p>이 기나긴 첨단 논쟁의 끄트머리에 우리가 내린 결론은 오직 하나, <em>인간</em>이다. 기술이 아이의 모든 수고로움을 거세해주려는 이 달콤하고 유혹적인 쾌락의 시대 속에서, 마이클 샌델의 경고처럼 불완전성과 거친 마찰을 인내하는 고통을 잃어버리는 순간 인간의 영혼은 단 1미터도 뻗어 나가지 못합니다. 우리는 가장 차가운 초전도체 슈퍼컴퓨터의 빙벽 위에서 가장 뜨거운 인간의 피켓을 들어야 합니다.</p>
+<p>이 기나긴 첨단 논쟁의 끄트머리에 우리가 내린 결론은 오직 하나, <em>인간</em>이다. 기술이 아이의 모든 수고로움을 거세해주려는 이 달콤하고 유혹적인 쾌락의 시대 속에서, 마이클 샌델의 경고처럼 불완전성과 거친 마찰을 인내하는 고통을 잃어버리는 순간 인간의 영혼은 단 1미터도 뻗어 나가지 못한다. 우리는 가장 차가운 초전도체 슈퍼컴퓨터의 빙벽 위에서 가장 뜨거운 인간의 피켓을 들어야 한다.</p>
 <h2>9. 야생마를 길들이는 지휘관의 채찍과 교사의 눈물</h2>
-<p>아이들은 에이전틱 AI라는 거대한 야생마를 지배하고 학대할 정도로 오만하고 잔혹한 메타-인지적 사령관이 되어야 합니다. 하지만 아이러니하게도, 그 기계를 버려두고 고개를 돌린 곳에서 만나는 상처받은 동료와 교사 앞에서는 가장 나약하고 따뜻한 유대감으로 무너져 내릴 수 있는 모순의 인간이 되어야 합니다. 기계를 지배하되, 인간 앞에서는 한없이 겸손한 자.<br/>
-불 꺼진 교무실과 차가운 터치스크린 위 마지막 불씨를 밝히는 것은 트랜지스터의 연산 결과가 아니라, 시험을 망치고 어깨를 들썩이는 아이의 등을 쓰다듬어 주며 같이 울어주는 아날로그 교사의 투박한 손바닥입니다. 거대한 시스템 재설계의 끝에 찾아온 진실, 인간성의 역설적 부활. 이것이 AI교육 2026 로드맵이 피를 토하며 남기는 영원한 선언문입니다.</p>
+<p>아이들은 에이전틱 AI라는 거대한 야생마를 지배하고 학대할 정도로 오만하고 잔혹한 메타-인지적 사령관이 되어야 한다. 하지만 아이러니하게도, 그 기계를 버려두고 고개를 돌린 곳에서 만나는 상처받은 동료와 교사 앞에서는 가장 나약하고 따뜻한 유대감으로 무너져 내릴 수 있는 모순의 인간이 되어야 한다. 기계를 지배하되, 인간 앞에서는 한없이 겸손한 자.<br/>
+불 꺼진 교무실과 차가운 터치스크린 위 마지막 불씨를 밝히는 것은 트랜지스터의 연산 결과가 아니라, 시험을 망치고 어깨를 들썩이는 아이의 등을 쓰다듬어 주며 같이 울어주는 아날로그 교사의 투박한 손바닥이다. 거대한 시스템 재설계의 끝에 찾아온 진실, 인간성의 역설적 부활. 이것이 AI교육 2026 로드맵이 피를 토하며 남기는 영원한 선언문입니다.</p>
 <div class="interactive-widget sa-widget" data-id="sa-19">
 <h4 class="widget-title">⌨️ 핵심 어휘 회상</h4>
 <p style="margin-bottom: 1rem;">기술 발전이 인간의 영혼과 존엄성을 해치지 않고, 기계와 인간이 상호 작용하며 함께 조화롭게 진화하는 것을 뜻하는 3글자 단어는?</p>
@@ -155,14 +109,14 @@ flowchart TD
 <button class="submit-btn" type="button">정답 제출하기</button>
 <div class="feedback-msg"></div>
 </div>
-<div class="glossary-section" style="margin-top: 4rem; padding: 2.5rem; background: #fafafa; border-radius:12px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);"><h3 style="margin-top:0; font-size:1.4rem; color:#0f172a; margin-bottom:1.5rem;">📖 용어 해설 (본문 인용)</h3><ul style="line-height:2.0; color:#334155; font-size:1.05rem;"><li style="margin-bottom: 0.8rem;"><strong>마이클 샌델(Michael Sandel)</strong>: 정의와 기회라는 주제를 깊이 연구한 정치철학자로, 공동체적 연대를 강조합니다. <a href="https://en.wikipedia.org/wiki/Michael_Sandel" style="color:#2563eb; text-decoration:none; font-size:0.9rem;" target="_blank">[위키백과 ↗]</a></li><li style="margin-bottom: 0.8rem;"><strong>환각(Hallucination)</strong>: 인공지능이 사실이 아닌 내용을 마치 사실인 것처럼 그럴듯하게 생성해내는 오류 현상입니다. <a href="https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)" style="color:#2563eb; text-decoration:none; font-size:0.9rem;" target="_blank">[위키백과 ↗]</a></li></ul></div><div class="reflection-section" style="margin-top: 4rem; padding: 2.5rem; background: #fafafa; border-radius: 12px; border: 1px solid #eaeaea; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+<div class="glossary-section" style="margin-top: 4rem; padding: 2.5rem; background: #fafafa; border-radius:12px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);"><h3 style="margin-top:0; font-size:1.4rem; color:#0f172a; margin-bottom:1.5rem;">📖 용어 해설 (본문 인용)</h3><ul style="line-height:2.0; color:#334155; font-size:1.05rem;"><li style="margin-bottom: 0.8rem;"><strong>마이클 샌델(Michael Sandel)</strong>: 정의와 기회라는 주제를 깊이 연구한 정치철학자로, 공동체적 연대를 강조한다. <a href="https://en.wikipedia.org/wiki/Michael_Sandel" style="color:#2563eb; text-decoration:none; font-size:0.9rem;" target="_blank">[위키백과 ↗]</a></li><li style="margin-bottom: 0.8rem;"><strong>환각(Hallucination)</strong>: 인공지능이 사실이 아닌 내용을 마치 사실인 것처럼 그럴듯하게 생성해내는 오류 현상이다. <a href="https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)" style="color:#2563eb; text-decoration:none; font-size:0.9rem;" target="_blank">[위키백과 ↗]</a></li></ul></div><div class="reflection-section" style="margin-top: 4rem; padding: 2.5rem; background: #fafafa; border-radius: 12px; border: 1px solid #eaeaea; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
 <h3 style="margin-top: 0; color: #111; font-size: 1.5rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
             성찰과 연대: 2026년을 향한 당신의 생각
         </h3>
 <p style="font-size: 1.15rem; color: #444; margin-bottom: 2rem; line-height: 1.6;">모든 것이 완벽하게 통제되고 수치화되는 알고리즘 사회 속에서, 공교육은 어떻게 학생들에게 방황할 자유와 실패할 특권을 보장할 수 있을까요?</p>
 <textarea id="reflection-answer-19" placeholder="자신의 생각을 편안하고 솔직하게 기록해보세요..." style="width: 100%; height: 140px; padding: 1.2rem; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; font-size: 1.05rem; margin-bottom: 1.5rem; resize: vertical; box-sizing: border-box; background: #fff;"></textarea>
 <button class="reflection-submit" data-chapter="19" style="background: #1a1a1a; color: white; border: none; padding: 1rem 2rem; border-radius: 8px; font-size: 1.05rem; font-weight: 600; cursor: pointer; transition: background 0.2s;">내 생각 제출하기 (로컬 저장)</button>
-<p id="save-msg-19" style="display: none; color: #22c55e; margin-top: 1rem; font-weight: 500; font-size: 1.05rem;">✓ 기기에 안전하게 저장되었습니다. 향후 서버 연동 시 익명으로 공유될 수 있습니다.</p>
+<p id="save-msg-19" style="display: none; color: #22c55e; margin-top: 1rem; font-weight: 500; font-size: 1.05rem;">✓ 기기에 안전하게 저장되었습니다. 향후 서버 연동 시 익명으로 공유될 수 있다.</p>
 </div>
 </h2></div>
 </article>
@@ -170,5 +124,64 @@ flowchart TD
 <footer class="site-footer" role="contentinfo">
 <div class="container"><p>© 2026 AI교육 2026. All rights reserved.</p></div>
 </footer>
+
+<script>
+
+            document.addEventListener("DOMContentLoaded", function() {
+                if(typeof vis === 'undefined') return;
+                var container = document.getElementById('vis-net-b9ac212d');
+                var data = {
+                    nodes: new vis.DataSet([{"id": "V_Top", "label": "인간을 위한 도구, 도구를 지배하는 인간 - Human over Machine", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "V1", "label": "제1원칙: 의도적 마찰 - Intentional Friction", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "V2", "label": "제2원칙: 하이터치의 절대성 - High-touch", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "V3", "label": "제3원칙: 질문의 해상도 - Resolution of Prompt", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "V_Bottom", "label": "메타인지와 야생의 근육 폭발 - Grit", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}]),
+                    edges: new vis.DataSet([])
+                };
+                var options = {
+                    layout: {
+                        hierarchical: {
+                            enabled: true,
+                            direction: 'UD',
+                            sortMethod: 'directed',
+                            nodeSpacing: 250,
+                            levelSeparation: 150
+                        }
+                    },
+                    physics: {
+                        enabled: true,
+                        hierarchicalRepulsion: { nodeDistance: 200, springLength: 100, damping: 0.09 }
+                    },
+                    edges: { smooth: { type: 'cubicBezier', forceDirection: 'vertical' }, color: '#94a3b8', width: 2 },
+                    interaction: { hover: true, dragNodes: true }
+                };
+                new vis.Network(container, data, options);
+            });
+            
+
+            document.addEventListener("DOMContentLoaded", function() {
+                if(typeof vis === 'undefined') return;
+                var container = document.getElementById('vis-net-9c1323c9');
+                var data = {
+                    nodes: new vis.DataSet([{"id": "P1a", "label": "전국 AI 교육 데이터 허브 클라우드 구축", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "P1b", "label": "교원 대상 마이크로 자격증 플랫폼 개설", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "P2a", "label": "\"시도별 파일럿 학교 10개교 선정, AI 튜터 + 데이터 대시보드 본격 운영", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "P2b", "label": "\"현장 교사 피드백 기반 에듀테크 모듈 A/B 테스트\"\"", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "P3a", "label": "\"파일럿 성공 모델 기반, 전국 공립학교 AI 거버넌스 시스템 적용", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "P3b", "label": "\"어린이 데이터 헌장 법령화 및 Parents Opt-out 제도 시행\"\"", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "P4a", "label": "\"대학·에듀테크·교육부 3자 AI 교육 생태계 표준 수립", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}, {"id": "P4b", "label": "\"글로벌 AI교육 모델 수출 및 UNESCO 협력\"\"", "shape": "box", "font": {"size": 16, "face": "Pretendard, sans-serif", "color": "#1e293b"}, "color": {"background": "#fdf2e9", "border": "#e67e22"}}]),
+                    edges: new vis.DataSet([])
+                };
+                var options = {
+                    layout: {
+                        hierarchical: {
+                            enabled: true,
+                            direction: 'UD',
+                            sortMethod: 'directed',
+                            nodeSpacing: 250,
+                            levelSeparation: 150
+                        }
+                    },
+                    physics: {
+                        enabled: true,
+                        hierarchicalRepulsion: { nodeDistance: 200, springLength: 100, damping: 0.09 }
+                    },
+                    edges: { smooth: { type: 'cubicBezier', forceDirection: 'vertical' }, color: '#94a3b8', width: 2 },
+                    interaction: { hover: true, dragNodes: true }
+                };
+                new vis.Network(container, data, options);
+            });
+            
+</script>
 </body>
 </html>
